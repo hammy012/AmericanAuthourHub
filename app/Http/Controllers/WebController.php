@@ -10,4 +10,12 @@ class WebController extends Controller
     {
         return view('welcome');
     }
+    public function book_promotions()
+    {
+        return view('book-promotions');
+    }
+    public function about_us()
+    {
+        return view('about-us');
+    }
 }
