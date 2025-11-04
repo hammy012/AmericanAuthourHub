@@ -24,4 +24,12 @@ class WebController extends Controller
     {
         return view('blogs');
     }
+    public function contact_us()
+    {
+        return view('contact-us');
+    }
+    public function book_video_trailer()
+    {
+        return view('book-video-trailer');
+    }
 }
