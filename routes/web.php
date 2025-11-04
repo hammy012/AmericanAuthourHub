@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WebController::class, 'index'])->name('home');
-Route::get('book-promotions', [WebController::class, 'book_promotions'])->name('book-promotions');
 Route::get('about-us', [WebController::class, 'about_us'])->name('about-us');
+Route::get('book-promotions', [WebController::class, 'book_promotions'])->name('book-promotions');
+Route::get('ebook-writing', [WebController::class, 'ebook_writing'])->name('ebook-writing');
+Route::get('book-editing', [WebController::class, 'book_editing'])->name('book-editing');

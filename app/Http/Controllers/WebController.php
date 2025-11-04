@@ -18,4 +18,12 @@ class WebController extends Controller
     {
         return view('about-us');
     }
+    public function ebook_writing()
+    {
+        return view('ebook-writing');
+    }
+    public function book_editing()
+    {
+        return view('book-editing');
+    }
 }
