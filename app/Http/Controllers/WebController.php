@@ -10,20 +10,18 @@ class WebController extends Controller
     {
         return view('welcome');
     }
-    public function book_promotions()
-    {
-        return view('book-promotions');
-    }
+
     public function about_us()
     {
         return view('about-us');
     }
-    public function ebook_writing()
+
+    public function book_promotions()
     {
-        return view('ebook-writing');
+        return view('book-promotions');
     }
-    public function book_editing()
+    public function blogs()
     {
-        return view('book-editing');
+        return view('blogs');
     }
 }

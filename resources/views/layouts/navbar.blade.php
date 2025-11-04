@@ -10,7 +10,7 @@
                     <div class="col-md-2 logo-box">
                         <div class="logo">
                             <a href="/">
-                                <img src="https://authorstime.com/assets/images/logo.png">
+                                <h2 style="font-size: 30px; color: #E4573D;">LOGO</h2>
                             </a>
                         </div>
                     </div>
@@ -33,14 +33,14 @@
                                                                     Promotions</a></li>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-7.png"><a
-                                                                    href="ebook-writing">E-book
+                                                                    href="book-promotions">E-book
                                                                     Writing</a></li>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-8.png"><a
-                                                                    href="book-editing">Editing</a></li>
+                                                                    href="book-promotions">Editing</a></li>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-11.png"><a
-                                                                    href="proofreading">Proofreading</a></li>
+                                                                    href="book-promotions">Proofreading</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -50,21 +50,21 @@
                                                             <!--<li><img src="assets/images/menu-icons-1.png"><a href="article-writing">Article Writing</a></li>-->
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-2.png"><a
-                                                                    href="audio-book">Audio
+                                                                    href="book-promotions">Audio
                                                                     Book</a></li>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-3.png"><a
-                                                                    href="author-website">Author
+                                                                    href="book-promotions">Author
                                                                     Website</a></li>
                                                             <!--<li><img src="assets/images/menu-icons-4.png"><a href="blog-writing">Blog Writng</a></li>-->
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-5.png"><a
-                                                                    href="book-cover">Book
+                                                                    href="book-promotions">Book
                                                                     Cover</a></li>
                                                             <li>
                                                                 <img
                                                                     src="https://authorstime.com/assets/images/menu-icons-13.png">
-                                                                <a href="book-printing">
+                                                                <a href="book-promotions">
                                                                     Book Printing
                                                                 </a>
                                                             </li>
@@ -76,20 +76,20 @@
                                                         <ul>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-9.png"><a
-                                                                    href="formatting">Formating</a></li>
+                                                                    href="book-promotions">Formating</a></li>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-10.png"><a
-                                                                    href="ghost-writing">Ghostwriting</a></li>
+                                                                    href="book-promotions">Ghostwriting</a></li>
                                                             <li>
                                                                 <img
                                                                     src="https://authorstime.com/assets/images/menu-icons-13.png">
-                                                                <a href="book-video-trailer">
+                                                                <a href="book-promotions">
                                                                     Video Book Trailer
                                                                 </a>
                                                             </li>
                                                             <li><img
                                                                     src="https://authorstime.com/assets/images/menu-icons-12.png"><a
-                                                                    href="book-publishing">Publishing</a></li>
+                                                                    href="book-promotions">Publishing</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -98,11 +98,11 @@
                                     </div>
                                 </li>
 
-                                <li>
+                                {{--  <li>
                                     <a href="book-video-trailer">
                                         Video Book Trailer
                                     </a>
-                                </li>
+                                </li>  --}}
                                 <li><a href="/blogs">Blogs </a></li>
                                 <li><a href="contact-us">Contact</a></li>
                             </ul>
