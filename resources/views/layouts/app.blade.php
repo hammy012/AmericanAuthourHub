@@ -40,8 +40,8 @@
         /* container anchored bottom-right */
         #chat-widget {
             position: fixed;
-            right: 24px;
-            bottom: 24px;
+            right: 15px;
+            bottom: 15px;
             z-index: 1100;
             font-family: inherit;
         }
@@ -50,7 +50,7 @@
         #chat-panel {
             position: absolute;
             right: 0;
-            bottom: 58px;
+            bottom: 65px;
             /* leave space for toggle */
             width: 360px;
             max-width: calc(100vw - 48px);
@@ -64,7 +64,7 @@
             transform: translateY(12px) scale(.99);
             display: none;
             /* shown via script */
-            max-height: 470px;
+            max-height: 460px;
             /* user asked: keep inside 470px */
         }
 
