@@ -61,7 +61,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>Professional Resume Services
                                     </h5>
                                     <p>We take pride in providing our clients with the best-in-class resume writing
@@ -81,7 +81,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>Author Website
                                     </h5>
                                     <p>We have a team of professional book writers that specialize in writing engaging
@@ -102,7 +102,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>Book Writing Services
                                     </h5>
                                     <p>We strive to provide our clients with exceptional custom book writing services
@@ -124,7 +124,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>eBook Writing & Publishing
                                     </h5>
                                     <p>We have got your back if you are looking for professional eBook writing and
@@ -145,7 +145,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>Book Cover Design
                                     </h5>
                                     <p>Are you looking for an engaging cover design service? You can trust professional
@@ -167,7 +167,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>Proofreading & Editing
                                     </h5>
                                     <p>We offer cost-effective proofreading and book editing services to our esteemed
@@ -190,7 +190,7 @@
                                     </h4>
                                 </div>
                                 <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
+                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
                                     <h5>Book Publishing Services
                                     </h5>
                                     <p>We help authors get their books published, covering a variety of genres,
@@ -573,7 +573,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="tier-box active">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/tier-circle.png"
+                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}"
                             class="tier-circle">
                         <span>3,000</span>
                         <h4>Top-Tier, US-Based
@@ -592,7 +592,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="tier-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/tier-circle.png"
+                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}"
                             class="tier-circle">
                         <span>10,000</span>
                         <h4>Our Customers <br>
@@ -623,7 +623,7 @@
             <div class="row testi-slider">
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>Highly experienced team of editors & writers.
                         </h4>
                         <p>"I must say that my experience with Zach the project manager and his team was terrific. They
@@ -637,7 +637,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>Completely satisfied with their publishing service & support.
                         </h4>
                         <p>“Kudos to the amazing team and for sure the people behind it. I've been struggling to publish
@@ -653,7 +653,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>Excellent understanding of what works for formatting & publishing.
                         </h4>
                         <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's
@@ -666,7 +666,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>First-Time Publishing Success!
                         </h4>
                         <p>"Eddie Williams has been very available and helpful in publishing my children's book. We had

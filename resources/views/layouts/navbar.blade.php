@@ -104,6 +104,7 @@
                                 </a>
                             </li>
                             {{--  <li><a href="/blogs">Blogs </a></li>  --}}
+                            <li><a href="faqs">FAQs</a></li>
                             <li><a href="contact-us">Contact</a></li>
                         </ul>
                     </div>
@@ -112,7 +113,7 @@
                     <ul class="cta-menu-links">
                         <li><a href="tel:+123456789">
                                 (123) 456-789 </a></li>
-                        <li><a href="{{ route('contact-us') }}" class="project-btn h-start">Connect</a>
+                        <li><a href="{{ route('contact-us') }}" class="project-btn h-start">Contact</a>
                         </li>
                     </ul>
                 </div>

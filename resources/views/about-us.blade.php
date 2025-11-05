@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Home')
+@section('title', 'Ebook | About us')
 
 @section('content')
 
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="tier-box active">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/tier-circle.png" class="tier-circle">
+                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle">
                         <span>3,000</span>
                         <h4>Top-Tier, US-Based
                             Content Writers
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="tier-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/tier-circle.png" class="tier-circle">
+                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle">
                         <span>10,000</span>
                         <h4>Our Customers <br>
                             Love Us
@@ -167,7 +167,7 @@
             <div class="row testi-slider">
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>Highly experienced team of editors & writers.
                         </h4>
                         <p>"I must say that my experience with Zach the project manager and his team was terrific. They
@@ -181,7 +181,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>Completely satisfied with their publishing service & support.
                         </h4>
                         <p>“Kudos to the amazing team and for sure the people behind it. I've been struggling to publish
@@ -197,7 +197,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>Excellent understanding of what works for formatting & publishing.
                         </h4>
                         <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's
@@ -210,7 +210,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="{{ asset('assets/imgs/coma.png') }}">
                         <h4>First-Time Publishing Success!
                         </h4>
                         <p>"Eddie Williams has been very available and helpful in publishing my children's book. We had
@@ -315,7 +315,7 @@
                             <input type="hidden" name="internet_connection" value="Cyber Internet Services Pakistan" />
                             <input type="hidden" name="zipcode" value="74600" />
                             <input type="hidden" name="region" value="Sindh" />
-                            <input type="hidden" name="url" value="https://authorstime.com/" />
+                            <input type="hidden" name="url" value="https://ebook.com/" />
                             <input type="hidden" name="form_name" value="GET IN TOUCH FORM" />
                             <input type="hidden" name="bot_detector" value="" />
                             <input type="hidden" name="privacy_policy"

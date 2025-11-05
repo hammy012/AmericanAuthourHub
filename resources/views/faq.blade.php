@@ -1,237 +1,230 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Book Video Trailor')
+@section('title', 'Ebook | FAQs')
 
 @section('content')
 
-    <section class="service-banner" style="background: url('{{ asset('assets/imgs/main-back.png') }}');">
 
+
+    <!-- Inline styles specific to this section (put in main CSS if you prefer) -->
+    <style>
+        .faq-sec {
+            padding: 70px 0;
+        }
+
+        .faq-box {
+            background: #fff;
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 6px 20px rgba(159, 11, 7, 0.06);
+        }
+
+        .faq-accordion {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .accordion-item+.accordion-item {
+            margin-top: 12px;
+        }
+
+        .accordion-btn {
+            width: 100%;
+            text-align: left;
+            padding: 18px 20px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #fff, #fbfdff);
+            border: 2px solid rgba(159, 11, 7, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+            color: #9F0B07;
+            transition: all .25s ease;
+            position: relative;
+        }
+
+        .accordion-btn:focus {
+            outline: 3px solid rgba(228, 87, 61, 0.12);
+            outline-offset: 2px;
+        }
+
+        .accordion-btn .q {
+            font-weight: 700;
+        }
+
+        .accordion-btn .toggle {
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            display: inline-block;
+            flex-shrink: 0;
+            border-left: 4px solid #002768;
+            margin-left: 12px;
+            position: relative;
+        }
+
+        /* plus/minus lines */
+        .accordion-btn .toggle::before,
+        .accordion-btn .toggle::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #002768;
+            transition: transform .25s ease, opacity .25s ease;
+            border-radius: 2px;
+        }
+
+        .accordion-btn .toggle::before {
+            width: 18px;
+            height: 3px;
+        }
+
+        .accordion-btn .toggle::after {
+            width: 3px;
+            height: 18px;
+        }
+
+        .accordion-item.open .accordion-btn {
+            background: linear-gradient(180deg, #eaf3ff, #fff);
+            border-color: rgba(228, 87, 61, 0.13);
+            box-shadow: 0 8px 26px rgba(159, 11, 7, 0.06);
+        }
+
+        .accordion-item.open .accordion-btn .toggle::after {
+            transform: translate(-50%, -50%) scaleY(0);
+            opacity: 0;
+        }
+
+        .accordion-content {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height .35s ease, padding .25s ease;
+            padding: 0 18px;
+            color: #444;
+        }
+
+        .accordion-content p {
+            margin: 15px 0 18px;
+            line-height: 1.6;
+        }
+
+        /* responsive tweaks */
+        @media (max-width:767px) {
+            .faq-sec {
+                padding: 40px 0;
+            }
+
+            .banner-head h1 {
+                font-size: 22px;
+            }
+
+            .accordion-btn {
+                padding: 14px;
+                font-size: 15px;
+            }
+        }
+    </style>
+
+
+
+    <section class="service-banner"
+        style="background: url('{{ asset('assets/imgs/main-back.png') }}') no-repeat center center/cover;">
         <div class="container">
             <div class="banner-head">
-                <span>Make Your Audience Visualize What You're Talking</span>
-                <h1>About With The Best Book Trailers
-
-                </h1>
-                <p>Let's work together to produce the most appealing trailer for your book. The best technique to highlight
-                    your achievement is to show your masterpiece to the audience. Let's spark your audience's interest ahead
-                    of
-                    time.
+                <span>Have Questions About Our eBook Services?</span>
+                <h1>Everything You Need to Know About Our Book Promotion</h1>
+                <p>Get answers to the most common questions authors ask before starting their book marketing journey.
+                    <br>
+                    From pricing to publishing support — we’ve covered it all to help you make confident decisions.
                 </p>
-                <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss your Project</a>
+
+                <a href="javascript:;" class="project-btn popup-btn">Explore FAQs</a>
             </div>
         </div>
     </section>
 
 
-    <!--  -->
-    <section class="spotlight-sec">
+    <!-- FAQ SECTION — paste this right AFTER the first </section> -->
+    <section class="faq-sec" style="background: #f7f9fc;">
         <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="spotlight-sec-head">
-                        <h3>Reading An Advertisement Can Be Boring
-                        </h3>
-                        <p>But a visual representation can capture attention in the first three seconds. You have just three
-                            seconds
-                            to sell a book and turn a visitor into your potential customer. Connect with us today to have
-                            your book’s
-                            trailer designed by our creative team and let the audience experience the out-of-the-world
-                            representation
-                            of your book.
-
-
+            <div class="row align-items-start">
+                <div class="col-md-5">
+                    <div class="banner-head">
+                        <span style="color:#002768;font-weight:700;">FAQs</span>
+                        <h1 style="color:#9F0B07;">Frequently Asked Questions</h1>
+                        <p style="color:#333;">
+                            Here you will find answers to common questions about our services, processes, and delivery.
+                            If your question is not listed, please get in touch via the “Let’s Discuss your Project” button.
                         </p>
-                        <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss your Project</a>
-                        <ul class="cta-btn">
-                            <li><a href="tel:+123456789">(123) 456-789</a></li>
-                            <li><a href="mailto:info@ebook.com"><span class="">info@ebook.com</span>
-                                </a>
+                        <a href="{{ route('contact-us') }}" class="project-btn popup-btn"
+                            style="background:#9F0B07;border-color:#9F0B07;color:#fff;">Let’s Discuss your Project</a>
+                    </div>
+
+                </div>
+
+                <div class="col-md-7">
+                    <div class="faq-box">
+                        <ul class="faq-accordion">
+
+                            <li class="accordion-item">
+                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq1">
+                                    <span class="q">What services do you offer?</span>
+                                    <span class="toggle"></span>
+                                </button>
+                                <div id="faq1" class="accordion-content" role="region" aria-labelledby="">
+                                    <p>Hum content writing, editing, publishing, SEO content, blog writing, book editing aur
+                                        web copywriting jese tamam services provide karte hain.</p>
+                                </div>
                             </li>
+
+                            <li class="accordion-item">
+                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq2">
+                                    <span class="q">How long does a project usually take?</span>
+                                    <span class="toggle"></span>
+                                </button>
+                                <div id="faq2" class="accordion-content">
+                                    <p>Project ki complexity aur scope par mabni hota hai — choti assignments kuch dino mein
+                                        aur novels/book projects kai hafton tak le sakte hain. Specific ETA hum project
+                                        brief lene ke baad batate hain.</p>
+                                </div>
+                            </li>
+
+                            <li class="accordion-item">
+                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq3">
+                                    <span class="q">Do you do revisions?</span>
+                                    <span class="toggle"></span>
+                                </button>
+                                <div id="faq3" class="accordion-content">
+                                    <p>Ji haan — har package mein revisions diye jate hain. Revision policy package ke
+                                        mutabiq vary kar sakti hai.</p>
+                                </div>
+                            </li>
+
+                            <li class="accordion-item">
+                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq4">
+                                    <span class="q">How do I start?</span>
+                                    <span class="toggle"></span>
+                                </button>
+                                <div id="faq4" class="accordion-content">
+                                    <p>Contact form bhar dein, ya "Let’s Discuss your Project" click karain — hum aapse
+                                        project details aur next steps share karenge.</p>
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="spotlight-sec-img">
-                        <img src="{{ asset('assets/imgs/video.png') }}">
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
-    <!--  -->
 
-    <!--  -->
-    <section class="why-choose-service">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="why-choose-service-head">
-                        <h3>Why Choose Us?</h3>
-                        <h6>Exceptional Digital Marketing</h6>
-                        <p>Our digital marketing solutions are designed to bring more traffic, leads, and customers,
-                            unleashing more
-                            opportunities for you to reach out to the masses.</p>
-                        <h6>Compelling Book Advertisement</h6>
-                        <p>We discover the target audience, conduct a market survey, and execute campaigns that bring
-                            remarkable
-                            outcomes in a quick time.</p>
-                        <h6>Reach a Wider Audience</h6>
-                        <p>We curate solid marketing plans assisted by a team of professionals to promote your book and
-                            expand your
-                            outreach to the masses.
 
-                        </p>
-                        <h6>A Proactive Approach</h6>
-                        <p>Authors Time has a team of dedicated book marketers who comprehend the authors’ needs and follow
-                            a
-                            proactive approach to market your book effectively.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--  -->
-
-    <!--  -->
-
-    <section class="words-ghost">
-        <div class="container">
-            <h3>Over 250 Million Words Ghostwritten</h3>
-            <p>Our industry-best writers are passionate about preserving stories and promoting thought leadership</p>
-        </div>
     </section>
 
-    <section class="tier-sec">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <div class="tier-sec-img">
-                        <img loading="lazy" src="{{ asset('assets/imgs/ban1.webp') }}">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tier-box active">
-                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle">
-                        <span>3,000</span>
-                        <h4>Top-Tier, US-Based
-                            Content Writers
-                        </h4>
-                        <p>Our authors go through extensive and rigorous testing and training procedures before being
-                            hired by
-                            our professional book writing agency. We have got some of the most celebrated writers
-                            onboard from
-                            across the United States.
-
-
-                        </p>
-                        <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="tier-box">
-                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle">
-                        <span>10,000</span>
-                        <h4>Our Customers <br>
-                            Love Us
-                        </h4>
-                        <p>Having served more than 10,000 satisfied clients, we take pride in our professional book
-                            writing
-                            services that have helped us stand out from our competitors.
-
-
-                        </p>
-                        <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  -->
-    <section class="testi-sec">
-        <div class="container">
-            <div class="banner-head">
-                <span>Testimonials</span>
-                <h2>Trust Ebook Company For All
-                    Your Business Writing Needs
-                </h2>
-            </div>
-            <div class="row testi-slider">
-                <div class="col-md-4">
-                    <div class="testi-box">
-                        <img src="{{ asset('assets/imgs/coma.png') }}">
-                        <h4>Highly experienced team of editors & writers.
-                        </h4>
-                        <p>"I must say that my experience with Zach the project manager and his team was terrific. They
-                            guided me along in the editing and process and were not only helpful but patient. Zach was a
-                            personal pleasure to deal with. I also learned along the way and was able to even improve
-                            upon my own writing and punctuation. He was always responsive to my questions and problems."
-                        </p>
-
-                        <h6>Carole Jett</h6>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testi-box">
-                        <img src="{{ asset('assets/imgs/coma.png') }}">
-                        <h4>Completely satisfied with their publishing service & support.
-                        </h4>
-                        <p>“Kudos to the amazing team and for sure the people behind it. I've been struggling to publish
-                            for years and on a fine October morning I call Ebook and get connected to Eddie
-                            Williams. Since then they have made my dream possible and thank you Zach for being available
-                            throughout the entire process, and whatever of an issue I'd, he responded me with patience
-                            and dedication. I felt heard and I'm glad my book "An Art of Love" is out there and seeking
-                            your love for the same!” </p>
-
-                        <h6>Ethan Mitchell</h6>
-
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testi-box">
-                        <img src="{{ asset('assets/imgs/coma.png') }}">
-                        <h4>Excellent understanding of what works for formatting & publishing.
-                        </h4>
-                        <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's
-                            a debut book, and I worried it doesn't look professional because of poor formatting, so
-                            contact Ebook . Most of all, Mr. Walton Pierce is an excellent manager. He helped to
-                            publish them one by one as if he is a personal coach. Thank you so much!"</p>
-
-                        <h6>Noah Martinez</h6>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="testi-box">
-                        <img src="{{ asset('assets/imgs/coma.png') }}">
-                        <h4>First-Time Publishing Success!
-                        </h4>
-                        <p>"Eddie Williams has been very available and helpful in publishing my children's book. We had
-                            a few miss communications and some editing problems but in the end the book is just as I had
-                            hoped. Eddie was always courteous, patient and ready to help with all the issues this first
-                            time publisher had. Thanks!" </p>
-
-                        <h6>Aiden Clark</h6>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--  -->
-    <section class="cta-se-2">
-        <div class="container">
-            <div class="cta-head-2">
-                <span>100% Original, Authentic, & Genuine</span>
-                <h3>Become a celebrated author of best-seller <br> books with Ebook Services.</h3>
-                <ul class="cta-btn">
-                    <li><a href="tel:+123456789">123 456-789</a> &nbsp; <a href="javascript:;" class="chat">Chat
-                            Now</a></li>
-                    <li><a href="mailto:info@ebook.com"><span>info@ebook.com</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
 
     <section class="touch-sec">
@@ -318,8 +311,7 @@
                                 value="I have read the Terms & Conditions and Privacy Policy." />
                             <input type="hidden" name="policy"
                                 value="By providing my contact information, I agree to receive text messages, calls, and emails from Ebook ." />
-                            <input type="text" name="name" maxlength="30" required=""
-                                placeholder="Enter Name">
+                            <input type="text" name="name" maxlength="30" required="" placeholder="Enter Name">
                             <input type="tel" name="phone" required="" placeholder="Enter Number"
                                 minlength="10" maxlength="10">
                             <input type="email" name="email" required="" placeholder="Enter Email">
@@ -415,4 +407,43 @@
         </div>
     </section>
 
+
+
+    <script>
+        (function() {
+            const items = document.querySelectorAll('.accordion-item');
+            items.forEach(item => {
+                const btn = item.querySelector('.accordion-btn');
+                const content = item.querySelector('.accordion-content');
+
+                // initialize aria-controls id already set in markup
+                btn.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('open');
+
+                    // close all
+                    items.forEach(i => {
+                        i.classList.remove('open');
+                        i.querySelector('.accordion-btn').setAttribute('aria-expanded',
+                            'false');
+                        i.querySelector('.accordion-content').style.maxHeight = null;
+                    });
+
+                    // if it was closed, open it
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        btn.setAttribute('aria-expanded', 'true');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+
+                // allow keyboard Enter/Space activation
+                btn.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+        })();
+    </script>
 @endsection
