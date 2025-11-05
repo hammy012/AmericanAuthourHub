@@ -4,18 +4,6 @@
 
 @section('content')
 
-    <section class="service-banner" style="background: url('https://authorstime.com/assets/images/privacy-banner.png');">
-
-        <div class="container">
-            <div class="banner-head">
-
-                <h1>Privacy Policy
-                </h1>
-                <!--<p>The privacy policy assists both you and us in keeping your information private. In addition, our privacy policy will assist you in comprehending the steps we take to protect your privacy both before and after the work process.-->
-                </p>
-            </div>
-        </div>
-    </section>
     <section class="main-privacy">
         <div class="container">
             <div class="row">

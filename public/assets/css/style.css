@@ -27,6 +27,11 @@
     background-color: #9F0B07;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 [class^="box-"] {
     display: none;
 }

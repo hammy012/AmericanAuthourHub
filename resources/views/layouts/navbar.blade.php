@@ -28,18 +28,18 @@
                                                 <div class="menu_box_list">
                                                     <ul>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-6.png"><a
+                                                                src="{{ asset('assets/imgs/i1.png') }}"><a
                                                                 href="book-promotions">Book
                                                                 Promotions</a></li>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-7.png"><a
+                                                                src="{{ asset('assets/imgs/i2.png') }}"><a
                                                                 href="book-promotions">E-book
                                                                 Writing</a></li>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-8.png"><a
+                                                                src="{{ asset('assets/imgs/i3.png') }}"><a
                                                                 href="book-promotions">Editing</a></li>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-11.png"><a
+                                                                src="{{ asset('assets/imgs/i4.png') }}"><a
                                                                 href="book-promotions">Proofreading</a></li>
                                                     </ul>
                                                 </div>
@@ -49,21 +49,21 @@
                                                     <ul>
                                                         <!--<li><img src="assets/images/menu-icons-1.png"><a href="article-writing">Article Writing</a></li>-->
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-2.png"><a
+                                                                src="{{ asset('assets/imgs/i5.png') }}"><a
                                                                 href="book-promotions">Audio
                                                                 Book</a></li>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-3.png"><a
+                                                                src="{{ asset('assets/imgs/i6.png') }}"><a
                                                                 href="book-promotions">Author
                                                                 Website</a></li>
                                                         <!--<li><img src="assets/images/menu-icons-4.png"><a href="blog-writing">Blog Writng</a></li>-->
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-5.png"><a
+                                                                src="{{ asset('assets/imgs/i7.png') }}"><a
                                                                 href="book-promotions">Book
                                                                 Cover</a></li>
                                                         <li>
                                                             <img
-                                                                src="https://authorstime.com/assets/images/menu-icons-13.png">
+                                                                src="{{ asset('assets/imgs/i8.png') }}">
                                                             <a href="book-promotions">
                                                                 Book Printing
                                                             </a>
@@ -75,20 +75,20 @@
                                                 <div class="menu_box_list">
                                                     <ul>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-9.png"><a
+                                                                src="{{ asset('assets/imgs/i9.png') }}"><a
                                                                 href="book-promotions">Formating</a></li>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-10.png"><a
+                                                                src="{{ asset('assets/imgs/i10.png') }}"><a
                                                                 href="book-promotions">Ghostwriting</a></li>
                                                         <li>
                                                             <img
-                                                                src="https://authorstime.com/assets/images/menu-icons-13.png">
+                                                                src="{{ asset('assets/imgs/i11.png') }}">
                                                             <a href="book-promotions">
                                                                 Video Book Trailer
                                                             </a>
                                                         </li>
                                                         <li><img
-                                                                src="https://authorstime.com/assets/images/menu-icons-12.png"><a
+                                                                src="{{ asset('assets/imgs/i12.png') }}"><a
                                                                 href="book-promotions">Publishing</a></li>
                                                     </ul>
                                                 </div>

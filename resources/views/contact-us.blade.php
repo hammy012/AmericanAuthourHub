@@ -5,7 +5,7 @@
 @section('content')
 
 
-    <section class="contact-banner">
+    <section class="contact-banner" style="background: url('{{ asset('assets/imgs/main-back.png') }}');">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -21,31 +21,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="contact-img">
-                        <img src="https://authorstime.com/assets/images/contact-banner-img.png">
-                    </div>
+                    {{--  <div class="contact-img">
+                    </div>  --}}
+                    <img src="{{ asset('assets/imgs/about.webp') }}">
                 </div>
             </div>
         </div>
     </section>
-    <!--  -->
-    <!--  -->
-    <div class="client-logos-2">
-        <div class="container-fluid">
-            <ul class="client-logos-2-list">
-                <li><img src="https://authorstime.com/assets/images/client-logo-1.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-3.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-4.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-6.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-1.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-3.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-4.png"></li>
-                <li><img src="https://authorstime.com/assets/images/client-logo-6.png"></li>
-            </ul>
-        </div>
-    </div>
-    <!--  -->
-    <!--  -->
+
     <section class="contact-us">
         <div class="container">
             <div class="row">
@@ -55,9 +38,9 @@
                         <h3>We Would Like To Hear From You</h3>
                         <p>Feel free to give us a call, write to us, or complete the contact form at the bottom of this
                             page. Call
-                            (Toll Free): <a href="tel:+19293799764">
-                                (929) 379-9764 </a> Email: <a href="mailto:info@authorstime.com"><span class="">
-                                    info@authorstime.com </span></a>
+                            (Toll Free): <a href="tel:+123456789">
+                                (123) 456-789 </a> Email: <a href="mailto:info@ebook.com"><span class="">
+                                    info@ebook.com </span></a>
                         </p>
                     </div>
                     <div class="contact-us-form-header">
@@ -69,7 +52,7 @@
                             <input type="hidden" name="internet_connection" value="Cyber Internet Services Pakistan" />
                             <input type="hidden" name="zipcode" value="74600" />
                             <input type="hidden" name="region" value="Sindh" />
-                            <input type="hidden" name="url" value="https://authorstime.com/contact-us" />
+                            <input type="hidden" name="url" value="https://ebook.com/contact-us" />
                             <input type="hidden" name="form_name" value="CONTACT US FORM" />
                             <input type="hidden" name="bot_detector" value="" />
                             <input type="hidden" name="privacy_policy"
@@ -112,25 +95,25 @@
                 </div>
                 <div class="col-md-3">
                     <div class="contact-us-form-dtl">
-                        <img src="https://authorstime.com/assets/images/contact-statue.png">
+                        <img src="https://ebook.com/assets/images/contact-statue.png">
                         <ul class="contact-us-form-dtl-links">
                             <li>
                                 <div class="contact-us-form-dtl-inner">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                   <i class="fa-solid fa-phone"></i>
                                     <div class="contact-us-form-dtl-inner-2">
                                         <span>Call Us:</span>
-                                        <a href="tel:+19293799764">
-                                            (929) 379-9764 </a>
+                                        <a href="tel:+1123456789">
+                                            (123) 456-789 </a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="contact-us-form-dtl-inner">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <i class="fa-solid fa-envelope"></i>
                                     <div class="contact-us-form-dtl-inner-2">
                                         <span>Email Us:</span>
-                                        <a href="mailto:info@authorstime.com"><span class="">
-                                                info@authorstime.com </span></a>
+                                        <a href="mailto:info@ebook.com"><span class="">
+                                                info@ebook.com </span></a>
                                     </div>
                                 </div>
                             </li>
@@ -140,8 +123,7 @@
             </div>
         </div>
     </section>
-    <!--  -->
-    <!--  -->
+
     <section class="testi-sec">
         <div class="container">
             <div class="banner-head">
@@ -153,7 +135,7 @@
             <div class="row testi-slider">
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="https://ebook.com/assets/images/coma.png">
                         <h4>Highly experienced team of editors & writers.
                         </h4>
                         <p>"I must say that my experience with Zach the project manager and his team was terrific. They
@@ -166,7 +148,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="https://ebook.com/assets/images/coma.png">
                         <h4>Completely satisfied with their publishing service & support.
                         </h4>
                         <p>“Kudos to the amazing team and for sure the people behind it. I've been struggling to publish for
@@ -182,7 +164,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="https://ebook.com/assets/images/coma.png">
                         <h4>Excellent understanding of what works for formatting & publishing.
                         </h4>
                         <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's a
@@ -195,7 +177,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="testi-box">
-                        <img src="https://authorstime.com/assets/images/coma.png">
+                        <img src="https://ebook.com/assets/images/coma.png">
                         <h4>First-Time Publishing Success!
                         </h4>
                         <p>"Eddie Williams has been very available and helpful in publishing my childrens book. We had a
@@ -219,10 +201,10 @@
                     Authors Time Services.
                 </h3>
                 <ul class="cta-btn">
-                    <li><a href="tel:+19293799764">
-                            (929) 379-9764 </a></li>
-                    <li><a href="mailto:info@authorstime.com"><span class="">
-                                info@authorstime.com </span>
+                    <li><a href="tel:+1123456789">
+                            (123) 456-789 </a></li>
+                    <li><a href="mailto:info@ebook.com"><span class="">
+                                info@ebook.com </span>
                         </a>
                     </li>
                 </ul>

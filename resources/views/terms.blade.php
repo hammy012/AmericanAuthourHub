@@ -4,18 +4,6 @@
 
 @section('content')
 
-    <section class="service-banner" style="background: url('https://authorstime.com/assets/images/term-banner.png');">
-
-        <div class="container">
-            <div class="banner-head">
-
-                <h1>Term & Conditions
-                </h1>
-                <p>The preceding terms and conditions are applicable to www.authorstime.com projects.</p>
-            </div>
-        </div>
-    </section>
-    <!--  -->
 
     <section class="main-privacy">
         <div class="container">

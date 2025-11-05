@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <section class="main-banner" style="background: url('{{ asset('assets/imgs/main-back.jpg') }}');">
+    <section class="main-banner" style="background: url('{{ asset('assets/imgs/main-back.png') }}');">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -29,6 +29,7 @@
             </div>
         </div>
     </section>
+
     <section class="what-we-do-sec">
         <div class="container">
             <div class="row">
@@ -207,6 +208,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="choose-sec">
         <div class="container-fluid">
 
@@ -279,6 +282,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="services-sec">
         <div class="banner-head">
             <h2>Take A Look at What We Offer</h2>
@@ -556,6 +561,8 @@
         </div>
 
     </section>
+
+
     <section class="tier-sec">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -602,7 +609,9 @@
                 </div>
             </div>
         </div>
-    </section><!--  -->
+    </section>
+
+    <!--  -->
     <section class="testi-sec">
         <div class="container">
             <div class="banner-head">
@@ -671,7 +680,9 @@
 
             </div>
         </div>
-    </section><!--  -->
+    </section>
+
+    <!--  -->
     <section class="cta-se-2">
         <div class="container">
             <div class="cta-head-2">
@@ -680,11 +691,13 @@
                 <ul class="cta-btn">
                     <li><a href="tel:+123456789">123 456-789</a> &nbsp; <a href="javascript:;" class="chat">Chat
                             Now</a></li>
-                    <li><a href="mailto:iinfo@ebook.com"><span>iinfo@ebook.com</span></a></li>
+                    <li><a href="mailto:info@ebook.com"><span>info@ebook.com</span></a></li>
                 </ul>
             </div>
         </div>
     </section>
+
+
     <section class="touch-sec">
         <div class="container">
             <div class="row">
@@ -738,9 +751,9 @@
                                     <li><a href="tel:+1233456789">
                                             123 456-789 </a></li>
                                     <li>
-                                        <a href="mailto:iinfo@ebook.com">
+                                        <a href="mailto:info@ebook.com">
                                             <span class=" 92e1f3fef7e1d2f7fefbe6f7f0fdfdf9e5e0fbe6fbfcf5bcf1fdff">
-                                                iinfo@ebook.com </span>
+                                                info@ebook.com </span>
                                         </a>
                                     </li>
                                 </ul>
