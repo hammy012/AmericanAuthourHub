@@ -32,4 +32,12 @@ class WebController extends Controller
     {
         return view('book-video-trailer');
     }
+    public function term_condition()
+    {
+        return view('terms');
+    }
+    public function privacy_policy()
+    {
+        return view('privacy-policy');
+    }
 }

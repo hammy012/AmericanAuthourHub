@@ -20,3 +20,5 @@ Route::get('book-promotions', [WebController::class, 'book_promotions'])->name('
 Route::get('blogs', [WebController::class, 'blogs'])->name('blogs');
 Route::get('contact-us', [WebController::class, 'contact_us'])->name('contact-us');
 Route::get('book-video-trailer', [WebController::class, 'book_video_trailer'])->name('book-video-trailer');
+Route::get('terms-conditions', [WebController::class, 'term_condition'])->name('terms-conditions');
+Route::get('privacy-policy', [WebController::class, 'privacy_policy'])->name('privacy-policy');
