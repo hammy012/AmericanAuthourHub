@@ -288,70 +288,18 @@
 
                             <select name="service">
                                 <option value="">Select Service</option>
-                                <option value="Branded Content">
-                                    Branded Content </option>
-                                <option value="Book Printing">
-                                    Book Printing </option>
-                                <option value="Web Copywriting">
-                                    Web Copywriting </option>
-                                <option value="SEO Content Writing">
-                                    SEO Content Writing </option>
-                                <option value="Creative Writing">
-                                    Creative Writing </option>
-                                <option value="Blog Writing">
-                                    Blog Writing </option>
-                                <option value="Speech Writing">
-                                    Speech Writing </option>
-                                <option value="Editing & Proofreading">
-                                    Editing & Proofreading </option>
-                                <option value="Guest Post Writing">
-                                    Guest Post Writing </option>
-                                <option value="Marketing Content">
-                                    Marketing Content </option>
-                                <option value="Email Marketing">
-                                    Email Marketing </option>
-                                <option value="Brochures">
-                                    Brochures </option>
-                                <option value="Ad Copywriting">
-                                    Ad Copywriting </option>
-                                <option value="News Letters">
-                                    News Letters </option>
-                                <option value="Social Media Content">
-                                    Social Media Content </option>
-                                <option value="Infographics">
-                                    Infographics </option>
-                                <option value="Professional Content">
-                                    Professional Content </option>
-                                <option value="Professional Content">
-                                    Professional Content </option>
-                                <option value="Wikipedia Writing">
-                                    Wikipedia Writing </option>
-                                <option value="Book Editing">
-                                    Book Editing </option>
-                                <option value="Publications">
-                                    Publications </option>
-                                <option value="Data Analysis">
-                                    Data Analysis </option>
-                                <option value="Dissertation & Thesis">
-                                    Dissertation & Thesis </option>
-                                <option value="Web Design and Development">
-                                    Web Design and Development </option>
-                                <option value="Business Content">
-                                    Business Content </option>
-                                <option value="Email Writing">
-                                    Email Writing </option>
-                                <option value="Press Release Writing">
-                                    Press Release Writing </option>
-                                <option value="Business Proposals Writing">
-                                    Business Proposals Writing </option>
-                                <option value="White Papers Writing">
-                                    White Papers Writing </option>
-                                <option value="Product Descriptions Writing">
-                                    Product Descriptions Writing </option>
-                                <option value="Case Study Writing">
-                                    Case Study Writing </option>
-                                <option value="Letter Writing">
-                                    Letter Writing </option>
+                                <option value="Book Promotions">Book Promotions</option>
+                                <option value="E-book Writing">E-book Writing</option>
+                                <option value="Editing">Editing</option>
+                                <option value="Proofreading">Proofreading</option>
+                                <option value="Audio Book">Audio Book</option>
+                                <option value="Author Website">Author Website</option>
+                                <option value="Book Cover">Book Cover</option>
+                                <option value="Book Printing">Book Printing</option>
+                                <option value="Formatting">Formatting</option>
+                                <option value="Ghostwriting">Ghostwriting</option>
+                                <option value="Video Book Trailer">Video Book Trailer</option>
+                                <option value="Publishing">Publishing</option>
                             </select>
 
                             <textarea name="message" placeholder="Additional Comments"></textarea>
