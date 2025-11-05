@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <section class="service-banner" style="background: url('assets/images/term-banner.png');">
+    <section class="service-banner" style="background: url('https://authorstime.com/assets/images/term-banner.png');">
 
         <div class="container">
             <div class="banner-head">

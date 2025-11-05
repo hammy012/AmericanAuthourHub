@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <section class="service-banner" style="background: url('assets/images/privacy-banner.png');">
+    <section class="service-banner" style="background: url('https://authorstime.com/assets/images/privacy-banner.png');">
 
         <div class="container">
             <div class="banner-head">
@@ -16,7 +16,6 @@
             </div>
         </div>
     </section>
-    <!--  -->
     <section class="main-privacy">
         <div class="container">
             <div class="row">
@@ -87,6 +86,5 @@
             </div>
         </div>
     </section>
-
 
 @endsection

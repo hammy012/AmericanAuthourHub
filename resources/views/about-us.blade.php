@@ -19,7 +19,7 @@
       </div>
       <div class="col-md-6">
         <div class="about-img">
-          <img src="assets/images/about-banner-img.png">
+          <img src="https://authorstime.com/assets/images/about-banner-img.png">
         </div>
       </div>
     </div>
@@ -30,14 +30,14 @@
 <div class="client-logos-2">
   <div class="container-fluid">
     <ul class="client-logos-2-list">
-      <li><img src="assets/images/client-logo-1.png"></li>
-      <li><img src="assets/images/client-logo-3.png"></li>
-      <li><img src="assets/images/client-logo-4.png"></li>
-      <li><img src="assets/images/client-logo-6.png"></li>
-      <li><img src="assets/images/client-logo-1.png"></li>
-      <li><img src="assets/images/client-logo-3.png"></li>
-      <li><img src="assets/images/client-logo-4.png"></li>
-      <li><img src="assets/images/client-logo-6.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-1.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-3.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-4.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-6.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-1.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-3.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-4.png"></li>
+      <li><img src="https://authorstime.com/assets/images/client-logo-6.png"></li>
     </ul>
   </div>
 </div>
@@ -114,8 +114,8 @@
 <section class="cta-sec">
   <div class="container">
     <div class="row">
-      <img loading="lazy" src="assets/images/cta-after.webp" class="cta-img cta-after">
-      <img loading="lazy" src="assets/images/cta-before.webp" class="cta-img cta-before">
+      <img loading="lazy" src="https://authorstime.com/assets/images/cta-after.webp" class="cta-img cta-after">
+      <img loading="lazy" src="https://authorstime.com/assets/images/cta-before.webp" class="cta-img cta-before">
       <div class="col-md-6">
         <div class="cta-head">
           <h3>Let’s Write Your Book</h3>
@@ -130,7 +130,7 @@
       </div>
       <div class="col-md-6">
         <div class="cta-img-inner">
-          <img loading="lazy" src="assets/images/cta-img-1.png">
+          <img loading="lazy" src="https://authorstime.com/assets/images/cta-img-1.png">
         </div>
       </div>
     </div>
@@ -142,12 +142,12 @@
     <div class="row align-items-center">
       <div class="col-md-5">
         <div class="tier-sec-img">
-          <img loading="lazy" src="assets/images/tier-book-img.png">
+          <img loading="lazy" src="https://authorstime.com/assets/images/tier-book-img.png">
         </div>
       </div>
       <div class="col-md-3">
         <div class="tier-box active">
-          <img loading="lazy" src="assets/images/tier-circle.png" class="tier-circle">
+          <img loading="lazy" src="https://authorstime.com/assets/images/tier-circle.png" class="tier-circle">
           <span>3,000</span>
           <h4>Top-Tier, US-Based
             Content Writers
@@ -163,7 +163,7 @@
       </div>
       <div class="col-md-3">
         <div class="tier-box">
-          <img loading="lazy" src="assets/images/tier-circle.png" class="tier-circle">
+          <img loading="lazy" src="https://authorstime.com/assets/images/tier-circle.png" class="tier-circle">
           <span>10,000</span>
           <h4>Our Customers <br>
             Love Us
@@ -191,7 +191,7 @@
         <div class="row testi-slider">
             <div class="col-md-4">
                 <div class="testi-box">
-                    <img src="assets/images/coma.png">
+                    <img src="https://authorstime.com/assets/images/coma.png">
                     <h4>Highly experienced team of editors & writers.
                     </h4>
                     <p>"I must say that my experience with Zach the project manager and his team was terrific. They guided me along in the editing and process and were not only helpful but patient. Zach was a personal pleasure to deal with. I also learned along the way and was able to even improve upon my own writing and punctuation. He was always responsive to my questions and problems." </p>
@@ -201,7 +201,7 @@
             </div>
             <div class="col-md-4">
                 <div class="testi-box">
-                    <img src="assets/images/coma.png">
+                    <img src="https://authorstime.com/assets/images/coma.png">
                     <h4>Completely satisfied with their publishing service & support.
                     </h4>
                     <p>“Kudos to the amazing team and for sure the people behind it. Ive been struggling to publish for years and on a fine October morning I call Authors Time and get connected to Eddie Williams. Since then they have made my dream possible and thank you Zach for being available throughout the entire process, and whatever of an issue I'd, he responded me with patience and dedication. I felt heard and I'm glad my book "An Art of Love" is out there and seeking your love for the same!” </p>
@@ -212,7 +212,7 @@
             </div>
             <div class="col-md-4">
                 <div class="testi-box">
-                    <img src="assets/images/coma.png">
+                    <img src="https://authorstime.com/assets/images/coma.png">
                     <h4>Excellent understanding of what works for formatting & publishing.
                     </h4>
                     <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's a debut book, and I worried it doesn't look professional because of poor formatting, so contact Authors Time. Most of all, Mr. Walton Pierce is an excellent manager. He helped to publish them one by one as if he is a personal coach. Thank you so much!"</p>
@@ -222,7 +222,7 @@
             </div>
             <div class="col-md-4">
                 <div class="testi-box">
-                    <img src="assets/images/coma.png">
+                    <img src="https://authorstime.com/assets/images/coma.png">
                     <h4>First-Time Publishing Success!
                     </h4>
                     <p>"Eddie Williams has been very available and helpful in publishing my children's book. We had a few miss communications and some editing problems but in the end the book is just as I had hoped. Eddie was always courteous, patient and ready to help with all the issues this first time publisher had. Thanks!" </p>
@@ -311,7 +311,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="statue-img">
-                                <img src="assets/images/statue.webp" style="padding: 30px;">
+                                <img src="https://authorstime.com/assets/images/statue.webp" style="padding: 30px;">
                             </div>
                         </div>
                     </div>
