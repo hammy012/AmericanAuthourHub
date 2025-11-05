@@ -2,7 +2,7 @@
 
 /*Main Css */
 ::selection {
-    background: #e4573d;
+    background: #9F0B07;
     color: #fff;
     text-shadow: none;
 }
@@ -24,7 +24,7 @@
 
 ::-webkit-scrollbar-thumb:vertical {
     border-radius: 10px;
-    background-color: #e4573d;
+    background-color: #9F0B07;
 }
 
 [class^="box-"] {
@@ -168,7 +168,7 @@ button {
 }
 
 .slick-dots li.slick-active button {
-    background: #e4573d;
+    background: #9F0B07;
     width: 12px;
     height: 12px;
 }
@@ -273,7 +273,7 @@ a:hover {
 }
 
 .talk-btn a {
-    background-color: #002868;
+    background-color: #002768;
     padding: 15px 25px;
     color: #ffff;
     font-size: 14px;
@@ -287,7 +287,7 @@ a:hover {
 }
 
 .cta-menu-links li:nth-child(1) a {
-    background: #002868;
+    background: #002768;
     padding: 14px 17px;
     color: #ffff;
 }
@@ -321,9 +321,11 @@ a:hover {
 
 /*header css*/
 
+
+
 /* Main Banner CSS */
 .main-banner {
-    background: url("https://authorstime.com/assets//images/main-banner.webp");
+    background: url("assets\imgs\b");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -341,7 +343,7 @@ a:hover {
 }
 
 .banner-head h1 {
-    color: #e4573d;
+    color: #9F0B07;
     /*color: #fff;*/
     font-size: 45px;
     font-weight: bold;
@@ -362,7 +364,7 @@ a:hover {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    background-color: #e4573d;
+    background-color: #9F0B07;
 }
 
 .menu_box_list ul li a {
@@ -415,7 +417,7 @@ a:hover {
 }
 
 .what-we-do-sec .project-btn {
-    background: #002868;
+    background: #002768;
 }
 
 .what-we-do-sec .slick-list {
@@ -440,7 +442,7 @@ a:hover {
 .what-we-do-main-inner-box {
     position: absolute;
     bottom: -50px;
-    background: #e4573d;
+    background: #9F0B07;
     z-index: 2;
     padding: 30px 20px 30px 30px;
     opacity: 0;
@@ -534,7 +536,7 @@ a:hover {
 }
 
 .cta-head h3 {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 45px;
     font-weight: bold;
 }
@@ -557,7 +559,7 @@ a:hover {
 }
 
 .cta-btn li:nth-child(1) a {
-    background: #002868;
+    background: #002768;
     padding: 14px 23px;
     color: #ffff !important;
 }
@@ -636,7 +638,7 @@ section.cta-sec .cta-btn li a {
     content: "\f078" !important;
     font-family: "FontAwesome" !important;
     left: 0 !important;
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 16px;
 }
 
@@ -661,7 +663,7 @@ section.cta-sec .cta-btn li a {
 }
 
 .services-sec-box-inner h4 {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 25px;
     font-weight: bold;
     padding: 0 0 15px 0;
@@ -702,7 +704,7 @@ section.cta-sec .cta-btn li a {
 }
 
 .tier-box span {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 65px;
     font-weight: bold;
 }
@@ -723,7 +725,7 @@ section.cta-sec .cta-btn li a {
 
 .project-btn {
     font-size: 15px;
-    /* background:#002868; */
+    /* background:#002768; */
 }
 
 .tier-sec {
@@ -731,7 +733,7 @@ section.cta-sec .cta-btn li a {
 }
 
 .tier-box.active {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .tier-box.active h4,
@@ -822,7 +824,7 @@ section.cta-sec .cta-btn li a {
 }
 
 .testi-box h6 {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 18px;
     font-weight: bold;
     text-decoration: underline;
@@ -859,7 +861,7 @@ section.cta-sec .cta-btn li a {
 }
 
 .cta-btn li:nth-child(1) a {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 /**/
@@ -1286,7 +1288,7 @@ section.cta-sec .cta-btn li a {
 }
 
 .clock-box {
-    background: #e4573d;
+    background: #9F0B07;
     padding: 25px;
 }
 
@@ -1357,7 +1359,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 21px 54px;
     font-size: 18px;
     color: #fff;
-    background: #e4573d;
+    background: #9F0B07;
     display: table;
     margin: auto;
 }
@@ -1441,7 +1443,7 @@ footer {
 
 .services-links li i {
     padding: 0 5px 0 0;
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .services-links {
@@ -1550,7 +1552,7 @@ footer {
 }
 
 .about-us .project-btn {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .client-logos-2 {
@@ -1575,7 +1577,7 @@ footer {
 }
 
 .what-we-do-about .banner-head span {
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .what-we-do-about {
@@ -1591,7 +1593,7 @@ footer {
 .what-we-do-about-inner-about span {
     font-size: 45px;
     font-weight: bold;
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .what-we-do-about-inner-about h3 {
@@ -1610,7 +1612,7 @@ footer {
 }
 
 .what-we-do-about-inner-about a {
-    background: #e4573d;
+    background: #9F0B07;
     color: #ffff;
     padding: 16px 47px;
     font-size: 18px;
@@ -1622,7 +1624,7 @@ footer {
 }
 
 .slick-current .what-we-do-about-inner-about {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .slick-current .what-we-do-about-inner-about span,
@@ -1651,7 +1653,7 @@ footer {
 }
 
 .contact-us-form span {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 30px;
 }
 
@@ -1702,7 +1704,7 @@ footer {
 }
 
 .contact-us-form-header button {
-    background: #002868;
+    background: #002768;
     color: #ffff;
     padding: 17px 56px;
     font-size: 18px;
@@ -1728,7 +1730,7 @@ footer {
 }
 
 .contact-us-form-dtl-inner i {
-    background: #e4573d;
+    background: #9F0B07;
     border-radius: 50%;
     padding: 16px 17px;
     color: #ffff;
@@ -1755,7 +1757,7 @@ footer {
 }
 
 .contact-banner .project-btn {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 /**/
@@ -1773,7 +1775,7 @@ footer {
 }
 
 .review-banner .project-btn {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .review-box i {
@@ -1799,7 +1801,7 @@ footer {
     color: #ffff;
     font-size: 35px;
     font-weight: bold;
-    background: #e4573d;
+    background: #9F0B07;
     border-radius: 50%;
     padding: 51px 43px;
 }
@@ -1831,7 +1833,7 @@ footer {
 }
 
 .review-box.active {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .review-box.active h4,
@@ -1841,7 +1843,7 @@ footer {
 
 .review-box.active h5 {
     background: #ffff;
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .review-box.active i {
@@ -1886,7 +1888,7 @@ footer {
 }
 
 .service-banner .project-btn {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .service-client-logos img {
@@ -1935,7 +1937,7 @@ footer {
 .article-writing-service-box span {
     display: table;
     margin-left: auto;
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 45px;
     font-weight: bold;
 }
@@ -1955,7 +1957,7 @@ footer {
 }
 
 .article-writing-service-box.active {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .article-writing-service-box.active span,
@@ -2003,7 +2005,7 @@ footer {
 }
 
 .spotlight-sec-head .cta-btn li:nth-child(1) a {
-    background: #002868;
+    background: #002768;
 }
 
 .pricing-sec {
@@ -2060,7 +2062,7 @@ footer {
 }
 
 .pricing-box-head-1 span {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 50px;
     font-weight: bold;
     padding: 15px 0px;
@@ -2097,21 +2099,21 @@ footer {
 }
 
 .pricing-btn li:nth-child(1) a {
-    background: #e4573d;
+    background: #9F0B07;
     color: #ffff;
     font-size: 18px;
     font-weight: bold;
     padding: 15px 25px;
-    border: 1px solid #e4573d;
+    border: 1px solid #9F0B07;
 }
 
 .pricing-btn li:nth-child(2) a {
-    background: #002868;
+    background: #002768;
     color: #ffff;
     font-size: 18px;
     font-weight: bold;
     padding: 15px 25px;
-    border: 1px solid #002868;
+    border: 1px solid #002768;
 }
 
 .pricing-btn {
@@ -2126,7 +2128,7 @@ footer {
 }
 
 .pricing-sec::selection {
-    background: #e4573d;
+    background: #9F0B07;
     color: #fff;
     text-shadow: none;
 }
@@ -2148,7 +2150,7 @@ footer {
 
 .pricing-sec::-webkit-scrollbar-thumb:vertical {
     border-radius: 10px;
-    background-color: #e4573d;
+    background-color: #9F0B07;
 }
 
 .simple-start h6 {
@@ -2173,7 +2175,7 @@ footer {
 }
 
 .pricing-box.active .pricing-box-head-1 {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .why-choose-service {
@@ -2191,7 +2193,7 @@ footer {
 }
 
 .why-choose-service-head h6 {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 20px;
     font-weight: bold;
     padding: 0 0 15px 0;
@@ -2352,7 +2354,7 @@ footer {
 }
 
 .audio-bk-pl {
-    background: #e4573d;
+    background: #9F0B07;
     padding: 20px 0;
 }
 
@@ -2361,7 +2363,7 @@ footer {
 }
 
 .article-writing-service .project-btn {
-    background: #002868;
+    background: #002768;
 }
 
 /**/
@@ -2445,7 +2447,7 @@ footer {
 }
 
 .slick-current .cater-box {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .slick-current .cater-box img {
@@ -2544,7 +2546,7 @@ footer {
 
 .counter-list-box-2 span,
 .counter-list-box-2 strong {
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .top-fav-sec .slick-arrow {
@@ -2626,7 +2628,7 @@ footer {
 .folio-slider-kinlde::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     width: 1150px;
     height: 100px;
     left: -20px;
@@ -2667,7 +2669,7 @@ footer {
     top: -20px;
     display: table;
     padding: 15px 13px;
-    background: #e4573d;
+    background: #9F0B07;
     border-radius: 50%;
     color: #fff;
     font-size: 25px;
@@ -2690,7 +2692,7 @@ footer {
 .top-fav-sec .project-btn {
     display: table;
     margin: 50px auto 0;
-    background: #002868;
+    background: #002768;
 }
 
 .kindle-work-sec-box {
@@ -2701,7 +2703,7 @@ footer {
 .kindle-work-sec-box h6 {
     font-size: 25px;
     font-weight: bold;
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .kindle-work-sec-inner p {
@@ -2711,7 +2713,7 @@ footer {
 }
 
 .kindle-work-sec-box span {
-    background: #e4573d;
+    background: #9F0B07;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2728,7 +2730,7 @@ footer {
 .kindle-work-sec-box span::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     width: 4px;
     height: 130px;
     z-index: -1;
@@ -2756,7 +2758,7 @@ span.bf-none::before {
 }
 
 .kindle-ser-box-new.active {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .kindle-ser-box-new.active h4,
@@ -2856,7 +2858,7 @@ span.bf-none::before {
 .portfolio-sec .banner-head span {
     display: table;
     margin: auto;
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .portfolio-sec h1 {
@@ -3111,7 +3113,7 @@ form .control-group {
 .main-banner .project-btn::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3125,7 +3127,7 @@ form .control-group {
 .phone-btn::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3154,7 +3156,7 @@ form .control-group {
 .service-banner .project-btn::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3183,7 +3185,7 @@ form .control-group {
 .project-btn::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3212,7 +3214,7 @@ form .control-group {
 .cta-menu-links li:nth-child(1) a::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3241,7 +3243,7 @@ form .control-group {
 .talk-btn a::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3270,7 +3272,7 @@ form .control-group {
 .spotlight-sec-head .cta-btn li:nth-child(1) a::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3299,7 +3301,7 @@ form .control-group {
 .touc-sec-form button::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -245px;
@@ -3328,7 +3330,7 @@ form .control-group {
 .cta-se-2 .cta-btn li:nth-child(1) a::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -245px;
@@ -3357,7 +3359,7 @@ form .control-group {
 .what-we-do-sec .project-btn::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -245px;
@@ -3387,7 +3389,7 @@ form .control-group {
 .article-writing-service .project-btn::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -235px;
@@ -3417,7 +3419,7 @@ form .control-group {
 .amazon-kindle-sec .cta-btn li:nth-child(1) a::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -245px;
@@ -3446,7 +3448,7 @@ form .control-group {
 .kindle-cta-sec .cta-btn li:nth-child(1) a::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -245px;
@@ -3475,7 +3477,7 @@ form .control-group {
 .contact-us-form-header button::before {
     position: absolute;
     content: "";
-    background: #e4573d;
+    background: #9F0B07;
     height: 100%;
     width: 100%;
     left: -275px;
@@ -3504,7 +3506,7 @@ form .control-group {
 .cta-sec .cta-btn li:nth-child(1) a::before {
     position: absolute;
     content: "";
-    background: #002868;
+    background: #002768;
     height: 100%;
     width: 100%;
     left: -245px;
@@ -3543,7 +3545,7 @@ form .control-group {
 }
 
 .services-sec-slider-ltr .slick-current .services-sec-box {
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 .services-sec-slider-ltr .slick-current .services-sec-box p,
@@ -3553,12 +3555,12 @@ form .control-group {
 
 .pricing-btn li:nth-child(1) a:hover {
     background: none;
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .pricing-btn li:nth-child(2) a:hover {
     background: none;
-    color: #002868;
+    color: #002768;
 }
 
 .tier-box .project-btn:hover {
@@ -3566,7 +3568,7 @@ form .control-group {
 }
 
 .what-we-do-main-inner-box a:hover {
-    background: #002868;
+    background: #002768;
     color: #fff;
 }
 
@@ -3623,12 +3625,12 @@ section.services-sec .banner-head p {
 }
 
 .services-links li a:hover {
-    color: #e4573d;
+    color: #9F0B07;
 }
 
 .social-links-list li a:hover {
     color: #ffff;
-    background: #e4573d;
+    background: #9F0B07;
 }
 
 ul.bbb li {
@@ -3750,7 +3752,7 @@ header.sticky {
 }
 
 .banner-head h2 {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 45px;
     font-weight: bold;
     line-height: 50px;
@@ -3878,7 +3880,7 @@ header.sticky {
 }
 
 .popup-content [class*="col-"] input.btn {
-    background: #002868;
+    background: #002768;
     color: #fff;
     margin: auto;
     padding: 0px 30px;
@@ -3925,7 +3927,7 @@ header.sticky {
     top: 0;
     right: 0;
     font-size: 16px;
-    background: #002868;
+    background: #002768;
     height: 30px;
     width: 30px;
     display: flex;
@@ -4071,15 +4073,15 @@ header.sticky {
 }
 
 .h-phone {
-    background-color: #002868 !important;
+    background-color: #002768 !important;
 }
 
 .h-phone-2 {
-    background-color: #e4573d;
+    background-color: #9F0B07;
 }
 
 .banner-head h2 {
-    color: #e4573d;
+    color: #9F0B07;
     font-size: 45px;
     font-weight: bold;
     line-height: 50px;

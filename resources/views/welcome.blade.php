@@ -4,13 +4,13 @@
 
 @section('content')
 
-    <section class="main-banner">
+    <section class="main-banner" style="background: url('{{ asset('assets/imgs/main-back.jpg') }}');">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="banner-head">
                         <span></span>
-                        <h1>Unveil Your Story With A Premium Book Writing Company</h1>
+                        <h1 class="text-light">Unveil Your Story With A Premium Book Writing Company</h1>
                         <p>We provide custom book writing services without compromising on quality. Our professional
                             book
                             writers always come up with out-of-the-box ideas and bring them to life with their engaging
@@ -18,47 +18,17 @@
                         </p>
                         <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
                         <a href="tel:+1233456789" class="project-btn phone-btn h-phone">123 456-789</a>
-                        <!-- <ul class="bbb">
-                             <li class="bounce2">
-                                <a href="https://clutch.co/profile/write-set-go#summary">
-                                   <iframe width="100" height="100"
-                                      src="https://shareables.clutch.co/share/badges/2044399/43737?utm_source=clutch_top_company_badge&amp;utm_medium=image_embed"
-                                      title="Top Clutch Ebook Writing 2023"></iframe>
-                                </a>
-                             </li>
-                             <li class="bounce2">
-                                <a
-                                   href="https://www.bbb.org/us/ca/thousand-oaks/profile/publishing-consultant/write-set-go-1236-92078361">
-                                   <img src="assets/images/bbb.svg">
-                                </a>
-                             </li>
-                          </ul> -->
+
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="banner-img">
-                        <img src="https://authorstime.com/assets/images/banner-img.webp">
+                        <img src="{{ asset('assets/imgs/book1.webp') }}">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="client-logos">
-        <div class="container">
-            <ul class="client-logo-slider">
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-1.png"></li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-3.png"></li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-4.png" class="w-logo">
-                </li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-6.png"></li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-1.png"></li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-3.png"></li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-4.png" class="w-logo">
-                </li>
-                <li><img loading="lazy" src="https://authorstime.com/assets/images/banner-brands-logo-6.png"></li>
-            </ul>
-        </div>
-    </div>
     <section class="what-we-do-sec">
         <div class="container">
             <div class="row">
@@ -83,7 +53,7 @@
                         <li>
                             <div class="what-we-do-main-box">
                                 <img loading="lazy"
-                                    src="https://authorstime.com/assets/images/Professional-Resume-Services.jpg"
+                                    src="{{ asset('assets/imgs/r1.jpg') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Professional Resume <br> Services
@@ -103,7 +73,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="https://authorstime.com/assets/images/Author-Website.png"
+                                <img loading="lazy" src="{{ asset('assets/imgs/r2.webp') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Author Website
@@ -124,7 +94,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="https://authorstime.com/assets/images/Book-Writing-Services.png"
+                                <img loading="lazy" src="{{ asset('assets/imgs/r3.jpg') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Book Writing <br> Services
@@ -146,7 +116,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="https://authorstime.com/assets/images/eBook-Writing-Publishing.jpg"
+                                <img loading="lazy" src="{{ asset('assets/imgs/r4.jpg') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>eBook Writing & <br> Publishing
@@ -167,7 +137,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="https://authorstime.com/assets/images/Book-Cover-Design.jpg"
+                                <img loading="lazy" src="{{ asset('assets/imgs/r5.jpg') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Book Cover <br> Design
@@ -189,7 +159,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="https://authorstime.com/assets/images/Proof-Reading-Editing.jpg"
+                                <img loading="lazy" src="{{ asset('assets/imgs/r6.png') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Proofreading & <br> Editing
@@ -212,7 +182,7 @@
                         <li>
                             <div class="what-we-do-main-box">
                                 <img loading="lazy"
-                                    src="https://authorstime.com/assets/images/Book-Publishing-Services.webp"
+                                    src="{{ asset('assets/imgs/r7.png') }}"
                                     class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Book Publishing <br> Services
@@ -232,56 +202,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="what-we-do-main-box">
-                                <img loading="lazy"
-                                    src="https://authorstime.com/assets/images/Book-Marketing-Services.jpg"
-                                    class="ser-what-img">
-                                <div class="what-we-do-main-box-head">
-                                    <h4>Book Marketing <br> Services
-                                    </h4>
-                                </div>
-                                <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="https://authorstime.com/assets/images/what-icon-1.png">
-                                    <h5>Book Marketing Services
-                                    </h5>
-                                    <p>Are you finding it difficult to market your book? We are here to help you out.
-                                        Hire our
-                                        book marketing services to put out your work on different platforms and media to
-                                        engage
-                                        your readers worldwide and make healthy profits.
-                                    </p>
-                                    <a href="javascript:;" class="popup-btn">Get Started</a>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="cta-sec">
-        <div class="container">
-            <div class="row">
-                <img loading="lazy" src="https://authorstime.com/assets/images/cta-after.webp" class="cta-img cta-after">
-                <img loading="lazy" src="https://authorstime.com/assets/images/cta-before.webp"
-                    class="cta-img cta-before">
-                <div class="col-md-6">
-                    <div class="cta-head">
-                        <h3>Let’s Write Your Book</h3>
-                        <p>Share your idea with us. Our writers will bring it to life for you.</p>
-                        <ul class="cta-btn">
-                            <li><a href="tel:+123456789">(123) 456-789</a></li>
-                            <li><a href="mailto:info@ebook.com"><span>info@ebook.com</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="cta-img-inner">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/cta-img-1.png">
-                    </div>
                 </div>
             </div>
         </div>
@@ -292,12 +213,12 @@
             <div class="row">
                 <div class="col-md-2 offset-1">
                     <div class="choose-sec-img">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/choose-img-2.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/b1.webp') }}">
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="choose-sec-img">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/choose-img-1.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/b2.webp') }}">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -373,7 +294,7 @@
             <ul class="service-ltr">
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/novel-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t1.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Novel Writing</h4>
                             <p>Do you know that hiring one of our novel writers will help you publish your own novel in
@@ -389,7 +310,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/speech-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t2.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Speech Writing</h4>
                             <p>Do you know that hiring one of our novel writers will help you publish your own novel in
@@ -405,7 +326,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/wiki-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t3.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Wiki Writing</h4>
                             <p>Do you want to boost your website's visibility with our cost-effective, dependable, and
@@ -423,7 +344,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/movies-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t4.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Movie Writing</h4>
                             <p>Our professional team of writers has provided exceptional and high-quality script writing
@@ -440,7 +361,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/novel-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t5.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Novel Writing</h4>
                             <p>Do you know that hiring one of our novel writers will help you publish your own novel in
@@ -455,7 +376,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/speech-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t6.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Speech Writing</h4>
                             <p>At Ebook , we ensure what you aim to say through your speech not only captivates
@@ -470,7 +391,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/wiki-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t3.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Wiki Writing</h4>
                             <p>Do you want to boost your website's visibility with our cost-effective, dependable, and
@@ -487,7 +408,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/movies-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t2.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Movie Writing</h4>
                             <p>Our professional team of writers has provided exceptional and high-quality script writing
@@ -507,7 +428,7 @@
             <ul class="service-rtl">
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/story-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t6.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Story Writing</h4>
                             <p>Ebook 's team consists of professional writers who can weave magic with their
@@ -523,7 +444,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/song-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t5.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Song Writing</h4>
                             <p>Our team can transform your idea into a wonderfully written song that everyone will enjoy
@@ -538,7 +459,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/memoir-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t4.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Memoir Writing</h4>
                             <p>We offer professional memoir writing services to our clients. If you are planning to
@@ -554,7 +475,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/non-fiction.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t3.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Nonfiction Writing</h4>
                             <p>Do you want to get your non-fiction book published? We are here to help. At Ebook ,
@@ -570,7 +491,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/story-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t2.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Story Writing</h4>
                             <p>Ebook 's team consists of professional writers who can weave magic with their
@@ -586,7 +507,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/song-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t1.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Song Writing</h4>
                             <p>Our team can transform your idea into a wonderfully written song that everyone will enjoy
@@ -601,7 +522,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/memoir-writing.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t4.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Memoir Writing</h4>
                             <p>We offer professional memoir writing services to our clients. If you are planning to
@@ -617,7 +538,7 @@
                 </li>
                 <li>
                     <div class="services-sec-box">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/non-fiction.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/t1.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Nonfiction Writing</h4>
                             <p>Do you want to get your non-fiction book published? We are here to help. At Ebook ,
@@ -640,7 +561,7 @@
             <div class="row align-items-center">
                 <div class="col-md-5">
                     <div class="tier-sec-img">
-                        <img loading="lazy" src="https://authorstime.com/assets/images/tier-book-img.png">
+                        <img loading="lazy" src="{{ asset('assets/imgs/ban1.webp') }}">
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -779,7 +700,7 @@
                             ensure total satisfaction.
                         </p>
                     </div>
-                    <div class="clock-box">
+                    {{--  <div class="clock-box">
                         <div class="row">
                             <div class="col-md-6">
                                 <p>It’s easy to reach us via chat.
@@ -830,7 +751,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  --}}
                 </div>
                 <div class="col-md-5 offset-1">
                     <div class="touc-sec-form">
