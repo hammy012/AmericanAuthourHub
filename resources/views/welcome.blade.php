@@ -17,7 +17,7 @@
                             words.
                         </p>
                         <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
-                        <a href="tel:+19293799764" class="project-btn phone-btn h-phone">(929) 379-9764</a>
+                        <a href="tel:+1233456789" class="project-btn phone-btn h-phone">123 456-789</a>
                         <!-- <ul class="bbb">
                          <li class="bounce2">
                             <a href="https://clutch.co/profile/write-set-go#summary">
@@ -75,8 +75,7 @@
                             professional book writing services.
                         </p>
                         <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
-                        <a href="tel:+19293799764" class="project-btn phone-btn h-phone-2">(929) 379-9764</a>
-                        <a href="javascript:;" class="project-btn chat">Chat Now</a>
+                        <a href="tel:+123456789" class="project-btn phone-btn h-phone-2">(123) 456-789</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -272,8 +271,8 @@
                         <h3>Let’s Write Your Book</h3>
                         <p>Share your idea with us. Our writers will bring it to life for you.</p>
                         <ul class="cta-btn">
-                            <li><a href="tel:+19293799764">(929) 379-9764</a></li>
-                            <li><a href="mailto:info@authorstime.com"><span>info@authorstime.com</span>
+                            <li><a href="tel:+123456789">(123) 456-789</a></li>
+                            <li><a href="mailto:info@ebook.com"><span>info@ebook.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -758,9 +757,9 @@
                 <span>100% Original, Authentic, & Genuine</span>
                 <h3>Become a celebrated author of best-seller <br> books with Ebook Services.</h3>
                 <ul class="cta-btn">
-                    <li><a href="tel:+19293799764">(929) 379-9764</a> &nbsp; <a href="javascript:;" class="chat">Chat
+                    <li><a href="tel:+123456789">123 456-789</a> &nbsp; <a href="javascript:;" class="chat">Chat
                             Now</a></li>
-                    <li><a href="mailto:info@authorstime.com"><span>info@authorstime.com</span></a></li>
+                    <li><a href="mailto:iinfo@ebook.com"><span>iinfo@ebook.com</span></a></li>
                 </ul>
             </div>
         </div>
@@ -815,12 +814,12 @@
                                     </li>
                                 </ul>
                                 <ul class="clock-box-links">
-                                    <li><a href="tel:+19293799764">
-                                            (929) 379-9764 </a></li>
+                                    <li><a href="tel:+1233456789">
+                                            123 456-789 </a></li>
                                     <li>
-                                        <a href="mailto:info@authorstime.com">
+                                        <a href="mailto:iinfo@ebook.com">
                                             <span class=" 92e1f3fef7e1d2f7fefbe6f7f0fdfdf9e5e0fbe6fbfcf5bcf1fdff">
-                                                info@authorstime.com </span>
+                                                iinfo@ebook.com </span>
                                         </a>
                                     </li>
                                 </ul>
