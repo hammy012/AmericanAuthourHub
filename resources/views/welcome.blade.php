@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Dashboard')
+@section('title', 'Ebook | Home')
 
 @section('content')
 
@@ -19,20 +19,20 @@
                         <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
                         <a href="tel:+1233456789" class="project-btn phone-btn h-phone">123 456-789</a>
                         <!-- <ul class="bbb">
-                         <li class="bounce2">
-                            <a href="https://clutch.co/profile/write-set-go#summary">
-                               <iframe width="100" height="100"
-                                  src="https://shareables.clutch.co/share/badges/2044399/43737?utm_source=clutch_top_company_badge&amp;utm_medium=image_embed"
-                                  title="Top Clutch Ebook Writing 2023"></iframe>
-                            </a>
-                         </li>
-                         <li class="bounce2">
-                            <a
-                               href="https://www.bbb.org/us/ca/thousand-oaks/profile/publishing-consultant/write-set-go-1236-92078361">
-                               <img src="assets/images/bbb.svg">
-                            </a>
-                         </li>
-                      </ul> -->
+                             <li class="bounce2">
+                                <a href="https://clutch.co/profile/write-set-go#summary">
+                                   <iframe width="100" height="100"
+                                      src="https://shareables.clutch.co/share/badges/2044399/43737?utm_source=clutch_top_company_badge&amp;utm_medium=image_embed"
+                                      title="Top Clutch Ebook Writing 2023"></iframe>
+                                </a>
+                             </li>
+                             <li class="bounce2">
+                                <a
+                                   href="https://www.bbb.org/us/ca/thousand-oaks/profile/publishing-consultant/write-set-go-1236-92078361">
+                                   <img src="assets/images/bbb.svg">
+                                </a>
+                             </li>
+                          </ul> -->
                     </div>
                 </div>
                 <div class="col-md-6">
