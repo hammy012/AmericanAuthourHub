@@ -68,6 +68,9 @@
             </div>
         </div>
 
+        <hr>
+        <hr>
+
         <!-- Bottom Copyright Section -->
         <div class="footer-bottom mt-4 pt-3">
             <div class="row align-items-center justify-content-between">
