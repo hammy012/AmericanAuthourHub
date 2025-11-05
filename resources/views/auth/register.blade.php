@@ -1,52 +1,267 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
+{{-- resources/views/auth/register.blade.php --}}
+@extends('layouts.app')
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+@section('title', 'Ebook | Register')
+
+@section('content')
+    <style>
+        :root {
+            --accent-red: #9F0B07;
+            --accent-blue: #002768;
+            --muted: #6b7280;
+            --card-bg: #ffffff;
+            --card-border: rgba(2, 39, 104, 0.06);
+            --card-shadow: 0 30px 60px rgba(2, 39, 104, 0.12);
+        }
+
+        .auth-page {
+            min-height: calc(100vh - 160px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 16px;
+            background: #fbfdff;
+        }
+
+        .auth-card {
+            width: 100%;
+            max-width: 520px;
+            background: var(--card-bg);
+            border-radius: 14px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--card-border);
+            overflow: hidden;
+            padding: 34px;
+            box-sizing: border-box;
+        }
+
+        .brand {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .brand .logo {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--accent-red);
+            letter-spacing: -0.6px;
+        }
+
+        .brand .tag {
+            font-size: 14px;
+            color: var(--accent-red);
+            font-weight: 700;
+            margin-top: 6px;
+        }
+
+        .card-title {
+            text-align: center;
+            margin-top: 6px;
+            margin-bottom: 18px;
+        }
+
+        .card-title h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #0f172a;
+            font-weight: 900;
+        }
+
+        .card-title p {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .status {
+            background: #f1f5f9;
+            padding: 10px 12px;
+            border-radius: 8px;
+            color: #0f172a;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #374151;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 13px 14px;
+            border-radius: 10px;
+            border: 1px solid #e8eaf0;
+            font-size: 15px;
+            box-sizing: border-box;
+            background: #fbfdff;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+            border-color: var(--accent-blue);
+        }
+
+        .input-error {
+            color: #b91c1c;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, var(--accent-red), #b24f32);
+            color: #fff;
+            border: none;
+            font-weight: 900;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(159, 11, 7, 0.12);
+            transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px rgba(159, 11, 7, 0.14);
+            opacity: 0.98;
+        }
+
+        .alt {
+            text-align: center;
+            margin-top: 14px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .alt a {
+            color: var(--accent-red);
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        @media (max-width: 520px) {
+            .auth-card {
+                padding: 22px;
+                max-width: 94vw;
+                border-radius: 12px;
+            }
+
+            .brand .logo {
+                font-size: 30px;
+            }
+
+            .card-title h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <section class="auth-page" aria-labelledby="register-heading">
+        <div class="auth-card" role="region" aria-label="Register form">
+            <div class="brand" aria-hidden="false">
+                <div class="logo">Ebook</div>
+            </div>
+
+            <div class="card-title">
+                <h2 id="register-heading">Create your account</h2>
+                <p>Join Ebook — get access to writing & publishing tools</p>
+            </div>
+
+            {{-- Session status --}}
+            @if (session('status'))
+                <div class="status" role="status">{{ session('status') }}</div>
+            @endif
+
+            {{-- Validation errors --}}
+            @if ($errors->any())
+                <div class="status" role="alert" style="background:#fff4f4;color:#7f1d1d;">
+                    <strong>There were some problems with your input</strong>
+                    <ul style="margin:8px 0 0 16px;">
+                        @foreach ($errors->all() as $error)
+                            <li style="font-size:13px;">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form method="POST" action="{{ route('register') }}" novalidate>
+                @csrf
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input id="name" name="name" type="text" value="{{ old('name') }}" required autofocus
+                        autocomplete="name" />
+                    @error('name')
+                        <div class="input-error">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" value="{{ old('email') }}" required
+                        autocomplete="username" />
+                    @error('email')
+                        <div class="input-error">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" required autocomplete="new-password" />
+                    @error('password')
+                        <div class="input-error">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="password_confirmation">Confirm Password</label>
+                    <input id="password_confirmation" name="password_confirmation" type="password" required
+                        autocomplete="new-password" />
+                    @error('password_confirmation')
+                        <div class="input-error">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="meta-row">
+                    <div></div>
+                    <div class="alt" style="text-align:right;">
+                        <a href="{{ route('login') }}">Already registered?</a>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn-primary">Register</button>
+                </div>
+            </form>
+
+            <div class="alt">
+                By creating an account you agree to our <a href="{{ url('/terms-conditions') }}">Terms</a> & <a
+                    href="{{ url('/privacy-policy') }}">Privacy Policy</a>
+            </div>
         </div>
-
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+    </section>
+@endsection

@@ -12,18 +12,16 @@
                         <span></span>
                         <h1 class="text-light">Unveil Your Story With A Premium Book Writing Company</h1>
                         <p>We provide custom book writing services without compromising on quality. Our professional
-                            book
-                            writers always come up with out-of-the-box ideas and bring them to life with their engaging
+                            book writers always come up with out-of-the-box ideas and bring them to life with their engaging
                             words.
                         </p>
                         <a href="javascript:;" class="project-btn popup-btn">Let’s Discuss Your Project</a>
                         <a href="tel:+1233456789" class="project-btn phone-btn h-phone">123 456-789</a>
-
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="banner-img">
-                        <img src="{{ asset('assets/imgs/book1.webp') }}">
+                        <img src="{{ asset('assets/imgs/main.webp') }}">
                     </div>
                 </div>
             </div>
@@ -53,9 +51,7 @@
                     <ul class="what-we-slider">
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy"
-                                    src="{{ asset('assets/imgs/r1.jpg') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/main.webp') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Professional Resume <br> Services
                                     </h4>
@@ -74,8 +70,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="{{ asset('assets/imgs/r2.webp') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/r2.webp') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Author Website
                                     </h4>
@@ -95,8 +90,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="{{ asset('assets/imgs/r3.jpg') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/r3.jpg') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Book Writing <br> Services
                                     </h4>
@@ -117,8 +111,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="{{ asset('assets/imgs/r4.jpg') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/r4.jpg') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>eBook Writing & <br> Publishing
                                     </h4>
@@ -138,8 +131,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="{{ asset('assets/imgs/r5.jpg') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/r5.jpg') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Book Cover <br> Design
                                     </h4>
@@ -160,8 +152,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy" src="{{ asset('assets/imgs/r6.png') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/r6.png') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Proofreading & <br> Editing
                                     </h4>
@@ -182,9 +173,7 @@
                         </li>
                         <li>
                             <div class="what-we-do-main-box">
-                                <img loading="lazy"
-                                    src="{{ asset('assets/imgs/r7.png') }}"
-                                    class="ser-what-img">
+                                <img loading="lazy" src="{{ asset('assets/imgs/r7.png') }}" class="ser-what-img">
                                 <div class="what-we-do-main-box-head">
                                     <h4>Book Publishing <br> Services
                                     </h4>
@@ -573,8 +562,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="tier-box active">
-                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}"
-                            class="tier-circle">
+                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle">
                         <span>3,000</span>
                         <h4>Top-Tier, US-Based
                             Content Writers
@@ -592,8 +580,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="tier-box">
-                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}"
-                            class="tier-circle">
+                        <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle">
                         <span>10,000</span>
                         <h4>Our Customers <br>
                             Love Us
