@@ -4,9 +4,6 @@
 
 @section('content')
 
-
-
-    <!-- Inline styles specific to this section (put in main CSS if you prefer) -->
     <style>
         .faq-sec {
             padding: 70px 0;
@@ -131,7 +128,6 @@
     </style>
 
 
-
     <section class="service-banner"
         style="background: url('{{ asset('assets/imgs/main-back.png') }}') no-repeat center center/cover;">
         <div class="container">
@@ -147,7 +143,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- FAQ SECTION — paste this right AFTER the first </section> -->
     <section class="faq-sec" style="background: #f7f9fc;">
