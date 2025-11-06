@@ -10,7 +10,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="banner-head">
-                        <h1>We Are Here To Help
+                        <h1 class="text-light">We Are Here To Help
                         </h1>
                         <p>Do you want us to write on your behalf? Get in touch with us. Provide all the details regarding
                             your

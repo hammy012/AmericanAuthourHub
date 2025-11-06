@@ -11,7 +11,7 @@
                 <div class="col-md-6">
                     <div class="banner-head">
                         <span>Something About Authors Time</span>
-                        <h1>About Authors Time </h1>
+                        <h1 class="text-light">About Authors Time </h1>
                         <p>Giving customers what they have been searching for - a truly collaborative and seamless content
                             creation
                             platform where customers can form real connections – is the sole purpose for the inception of
