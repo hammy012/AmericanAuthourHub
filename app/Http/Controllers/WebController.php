@@ -24,6 +24,10 @@ class WebController extends Controller
     {
         return view('blogs');
     }
+    public function blog()
+    {
+        return view('blog');
+    }
     public function faqs()
     {
         return view('faq');

@@ -19,6 +19,7 @@ Route::get('/', [WebController::class, 'index'])->name('home');
 Route::get('about-us', [WebController::class, 'about_us'])->name('about-us');
 Route::get('book-promotions', [WebController::class, 'book_promotions'])->name('book-promotions');
 Route::get('blogs', [WebController::class, 'blogs'])->name('blogs');
+Route::get('blog/{slug}', [WebController::class, 'blog'])->name('blog');
 Route::get('faqs', [WebController::class, 'faqs'])->name('faqs');
 Route::get('contact-us', [WebController::class, 'contact_us'])->name('contact-us');
 Route::get('book-video-trailer', [WebController::class, 'book_video_trailer'])->name('book-video-trailer');

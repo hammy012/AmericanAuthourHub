@@ -148,7 +148,7 @@
                         <h3>How to Market Your Book Effectively</h3>
                         <p class="excerpt">Discover practical book marketing tips that help authors reach a wider audience
                             and boost sales.</p>
-                        <a href="javascript:;" class="read-more">Read More</a>
+                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
                     </div>
                 </article>
 
@@ -160,7 +160,7 @@
                         <h3>The Art of Writing Engaging Fiction</h3>
                         <p class="excerpt">Learn key techniques to make your story compelling, with strong characters and
                             emotional depth.</p>
-                        <a href="javascript:;" class="read-more">Read More</a>
+                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
                     </div>
                 </article>
 
@@ -172,7 +172,7 @@
                         <h3>Why Professional Editing Matters</h3>
                         <p class="excerpt">Editing turns a good manuscript into a great one. Here why you should never
                             skip it.</p>
-                        <a href="javascript:;" class="read-more">Read More</a>
+                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
                     </div>
                 </article>
 
@@ -184,7 +184,7 @@
                         <h3>Self-Publishing vs Traditional Publishing</h3>
                         <p class="excerpt">Explore the pros and cons of both approaches to decide which suits your author
                             journey best.</p>
-                        <a href="javascript:;" class="read-more">Read More</a>
+                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
                     </div>
                 </article>
 
