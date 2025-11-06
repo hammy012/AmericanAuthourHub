@@ -231,7 +231,7 @@
 
     </section>
 
-
+@include('layouts.contact')
 
 
     <script>

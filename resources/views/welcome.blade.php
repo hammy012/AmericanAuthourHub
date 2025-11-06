@@ -354,7 +354,8 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t6.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Speech Writing</h4>
-                            <p>At American Author Hub , we ensure what you aim to say through your speech not only captivates
+                            <p>At American Author Hub , we ensure what you aim to say through your speech not only
+                                captivates
                                 your
                                 audience, it truly mesmerizes them into wonder toward your aims and goals. Our
                                 experienced team
@@ -453,7 +454,8 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t3.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Nonfiction Writing</h4>
-                            <p>Do you want to get your non-fiction book published? We are here to help. At American Author Hub ,
+                            <p>Do you want to get your non-fiction book published? We are here to help. At American Author
+                                Hub ,
                                 we
                                 take pride in providing our clients with exceptional non-fiction writing services at an
                                 affordable cost. Being our client, you need to share your idea with our writers, and
@@ -516,7 +518,8 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t1.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Nonfiction Writing</h4>
-                            <p>Do you want to get your non-fiction book published? We are here to help. At American Author Hub ,
+                            <p>Do you want to get your non-fiction book published? We are here to help. At American Author
+                                Hub ,
                                 we
                                 take pride in providing our clients with exceptional non-fiction writing services at an
                                 affordable cost. Being our client, you need to share your idea with our writers, and
@@ -626,7 +629,8 @@
                         </h4>
                         <p>"I created a childrens book and considered it to publish as self-publishing by KDP. But it's
                             a debut book, and I worried it does not look professional because of poor formatting, so
-                            contact American Author Hub . Most of all, Mr. Walton Pierce is an excellent manager. He helped to
+                            contact American Author Hub . Most of all, Mr. Walton Pierce is an excellent manager. He helped
+                            to
                             publish them one by one as if he is a personal coach. Thank you so much!"</p>
 
                         <h6>Noah Martinez</h6>
@@ -664,5 +668,7 @@
             </div>
         </div>
     </section>
+
+    @include('layouts.contact')
 
 @endsection

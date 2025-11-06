@@ -136,7 +136,9 @@
     <section class="auth-page" aria-labelledby="verify-heading">
         <div class="auth-card" role="region" aria-label="Email verification">
             <div class="brand">
-                <div class="logo">American Author Hub</div>
+                <div class="logo">
+                    <img src="{{ asset('assets/imgs/logo.png') }}" style="width: 150px; margin-bottom: -40px; margin-top: -40px;" alt="">
+                </div>
             </div>
 
             <div class="card-title">

@@ -4,7 +4,9 @@
             <!-- Left Column -->
             <div class="col-md-5">
                 <div class="footer-box-1">
-                    <h1 style="font-size: 70px;">American Author Hub</h1>
+                    <h1 style="font-size: 70px;">
+                        <img src="{{ asset('assets/imgs/logo.png') }}" alt="" style="width: 150px; margin-bottom: -60px;">
+                    </h1>
                     <p>
                         American Author Hub is a content agency that offers you the best of writing, design,
                         publishing, and marketing. We have an expert team of dedicated and committed

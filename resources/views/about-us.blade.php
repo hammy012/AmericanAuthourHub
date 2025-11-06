@@ -240,6 +240,6 @@
             </div>
         </div>
     </section>
-
+@include('layouts.contact')
 
 @endsection

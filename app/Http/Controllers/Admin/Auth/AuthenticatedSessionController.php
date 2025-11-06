@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -23,7 +24,7 @@ class AuthenticatedSessionController extends Controller
         ]);
 
         // debug: show admin record
-        $admin = \App\Models\Admin::where('email', $credentials['email'])->first();
+        $admin = Admin::where('email', $credentials['email'])->first();
         Log::info('Admin record:', ['admin' => $admin ? $admin->toArray() : null]);
 
         // debug: check hash

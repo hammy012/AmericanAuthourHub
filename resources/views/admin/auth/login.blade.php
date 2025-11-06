@@ -318,11 +318,13 @@
 
             <div class="info" aria-hidden="false">
                 <div class="brand">
-                    <div class="logo">ADM</div>
+                    <img style="width: 60px" src="{{ asset('assets/imgs/logo.png') }}" alt="">
                     <div>
-                        <h1 id="login-heading">Admin Panel</h1>
-                        <div class="lead">Secure area — sirf authorised admin ke liye. Login karne ke baad aap
-                            dashboard access kar sakte hain.</div>
+                        <h1 id="login-heading">Ameran Author Hub - Admin Panel</h1>
+                        <div class="lead">
+                            Secure area — for authorized administrators only.
+                            Once logged in, you’ll have access to the full dashboard and management tools.
+                        </div>
                     </div>
                 </div>
 
@@ -331,7 +333,8 @@
                         <div class="dot blue">A</div>
                         <div>
                             <div style="font-weight:700;color:#0f172a">Fast Access</div>
-                            <div style="color:#64748b;font-size:13px">Seeded admin — manual registration allowed nahi.
+                            <div style="color:#64748b;font-size:13px">
+                                Admin accounts are seeded — manual registration is disabled.
                             </div>
                         </div>
                     </div>
@@ -340,7 +343,9 @@
                         <div class="dot red">S</div>
                         <div>
                             <div style="font-weight:700;color:#0f172a">Secure</div>
-                            <div style="color:#64748b;font-size:13px">Hashed passwords and guard-protected routes.</div>
+                            <div style="color:#64748b;font-size:13px">
+                                Encrypted passwords and guard-protected routes ensure full data safety.
+                            </div>
                         </div>
                     </div>
 
@@ -348,16 +353,17 @@
                         <div class="dot blue">U</div>
                         <div>
                             <div style="font-weight:700;color:#0f172a">Unified</div>
-                            <div style="color:#64748b;font-size:13px">Breeze-styled forms with custom admin guard.</div>
+                            <div style="color:#64748b;font-size:13px">
+                                Breeze-inspired forms integrated with a custom admin guard.
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="form-panel" aria-live="polite">
                 <div class="form-title">Welcome back, Admin</div>
-                <div class="form-sub">Apna email aur password daal kar login karein.</div>
+                <div class="form-sub">Enter your email and password to access the admin dashboard.</div>
 
                 {{-- Session / validation errors --}}
                 @if (session('status'))
@@ -365,7 +371,7 @@
                 @endif
 
                 @if ($errors->any())
-                    <div class="session-error">Credentials are incorrect — please check and try again.</div>
+                    <div class="session-error">Invalid credentials — please check and try again.</div>
                 @endif
 
                 <form method="POST" action="{{ route('admin.login.store') }}" novalidate>
@@ -396,7 +402,7 @@
                         </label>
 
                         <div style="font-size:13px;color:#64748b">
-                            {{-- optionally a tiny link for forgot password --}}
+                            {{-- Optional forgot password link --}}
                             {{-- <a href="#" style="color:var(--flag-blue);text-decoration:none;">Forgot?</a> --}}
                         </div>
                     </div>
@@ -407,12 +413,12 @@
                 </form>
 
                 <div style="margin-top:18px;color:#94a3b8;font-size:13px">
-                    © {{ date('Y') }} Your Company. All rights reserved.
+                    © {{ date('Y') }} American author hub all rights reserved.
                 </div>
             </div>
-
         </div>
     </div>
+
 </body>
 
 </html>

@@ -10,7 +10,7 @@
             <div class="col-md-2 logo-box">
                <div class="logo">
                   <a href="/">
-                     <img src="assets/images/logo.png" alt="Authors Time">
+                     <img src="{{ asset('assets/imgs/logo.png') }}" alt="Authors Time">
                   </a>
                </div>
             </div>

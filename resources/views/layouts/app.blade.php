@@ -237,7 +237,7 @@
         @yield('content')
     </main>
 
-    @include('layouts.contact')
+
 
     @include('layouts.footer')
 
