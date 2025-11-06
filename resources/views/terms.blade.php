@@ -10,6 +10,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12 privacy">
                     <br>
+                    <h3 class="lead"><strong>Terms & Condition</strong></h3>
                     <p>You will hold full to the content that we will develop for you and deliver as per the agreed terms.
                         We will
                         hold no whatsoever on the content and you are free to publish and use it as per your wish. </p>

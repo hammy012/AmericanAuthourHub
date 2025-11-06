@@ -184,7 +184,7 @@
 
             <div class="card-title">
                 <h2 id="register-heading">Create your account</h2>
-                <p>Join Ebook — get access to writing & publishing tools</p>
+                <p class="mt-2">Join Ebook — get access to writing & publishing tools</p>
             </div>
 
             {{-- Session status --}}
@@ -210,8 +210,8 @@
                 <!-- Name -->
                 <div class="form-group">
                     <label for="name">Full name</label>
-                    <input id="name" name="name" type="text" value="{{ old('name') }}" required autofocus
-                        autocomplete="name" />
+                    <input id="name" name="name" placeholder="Full name" type="text" value="{{ old('name') }}"
+                        required autofocus autocomplete="name" />
                     @error('name')
                         <div class="input-error">{{ $message }}</div>
                     @enderror
@@ -220,8 +220,8 @@
                 <!-- Email Address -->
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" value="{{ old('email') }}" required
-                        autocomplete="username" />
+                    <input id="email" name="email" placeholder="Enter Your Email" type="email"
+                        value="{{ old('email') }}" required autocomplete="username" />
                     @error('email')
                         <div class="input-error">{{ $message }}</div>
                     @enderror
@@ -230,7 +230,8 @@
                 <!-- Password -->
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input id="password" name="password" type="password" required autocomplete="new-password" />
+                    <input id="password" name="password" type="password" placeholder="Type Your Password" required
+                        autocomplete="new-password" />
                     @error('password')
                         <div class="input-error">{{ $message }}</div>
                     @enderror
@@ -239,8 +240,8 @@
                 <!-- Confirm Password -->
                 <div class="form-group">
                     <label for="password_confirmation">Confirm Password</label>
-                    <input id="password_confirmation" name="password_confirmation" type="password" required
-                        autocomplete="new-password" />
+                    <input id="password_confirmation" placeholder="Confirm Password" name="password_confirmation"
+                        type="password" required autocomplete="new-password" />
                     @error('password_confirmation')
                         <div class="input-error">{{ $message }}</div>
                     @enderror
