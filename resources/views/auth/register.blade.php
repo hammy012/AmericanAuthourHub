@@ -1,9 +1,13 @@
-{{-- resources/views/auth/register.blade.php --}}
 @extends('layouts.app')
 
 @section('title', 'Ebook | Register')
 
 @section('content')
+    {{-- Font Awesome CDN (icons ke liye) --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-LmXQe6Z6h9bq0m2Ggq1YJ3d3t7yq3bKXQ6Kf5Z7Yt0e7sJH1zV6q9P6G6mL8e1k1Q9v1z7d3q1K5x9W1Qm2aQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         :root {
             --accent-red: #9F0B07;
@@ -104,6 +108,37 @@
             font-size: 15px;
             box-sizing: border-box;
             background: #fbfdff;
+        }
+
+        /* wrapper for input + icon */
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon input {
+            padding-right: 44px;
+            /* space for icon */
+        }
+
+        .toggle-password-btn {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #6b7280;
+        }
+
+        .toggle-password-btn:focus {
+            outline: 2px solid rgba(0, 39, 104, 0.12);
+            border-radius: 6px;
         }
 
         input:focus {
@@ -230,8 +265,14 @@
                 <!-- Password -->
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input id="password" name="password" type="password" placeholder="Type Your Password" required
-                        autocomplete="new-password" />
+                    <div class="input-with-icon">
+                        <input id="password" name="password" type="password" placeholder="Type Your Password" required
+                            autocomplete="new-password" />
+                        <button type="button" class="toggle-password-btn" data-target="password" aria-label="Show password"
+                            aria-pressed="false">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
                     @error('password')
                         <div class="input-error">{{ $message }}</div>
                     @enderror
@@ -240,8 +281,14 @@
                 <!-- Confirm Password -->
                 <div class="form-group">
                     <label for="password_confirmation">Confirm Password</label>
-                    <input id="password_confirmation" placeholder="Confirm Password" name="password_confirmation"
-                        type="password" required autocomplete="new-password" />
+                    <div class="input-with-icon">
+                        <input id="password_confirmation" placeholder="Confirm Password" name="password_confirmation"
+                            type="password" required autocomplete="new-password" />
+                        <button type="button" class="toggle-password-btn" data-target="password_confirmation"
+                            aria-label="Show confirm password" aria-pressed="false">
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+                    </div>
                     @error('password_confirmation')
                         <div class="input-error">{{ $message }}</div>
                     @enderror
@@ -265,4 +312,52 @@
             </div>
         </div>
     </section>
+
+    {{-- Toggle script --}}
+    <script>
+        (function() {
+            function toggleInputVisibility(input) {
+                if (input.type === 'password') {
+                    input.type = 'text';
+                } else {
+                    input.type = 'password';
+                }
+            }
+
+            function updateButtonState(btn, visible) {
+                btn.setAttribute('aria-pressed', visible ? 'true' : 'false');
+                btn.setAttribute('aria-label', visible ? 'Hide password' : 'Show password');
+                const icon = btn.querySelector('i');
+                if (!icon) return;
+                if (visible) {
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            }
+
+            document.querySelectorAll('.toggle-password-btn').forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    const targetId = btn.getAttribute('data-target');
+                    const input = document.getElementById(targetId);
+                    if (!input) return;
+                    const isHidden = input.type === 'password';
+                    // Toggle
+                    toggleInputVisibility(input);
+                    // Update aria + icon
+                    updateButtonState(btn, isHidden);
+                });
+
+                // Allow keyboard activation via Enter/Space
+                btn.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        btn.click();
+                    }
+                });
+            });
+        })();
+    </script>
 @endsection
