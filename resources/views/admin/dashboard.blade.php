@@ -163,7 +163,7 @@
                         <script>
                             document.write(new Date().getFullYear())
                         </script>
-                        &copy; Ebook Agency. Crafted with
+                        &copy; American Author Hub. Crafted with
                         <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon>
                         <a href="" class="fw-bold footer-text" target="_blank">HashTechmeta</a>
                     </div>
