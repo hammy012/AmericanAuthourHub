@@ -49,7 +49,7 @@
                                             </div>
                                         </div>
                                         <div class="col-6 text-end">
-                                            <p class="text-muted mb-0 text-truncate">Total Posts</p>
+                                            <p class="text-muted mb-0 text-truncate">Total Blogs</p>
                                             <h3 class="text-dark mt-1 mb-0">560</h3>
                                         </div>
                                     </div>
@@ -78,8 +78,8 @@
                                             </div>
                                         </div>
                                         <div class="col-6 text-end">
-                                            <p class="text-muted mb-0 text-truncate">Total Sellers</p>
-                                            <h3 class="text-dark mt-1 mb-0">340</h3>
+                                            <p class="text-muted mb-0 text-truncate">Total Services</p>
+                                            <h3 class="text-dark mt-1 mb-0">12</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -98,8 +98,8 @@
                                             </div>
                                         </div>
                                         <div class="col-6 text-end">
-                                            <p class="text-muted mb-0 text-truncate">Total Buyers</p>
-                                            <h3 class="text-dark mt-1 mb-0">905</h3>
+                                            <p class="text-muted mb-0 text-truncate">Total FAQs</p>
+                                            <h3 class="text-dark mt-1 mb-0">34</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -176,10 +176,8 @@
                             document.write(new Date().getFullYear())
                         </script>
                         &copy; Ebook Agency. Crafted with
-                        <iconify-icon icon="iconamoon:heart-duotone"
-                            class="fs-18 align-middle text-danger"></iconify-icon>
-                        <a href="https://mdhammad.netlify.app/" class="fw-bold footer-text"
-                            target="_blank">Codesgenius</a>
+                        <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon>
+                        <a href="https://mdhammad.netlify.app/" class="fw-bold footer-text" target="_blank">Codesgenius</a>
                     </div>
                 </div>
             </div>
