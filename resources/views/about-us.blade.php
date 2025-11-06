@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | About us')
+@section('title', 'American Author Hub | About us')
 
 @section('content')
 
@@ -162,7 +162,7 @@
         <div class="container">
             <div class="banner-head">
                 <span>Testimonials</span>
-                <h2>Trust Ebook Company For All
+                <h2>Trust American Author Hub Company For All
                     Your Business Writing Needs
                 </h2>
             </div>
@@ -187,10 +187,10 @@
                         <h4>Completely satisfied with their publishing service & support.
                         </h4>
                         <p>“Kudos to the amazing team and for sure the people behind it. I've been struggling to publish
-                            for years and on a fine October morning I call Ebook and get connected to Eddie
+                            for years and on a fine October morning I call American Author Hub and get connected to Eddie
                             Williams. Since then they have made my dream possible and thank you Zach for being available
                             throughout the entire process, and whatever of an issue I'd, he responded me with patience
-                            and dedication. I felt heard and I'm glad my book "An Art of Love" is out there and seeking
+                            and dedication. I felt heard and Im glad my book "An Art of Love" is out there and seeking
                             your love for the same!” </p>
 
                         <h6>Ethan Mitchell</h6>
@@ -204,7 +204,7 @@
                         </h4>
                         <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's
                             a debut book, and I worried it doesn't look professional because of poor formatting, so
-                            contact Ebook . Most of all, Mr. Walton Pierce is an excellent manager. He helped to
+                            contact American Author Hub . Most of all, Mr. Walton Pierce is an excellent manager. He helped to
                             publish them one by one as if he is a personal coach. Thank you so much!"</p>
 
                         <h6>Noah Martinez</h6>
@@ -231,7 +231,7 @@
         <div class="container">
             <div class="cta-head-2">
                 <span>100% Original, Authentic, & Genuine</span>
-                <h3>Become a celebrated author of best-seller <br> books with Ebook Services.</h3>
+                <h3>Become a celebrated author of best-seller <br> books with American Author Hub Services.</h3>
                 <ul class="cta-btn">
                     <li><a href="tel:+123456789">123 456-789</a> &nbsp; <a href="javascript:;" class="chat">Chat
                             Now</a></li>
@@ -323,7 +323,7 @@
                             <input type="hidden" name="privacy_policy"
                                 value="I have read the Terms & Conditions and Privacy Policy." />
                             <input type="hidden" name="policy"
-                                value="By providing my contact information, I agree to receive text messages, calls, and emails from Ebook ." />
+                                value="By providing my contact information, I agree to receive text messages, calls, and emails from American Author Hub ." />
                             <input type="text" name="name" maxlength="30" required=""
                                 placeholder="Enter Name">
                             <input type="tel" name="phone" required="" placeholder="Enter Number"
@@ -352,7 +352,7 @@
                                 <input type="checkbox" class="required" name="policy_check" id="policy_check" required
                                     style="width: fit-content !important;height: auto !important;">
                                 By providing my contact information, I agree to receive text messages, calls, and emails
-                                from Ebook .
+                                from American Author Hub .
                             </div>
                             <div class="form-group text-dark">
                                 <input type="checkbox" class="required" name="terms_policy" id="terms_policy" required

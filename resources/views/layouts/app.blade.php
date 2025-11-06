@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
-    <title>@yield('title', 'Ebook | Book Writing Company')</title>
+    <title>@yield('title', 'American Author Hub | Book Writing Company')</title>
 
     <!-- Font Awesome (CDN or local) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <meta name="title" content="@yield('meta_title', 'Ebook  | Book Writing Company')">
-    <meta name="description" content="@yield('meta_description', 'Become a published author with Ebook . Our professional writers offer exceptional book writing services.')">
+    <meta name="title" content="@yield('meta_title', 'American Author Hub  | Book Writing Company')">
+    <meta name="description" content="@yield('meta_description', 'Become a published author with American Author Hub . Our professional writers offer exceptional book writing services.')">
     <link rel="canonical" href="{{ url()->current() }}" />
 
     <meta property="og:image" content="{{ asset('assets/images/logo.png') }}">

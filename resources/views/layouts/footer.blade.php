@@ -6,7 +6,7 @@
                 <div class="footer-box-1">
                     <h1 style="font-size: 70px;">EBOOK</h1>
                     <p>
-                        Ebook is a content agency that offers you the best of writing, design,
+                        American Author Hub is a content agency that offers you the best of writing, design,
                         publishing, and marketing. We have an expert team of dedicated and committed
                         professionals to take on any project with our instant solutions for your books
                         with worldwide marketing channels!
@@ -80,7 +80,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6 text-md-end text-center">
-                    <p class="footer-copy mb-0">© {{ date('Y') }} <strong>Ebook</strong>. All Rights Reserved.</p>
+                    <p class="footer-copy mb-0">© {{ date('Y') }} <strong>American Author Hub</strong>. All Rights Reserved.</p>
                 </div>
             </div>
         </div>

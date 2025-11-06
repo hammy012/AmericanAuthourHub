@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | FAQs')
+@section('title', 'American Author Hub | FAQs')
 
 @section('content')
 
@@ -316,7 +316,7 @@
                             <input type="hidden" name="privacy_policy"
                                 value="I have read the Terms & Conditions and Privacy Policy." />
                             <input type="hidden" name="policy"
-                                value="By providing my contact information, I agree to receive text messages, calls, and emails from Ebook ." />
+                                value="By providing my contact information, I agree to receive text messages, calls, and emails from American Author Hub ." />
                             <input type="text" name="name" maxlength="30" required="" placeholder="Enter Name">
                             <input type="tel" name="phone" required="" placeholder="Enter Number"
                                 minlength="10" maxlength="10">
@@ -345,7 +345,7 @@
                                 <input type="checkbox" class="required" name="policy_check" id="policy_check" required
                                     style="width: fit-content !important;height: auto !important;">
                                 By providing my contact information, I agree to receive text messages, calls, and emails
-                                from Ebook .
+                                from American Author Hub .
                             </div>
                             <div class="form-group text-dark">
                                 <input type="checkbox" class="required" name="terms_policy" id="terms_policy" required

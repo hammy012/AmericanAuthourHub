@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Register')
+@section('title', 'American Author Hub | Register')
 
 @section('content')
     {{-- Font Awesome CDN (icons ke liye) --}}
@@ -213,12 +213,12 @@
     <section class="auth-page" aria-labelledby="register-heading">
         <div class="auth-card" role="region" aria-label="Register form">
             <div class="brand" aria-hidden="false">
-                <div class="logo">Ebook</div>
+                <div class="logo">American Author Hub</div>
             </div>
 
             <div class="card-title">
                 <h2 id="register-heading">Create your account</h2>
-                <p class="mt-2">Join Ebook — get access to writing & publishing tools</p>
+                <p class="mt-2">Join American Author Hub — get access to writing & publishing tools</p>
             </div>
 
             {{-- Session status --}}

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Home')
+@section('title', 'American Author Hub | Home')
 
 @section('content')
 
@@ -49,25 +49,6 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="what-we-slider">
-                        <li>
-                            <div class="what-we-do-main-box">
-                                <img loading="lazy" src="{{ asset('assets/imgs/main.webp') }}" class="ser-what-img">
-                                <div class="what-we-do-main-box-head">
-                                    <h4>Professional Resume <br> Services
-                                    </h4>
-                                </div>
-                                <div class="what-we-do-main-inner-box">
-                                    <img loading="lazy" src="{{ asset('assets/imgs/what.png') }}">
-                                    <h5>Professional Resume Services
-                                    </h5>
-                                    <p>We take pride in providing our clients with the best-in-class resume writing
-                                        services for
-                                        senior managers, board members, executives, etc.
-                                    </p>
-                                    <a href="javascript:;" class="popup-btn">Get Started</a>
-                                </div>
-                            </div>
-                        </li>
                         <li>
                             <div class="what-we-do-main-box">
                                 <img loading="lazy" src="{{ asset('assets/imgs/r2.webp') }}" class="ser-what-img">
@@ -215,7 +196,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="banner-head">
-                        <span>Reasons to Choose Ebook </span>
+                        <span>Reasons to Choose American Author Hub </span>
                         <h2>Welcome to the World of Literature</h2>
                         <p>
                             We have served over 10,000 satisfied customers. This is a
@@ -373,7 +354,7 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t6.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Speech Writing</h4>
-                            <p>At Ebook , we ensure what you aim to say through your speech not only captivates
+                            <p>At American Author Hub , we ensure what you aim to say through your speech not only captivates
                                 your
                                 audience, it truly mesmerizes them into wonder toward your aims and goals. Our
                                 experienced team
@@ -425,7 +406,7 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t6.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Story Writing</h4>
-                            <p>Ebook 's team consists of professional writers who can weave magic with their
+                            <p>American Author Hub 's team consists of professional writers who can weave magic with their
                                 wordplay.
                                 They are the wordsmiths in the truest sense. They are incredibly proficient in their
                                 genres and
@@ -472,7 +453,7 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t3.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Nonfiction Writing</h4>
-                            <p>Do you want to get your non-fiction book published? We are here to help. At Ebook ,
+                            <p>Do you want to get your non-fiction book published? We are here to help. At American Author Hub ,
                                 we
                                 take pride in providing our clients with exceptional non-fiction writing services at an
                                 affordable cost. Being our client, you need to share your idea with our writers, and
@@ -488,7 +469,7 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t2.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Story Writing</h4>
-                            <p>Ebook 's team consists of professional writers who can weave magic with their
+                            <p>American Author Hub 's team consists of professional writers who can weave magic with their
                                 wordplay.
                                 They are the wordsmiths in the truest sense. They are incredibly proficient in their
                                 genres and
@@ -535,7 +516,7 @@
                         <img loading="lazy" src="{{ asset('assets/imgs/t1.webp') }}" style="width: 190px;">
                         <div class="services-sec-box-inner">
                             <h4>Nonfiction Writing</h4>
-                            <p>Do you want to get your non-fiction book published? We are here to help. At Ebook ,
+                            <p>Do you want to get your non-fiction book published? We are here to help. At American Author Hub ,
                                 we
                                 take pride in providing our clients with exceptional non-fiction writing services at an
                                 affordable cost. Being our client, you need to share your idea with our writers, and
@@ -603,7 +584,7 @@
         <div class="container">
             <div class="banner-head">
                 <span>Testimonials</span>
-                <h2>Trust Ebook Company For All
+                <h2>Trust American Author Hub Company For All
                     Your Business Writing Needs
                 </h2>
             </div>
@@ -628,7 +609,7 @@
                         <h4>Completely satisfied with their publishing service & support.
                         </h4>
                         <p>“Kudos to the amazing team and for sure the people behind it. I've been struggling to publish
-                            for years and on a fine October morning I call Ebook and get connected to Eddie
+                            for years and on a fine October morning I call American Author Hub and get connected to Eddie
                             Williams. Since then they have made my dream possible and thank you Zach for being available
                             throughout the entire process, and whatever of an issue I'd, he responded me with patience
                             and dedication. I felt heard and I'm glad my book "An Art of Love" is out there and seeking
@@ -645,7 +626,7 @@
                         </h4>
                         <p>"I created a children's book and considered it to publish as self-publishing by KDP. But it's
                             a debut book, and I worried it doesn't look professional because of poor formatting, so
-                            contact Ebook . Most of all, Mr. Walton Pierce is an excellent manager. He helped to
+                            contact American Author Hub . Most of all, Mr. Walton Pierce is an excellent manager. He helped to
                             publish them one by one as if he is a personal coach. Thank you so much!"</p>
 
                         <h6>Noah Martinez</h6>
@@ -674,7 +655,7 @@
         <div class="container">
             <div class="cta-head-2">
                 <span>100% Original, Authentic, & Genuine</span>
-                <h3>Become a celebrated author of best-seller <br> books with Ebook Services.</h3>
+                <h3>Become a celebrated author of best-seller <br> books with American Author Hub Services.</h3>
                 <ul class="cta-btn">
                     <li><a href="tel:+123456789">123 456-789</a> &nbsp; <a href="javascript:;" class="chat">Chat
                             Now</a></li>
@@ -768,7 +749,7 @@
                             <input type="hidden" name="privacy_policy"
                                 value="I have read the Terms & Conditions and Privacy Policy." />
                             <input type="hidden" name="policy"
-                                value="By providing my contact information, I agree to receive text messages, calls, and emails from Ebook ." />
+                                value="By providing my contact information, I agree to receive text messages, calls, and emails from American Author Hub ." />
                             <input type="text" name="name" maxlength="30" required=""
                                 placeholder="Enter Name">
                             <input type="tel" name="phone" required="" placeholder="Enter Number"
@@ -797,7 +778,7 @@
                                 <input type="checkbox" class="required" name="policy_check" id="policy_check" required
                                     style="width: fit-content !important;height: auto !important;">
                                 By providing my contact information, I agree to receive text messages, calls, and emails
-                                from Ebook .
+                                from American Author Hub .
                             </div>
                             <div class="form-group text-dark">
                                 <input type="checkbox" class="required" name="terms_policy" id="terms_policy" required

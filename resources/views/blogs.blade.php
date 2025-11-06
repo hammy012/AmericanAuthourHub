@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Blog')
+@section('title', 'American Author Hub | Blog')
 
 @section('content')
 
@@ -144,7 +144,7 @@
                 <article class="blog-card">
                     <img src="{{ asset('assets/imgs/blog1.avif') }}" alt="Blog 1" class="card-img">
                     <div class="card-body">
-                        <div class="meta">November 06, 2025 • Ebook Team</div>
+                        <div class="meta">November 06, 2025 • American Author Hub Team</div>
                         <h3>How to Market Your Book Effectively</h3>
                         <p class="excerpt">Discover practical book marketing tips that help authors reach a wider audience
                             and boost sales.</p>
@@ -156,7 +156,7 @@
                 <article class="blog-card">
                     <img src="{{ asset('assets/imgs/blog2.avif') }}" alt="Blog 2" class="card-img">
                     <div class="card-body">
-                        <div class="meta">November 04, 2025 • Ebook Team</div>
+                        <div class="meta">November 04, 2025 • American Author Hub Team</div>
                         <h3>The Art of Writing Engaging Fiction</h3>
                         <p class="excerpt">Learn key techniques to make your story compelling, with strong characters and
                             emotional depth.</p>
@@ -168,7 +168,7 @@
                 <article class="blog-card">
                     <img src="{{ asset('assets/imgs/blog3.webp') }}" alt="Blog 3" class="card-img">
                     <div class="card-body">
-                        <div class="meta">November 02, 2025 • Ebook Team</div>
+                        <div class="meta">November 02, 2025 • American Author Hub Team</div>
                         <h3>Why Professional Editing Matters</h3>
                         <p class="excerpt">Editing turns a good manuscript into a great one. Here why you should never
                             skip it.</p>
@@ -180,7 +180,7 @@
                 <article class="blog-card">
                     <img src="{{ asset('assets/imgs/blog4.jpg') }}" alt="Blog 4" class="card-img">
                     <div class="card-body">
-                        <div class="meta">October 30, 2025 • Ebook Team</div>
+                        <div class="meta">October 30, 2025 • American Author Hub Team</div>
                         <h3>Self-Publishing vs Traditional Publishing</h3>
                         <p class="excerpt">Explore the pros and cons of both approaches to decide which suits your author
                             journey best.</p>
@@ -277,7 +277,7 @@
                             <input type="hidden" name="privacy_policy"
                                 value="I have read the Terms & Conditions and Privacy Policy." />
                             <input type="hidden" name="policy"
-                                value="By providing my contact information, I agree to receive text messages, calls, and emails from Ebook ." />
+                                value="By providing my contact information, I agree to receive text messages, calls, and emails from American Author Hub ." />
                             <input type="text" name="name" maxlength="30" required="" placeholder="Enter Name">
                             <input type="tel" name="phone" required="" placeholder="Enter Number"
                                 minlength="10" maxlength="10">
@@ -306,7 +306,7 @@
                                 <input type="checkbox" class="required" name="policy_check" id="policy_check" required
                                     style="width: fit-content !important;height: auto !important;">
                                 By providing my contact information, I agree to receive text messages, calls, and emails
-                                from Ebook .
+                                from American Author Hub .
                             </div>
                             <div class="form-group text-dark">
                                 <input type="checkbox" class="required" name="terms_policy" id="terms_policy" required

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Reset Password')
+@section('title', 'American Author Hub | Reset Password')
 
 @section('content')
     {{-- Font Awesome for eye icon (remove if already loaded globally) --}}
@@ -195,7 +195,7 @@
     <section class="auth-page" aria-labelledby="reset-heading">
         <div class="auth-card" role="region" aria-label="Reset password form">
             <div class="brand">
-                <div class="logo">Ebook</div>
+                <div class="logo">American Author Hub</div>
             </div>
 
             <div class="card-title">

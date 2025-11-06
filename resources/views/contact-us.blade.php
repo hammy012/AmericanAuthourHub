@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Contact')
+@section('title', 'American Author Hub | Contact')
 
 @section('content')
 

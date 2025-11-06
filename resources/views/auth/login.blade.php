@@ -1,7 +1,7 @@
 {{-- resources/views/auth/login.blade.php --}}
 @extends('layouts.app')
 
-@section('title', 'Ebook | Login')
+@section('title', 'American Author Hub | Login')
 
 @section('content')
     <style>
@@ -209,12 +209,12 @@
     <section class="auth-page" aria-labelledby="login-heading">
         <div class="auth-card" role="region" aria-label="Login form">
             <div class="brand" aria-hidden="false">
-                <div class="logo">Ebook</div>
+                <div class="logo">American Author Hub</div>
             </div>
 
             <div class="card-title">
                 <h2 id="login-heading">Welcome back</h2>
-                <p>Sign in to your Ebook account</p>
+                <p>Sign in to your American Author Hub account</p>
             </div>
 
             {{-- Session status --}}

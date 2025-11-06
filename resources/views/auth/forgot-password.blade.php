@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Forgot Password')
+@section('title', 'American Author Hub | Forgot Password')
 
 @section('content')
     <style>
@@ -155,7 +155,7 @@
     <section class="auth-page" aria-labelledby="forgot-heading">
         <div class="auth-card" role="region" aria-label="Forgot password form">
             <div class="brand">
-                <div class="logo">Ebook</div>
+                <div class="logo">American Author Hub</div>
             </div>
 
             <div class="card-title">

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Ebook | Verify Email')
+@section('title', 'American Author Hub | Verify Email')
 
 @section('content')
     <style>
@@ -136,7 +136,7 @@
     <section class="auth-page" aria-labelledby="verify-heading">
         <div class="auth-card" role="region" aria-label="Email verification">
             <div class="brand">
-                <div class="logo">Ebook</div>
+                <div class="logo">American Author Hub</div>
             </div>
 
             <div class="card-title">
