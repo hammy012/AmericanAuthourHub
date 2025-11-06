@@ -8,8 +8,6 @@
             <div class="row">
                 <div class="col-xxl-5">
                     <div class="row">
-
-                        <!-- Total Users -->
                         <div class="col-md-6">
                             <div class="card overflow-hidden">
                                 <div class="card-body">
@@ -36,8 +34,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Total Posts -->
                         <div class="col-md-6">
                             <div class="card overflow-hidden">
                                 <div class="card-body">
@@ -65,8 +61,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Total Sellers -->
                         <div class="col-md-6">
                             <div class="card overflow-hidden">
                                 <div class="card-body">
@@ -85,8 +79,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Total Buyers -->
                         <div class="col-md-6">
                             <div class="card overflow-hidden">
                                 <div class="card-body">
@@ -105,13 +97,11 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
-                    </div> <!-- inner row -->
-                </div> <!-- col-xxl-5 -->
-            </div> <!-- main row -->
 
-
-            <!-- Recent Users Table -->
             <div class="row mt-4">
                 <div class="col">
                     <div class="card">
@@ -163,11 +153,9 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-        <!-- Footer -->
+
         <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -177,7 +165,7 @@
                         </script>
                         &copy; Ebook Agency. Crafted with
                         <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon>
-                        <a href="https://mdhammad.netlify.app/" class="fw-bold footer-text" target="_blank">Codesgenius</a>
+                        <a href="" class="fw-bold footer-text" target="_blank">HashTechmeta</a>
                     </div>
                 </div>
             </div>

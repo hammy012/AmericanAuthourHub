@@ -2,19 +2,17 @@
     <!-- Sidebar Logo -->
     <div class="logo-box" style="display: flex; justify-content: center; align-items: center">
         <a href="{{ route('admin.dashboard') }}" class="logo-dark">
-            {{--  <img src="{{ asset('assets/img/logo.png') }}" style="width: 100px; height: 50px;" class="logo-sm"
+            <img src="{{ asset('assets/imgs/white.png') }}" style="width: 150px; height: 150px;" class="logo-sm"
                 alt="logo sm">
-            <img src="{{ asset('assets/img/logo.png') }}" style="width: 100px; height: 50px;" class="logo-lg"
-                alt="logo dark">  --}}
-                <h2 class="mt-4 text-light">EBOOK</h2>
+            <img src="{{ asset('assets/imgs/white.png') }}" style="width: 150px; height: 150px;" class="logo-lg"
+                alt="logo dark">
         </a>
 
         <a href="{{ route('admin.dashboard') }}" class="logo-light">
-            {{--  <img src="{{ asset('assets/img/logo.png') }}" style="width: 100px; height: 50px;" class="logo-sm"
+            <img src="{{ asset('assets/imgs/white.png') }}" style="width: 150px; height: 150px;" class="logo-sm"
                 alt="logo sm">
-            <img src="{{ asset('assets/img/logo.png') }}" style="width: 100px; height: 50px;" class="logo-lg"
-                alt="logo light">  --}}
-                <h2 class="mt-4 text-light">EBOOK</h2>
+            <img src="{{ asset('assets/imgs/white.png') }}" style="width: 150px; height: 150px;" class="logo-lg"
+                alt="logo light">
         </a>
     </div>
 
