@@ -239,7 +239,7 @@
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" value="{{ old('email') }}" required autofocus
+                    <input id="email" name="email" type="email" placeholder="Email Address" value="{{ old('email') }}" required autofocus
                         autocomplete="username" />
                     @error('email')
                         <div class="input-error">{{ $message }}</div>
