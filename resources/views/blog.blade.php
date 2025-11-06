@@ -131,16 +131,6 @@
                                     and iterate based on what works.</p>
                             </div>
 
-                            <div class="mt-4 share-buttons">
-                                <strong>Share:</strong>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}"
-                                    target="_blank">Facebook</a>
-                                <a href="https://twitter.com/intent/tweet?text={{ urlencode('How to Market Your Book Effectively') }}&url={{ urlencode(url()->current()) }}"
-                                    target="_blank">Twitter</a>
-                                <a
-                                    href="mailto:?subject={{ urlencode('How to Market Your Book Effectively') }}&body={{ urlencode(url()->current()) }}">Email</a>
-                            </div>
-
                         </div>
 
                     </article>

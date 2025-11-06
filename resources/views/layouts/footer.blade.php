@@ -5,7 +5,8 @@
             <div class="col-md-5">
                 <div class="footer-box-1">
                     <h1 style="font-size: 70px;">
-                        <img src="{{ asset('assets/imgs/logo.png') }}" alt="" style="width: 150px; margin-bottom: -60px;">
+                        <img src="{{ asset('assets/imgs/logo.png') }}" alt=""
+                            style="width: 150px; margin-bottom: -60px;">
                     </h1>
                     <p>
                         American Author Hub is a content agency that offers you the best of writing, design,
@@ -36,6 +37,11 @@
                                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://www.pinterest.com/" target="_blank">
+                                    <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -46,23 +52,42 @@
                 <div class="footer-box-2">
                     <h4>Services</h4>
                     <ul class="services-links">
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="book-promotions">Book Promotions</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="ebook-writing">E-book Writing</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="book-editing">Editing</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="proofreading">Proofreading</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="audio-book">Audio Book</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="author-website">Author Website</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="book-cover">Book Cover</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="book-printing">Book Printing</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="formatting">Formatting</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="ghost-writing">Ghostwriting</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="book-video-trailer">Video Book Trailer</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i><a href="book-publishing">Publishing</a></li>
+                        <li><i class="fa-solid fa-bullhorn text-pink"></i> <a href="book-promotions">Book
+                                Promotions</a></li>
+
+                        <li><i class="fa-solid fa-book-open text-pink"></i> <a href="ebook-writing">E-book
+                                Writing</a></li>
+
+                        <li><i class="fa-solid fa-pen-to-square text-pink"></i> <a href="book-editing">Editing</a>
+                        </li>
+
+                        <li><i class="fa-solid fa-spell-check text-pink"></i> <a href="proofreading">Proofreading</a>
+                        </li>
+
+                        <li><i class="fa-solid fa-headphones text-pink"></i> <a href="audio-book">Audio Book</a></li>
+
+                        <li><i class="fa-solid fa-globe text-purple"></i> <a href="author-website">Author Website</a>
+                        </li>
+
+                        <li><i class="fa-solid fa-image text-pink"></i> <a href="book-cover">Book Cover</a></li>
+
+                        <li><i class="fa-solid fa-print text-pink"></i> <a href="book-printing">Book Printing</a>
+                        </li>
+
+                        <li><i class="fa-solid fa-align-left text-pink"></i> <a href="formatting">Formatting</a></li>
+
+                        <li><i class="fa-solid fa-feather text-pink"></i> <a href="ghost-writing">Ghostwriting</a>
+                        </li>
+
+                        <li><i class="fa-solid fa-video text-pink"></i> <a href="book-video-trailer">Video Book
+                                Trailer</a></li>
+
+                        <li><i class="fa-solid fa-book text-pink"></i> <a href="book-publishing">Publishing</a></li>
                     </ul>
+
                 </div>
             </div>
 
-            <!-- Right Column -->
             <div class="col-md-2">
                 <div class="feather-img">
                     <img src="https://authorstime.com/assets/images/feather.png" alt="Feather">
@@ -82,11 +107,11 @@
                     </ul>
                 </div>
                 <div class="col-md-6 text-md-end text-center">
-                    <p class="footer-copy mb-0">© {{ date('Y') }} <strong>American Author Hub</strong>. All Rights Reserved.</p>
+                    <p class="footer-copy mb-0">© {{ date('Y') }} <strong>American Author Hub</strong>. All Rights
+                        Reserved.</p>
                 </div>
             </div>
         </div>
 
     </div>
 </footer>
-

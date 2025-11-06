@@ -150,7 +150,7 @@
                             and boost sales.</p>
                         <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
                     </div>
-                </article>Our Blog
+                </article>
 
                 <!-- Blog Card 2 -->
                 <article class="blog-card">
