@@ -168,7 +168,6 @@
             background: linear-gradient(180deg, var(--accent-red), #b24f32);
             color: #fff;
             border: none;
-            font-weight: 900;
             font-size: 16px;
             cursor: pointer;
             box-shadow: 0 8px 20px rgba(159, 11, 7, 0.12);
@@ -185,12 +184,12 @@
             text-align: center;
             margin-top: 14px;
             color: var(--muted);
-            font-size: 14px;
+            font-size: 16px;
+            line-height: 19px
         }
 
         .alt a {
             color: var(--accent-red);
-            font-weight: 800;
             text-decoration: none;
         }
 
