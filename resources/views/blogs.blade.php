@@ -113,8 +113,8 @@
         style="background: url('{{ asset('assets/imgs/main-back.png') }}') no-repeat center center/cover;">
         <div class="container">
             <div class="banner-head">
-                <span style="color:#002768;font-weight:700;">Our Blog</span>
-                <h1 style="color:#9F0B07;">Insights, Tips & Stories</h1>
+                <span style="font-weight:700;">Our Blog</span>
+                <h1>Insights, Tips & Stories</h1>
                 <p style="color:#fff;">
                     Read the latest from our team — marketing tips for authors, case studies, book publishing guides,
                     and more. Stay inspired and informed.
@@ -150,7 +150,7 @@
                             and boost sales.</p>
                         <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
                     </div>
-                </article>
+                </article>Our Blog
 
                 <!-- Blog Card 2 -->
                 <article class="blog-card">

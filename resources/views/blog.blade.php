@@ -98,7 +98,8 @@
                     <article class="post-card">
 
                         {{-- Static featured image (use blog1.avif) --}}
-                        <img src="{{ asset('assets/imgs/blog1.avif') }}" alt="How to Market Your Book Effectively" class="post-hero">
+                        <img src="{{ asset('assets/imgs/blog1.avif') }}" alt="How to Market Your Book Effectively"
+                            class="post-hero">
 
                         <div class="post-body">
                             <div class="post-meta">November 06, 2025 • Ebook Team</div>
@@ -107,28 +108,37 @@
 
                             <div class="post-content">
                                 <p>Marketing a book requires planning, consistency, and using the right channels to reach
-                                readers. Start by identifying your target audience, preparing a launch timeline, and
-                                building a mailing list before release. Use social media strategically — share behind-the-scenes,
-                                excerpts, and reader testimonials. Collaborate with book bloggers, podcasters, and local
-                                bookstores for wider reach.</p>
+                                    readers. Start by identifying your target audience, preparing a launch timeline, and
+                                    building a mailing list before release. Use social media strategically — share
+                                    behind-the-scenes,
+                                    excerpts, and reader testimonials. Collaborate with book bloggers, podcasters, and local
+                                    bookstores for wider reach.</p>
 
                                 <h3>Key steps</h3>
                                 <ul>
-                                    <li><strong>Build an email list:</strong> Your list is the most reliable promotional tool.</li>
-                                    <li><strong>Plan a launch:</strong> Have promotions, giveaways, and outreach ready for launch week.</li>
-                                    <li><strong>Use paid ads wisely:</strong> Small, targeted campaigns on Facebook/Instagram can boost visibility.</li>
-                                    <li><strong>Leverage reviews:</strong> Ask early readers for honest reviews on Amazon/Goodreads.</li>
+                                    <li><strong>Build an email list:</strong> Your list is the most reliable promotional
+                                        tool.</li>
+                                    <li><strong>Plan a launch:</strong> Have promotions, giveaways, and outreach ready for
+                                        launch week.</li>
+                                    <li><strong>Use paid ads wisely:</strong> Small, targeted campaigns on
+                                        Facebook/Instagram can boost visibility.</li>
+                                    <li><strong>Leverage reviews:</strong> Ask early readers for honest reviews on
+                                        Amazon/Goodreads.</li>
                                 </ul>
 
-                                <p>Remember — marketing is a marathon. Keep engaging with your readers, publish helpful content,
-                                and iterate based on what works.</p>
+                                <p>Remember — marketing is a marathon. Keep engaging with your readers, publish helpful
+                                    content,
+                                    and iterate based on what works.</p>
                             </div>
 
                             <div class="mt-4 share-buttons">
                                 <strong>Share:</strong>
-                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}" target="_blank">Facebook</a>
-                                <a href="https://twitter.com/intent/tweet?text={{ urlencode('How to Market Your Book Effectively') }}&url={{ urlencode(url()->current()) }}" target="_blank">Twitter</a>
-                                <a href="mailto:?subject={{ urlencode('How to Market Your Book Effectively') }}&body={{ urlencode(url()->current()) }}">Email</a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(url()->current()) }}"
+                                    target="_blank">Facebook</a>
+                                <a href="https://twitter.com/intent/tweet?text={{ urlencode('How to Market Your Book Effectively') }}&url={{ urlencode(url()->current()) }}"
+                                    target="_blank">Twitter</a>
+                                <a
+                                    href="mailto:?subject={{ urlencode('How to Market Your Book Effectively') }}&body={{ urlencode(url()->current()) }}">Email</a>
                             </div>
 
                         </div>
@@ -146,10 +156,12 @@
                     <div class="recent-card">
                         <div class="d-flex">
                             <div style="flex:0 0 76px; margin-right:10px;">
-                                <img src="{{ asset('assets/imgs/blog2.avif') }}" alt="Market Your Book" style="width:76px;height:54px;object-fit:cover;border-radius:6px;">
+                                <img src="{{ asset('assets/imgs/blog2.avif') }}" alt="Market Your Book"
+                                    style="width:76px;height:54px;object-fit:cover;border-radius:6px;">
                             </div>
                             <div>
-                                <a href="javascript:;" style="color:#002768;font-weight:700;">How to Market Your Book Effectively</a>
+                                <a href="javascript:;" style="color:#002768;font-weight:700;">How to Market Your Book
+                                    Effectively</a>
                                 <div style="font-size:13px;color:#666;">Nov 06, 2025</div>
                             </div>
                         </div>
@@ -158,10 +170,12 @@
                     <div class="recent-card">
                         <div class="d-flex">
                             <div style="flex:0 0 76px; margin-right:10px;">
-                                <img src="{{ asset('assets/imgs/blog4.jpg') }}" alt="Writing Fiction" style="width:76px;height:54px;object-fit:cover;border-radius:6px;">
+                                <img src="{{ asset('assets/imgs/blog4.jpg') }}" alt="Writing Fiction"
+                                    style="width:76px;height:54px;object-fit:cover;border-radius:6px;">
                             </div>
                             <div>
-                                <a href="javascript:;" style="color:#002768;font-weight:700;">The Art of Writing Engaging Fiction</a>
+                                <a href="javascript:;" style="color:#002768;font-weight:700;">The Art of Writing Engaging
+                                    Fiction</a>
                                 <div style="font-size:13px;color:#666;">Nov 04, 2025</div>
                             </div>
                         </div>
