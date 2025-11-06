@@ -103,7 +103,7 @@
                                     Video Book Trailer
                                 </a>
                             </li>
-                            {{--  <li><a href="/blogs">Blogs </a></li>  --}}
+                            <li><a href="/blogs">Blogs </a></li>
                             <li><a href="faqs">FAQs</a></li>
                             <li><a href="contact-us">Contact</a></li>
                         </ul>
