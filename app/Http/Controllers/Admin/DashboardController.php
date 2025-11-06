@@ -8,7 +8,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        // آپ اپنی logic یہاں رکھیں
         return view('admin.dashboard');
     }
 }

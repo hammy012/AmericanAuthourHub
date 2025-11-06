@@ -4,7 +4,7 @@
             <!-- Left Column -->
             <div class="col-md-5">
                 <div class="footer-box-1">
-                    <h1 style="font-size: 70px;">EBOOK</h1>
+                    <h1 style="font-size: 70px;">American Author Hub</h1>
                     <p>
                         American Author Hub is a content agency that offers you the best of writing, design,
                         publishing, and marketing. We have an expert team of dedicated and committed
@@ -12,7 +12,7 @@
                         with worldwide marketing channels!
                     </p>
                     <ul class="clock-box-links">
-                        <li><a href="tel:+19293799764">(929) 379-9764</a></li>
+                        <li><a href="tel:+123456789">(123) 456-789</a></li>
                         <li><a href="mailto:info@ebook.com"><span>info@ebook.com</span></a></li>
                     </ul>
                     <h6>ABC City 10th Street New York United States</h6>

@@ -237,6 +237,8 @@
         @yield('content')
     </main>
 
+    @include('layouts.contact')
+
     @include('layouts.footer')
 
     <!-- Scripts: load from public/assets (defer optional) -->
