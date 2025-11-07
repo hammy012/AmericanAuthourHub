@@ -35,6 +35,27 @@
                 </a>
             </li>
 
+            <li class="menu-title mt-2">Profile setting</li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.profile-view') }}">
+                    <span class="nav-icon">
+                        <iconify-icon icon="solar:user-circle-bold-duotone"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> Profile </span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.business-setting') }}">
+                    <span class="nav-icon">
+                        <iconify-icon icon="solar:settings-bold-duotone"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> Business Setting </span>
+                </a>
+            </li>
+
+
         </ul>
     </div>
 </div>
