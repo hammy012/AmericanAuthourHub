@@ -16,10 +16,6 @@
         </a>
     </div>
 
-    <!-- Menu Toggle Button (sm-hover) -->
-    <button type="button" class="button-sm-hover" aria-label="Show Full Sidebar">
-        <iconify-icon icon="solar:double-alt-arrow-right-bold-duotone" class="button-sm-hover-icon"></iconify-icon>
-    </button>
 
     <div class="scrollbar" data-simplebar>
         <ul class="navbar-nav" id="navbar-nav">
