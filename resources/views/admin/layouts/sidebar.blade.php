@@ -35,6 +35,28 @@
                 </a>
             </li>
 
+            <li class="menu-title mt-2">Services</li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#sidebarBenefits" data-bs-toggle="collapse" role="button"
+                    aria-expanded="false" aria-controls="sidebarBenefits">
+                    <span class="nav-icon">
+                        <iconify-icon icon="mdi:gift-outline"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> Services </span>
+                </a>
+                <div class="collapse" id="sidebarBenefits">
+                    <ul class="nav sub-navbar-nav">
+                        <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="{{ route('admin.services.create') }}">Add</a>
+                        </li>
+                        <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="{{ route('admin.services.index') }}">List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
             <li class="menu-title mt-2">Profile setting</li>
 
             <li class="nav-item">
