@@ -24,14 +24,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer py-2 bg-light bg-opacity-50">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <span class="text-success">+8.2%</span>
-                                            <span class="text-muted ms-1 fs-12">Last Month</span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
 
@@ -49,15 +41,6 @@
                                             <p class="text-muted mb-0 text-truncate">Total Blogs</p>
                                             <h3 class="text-dark mt-1 mb-0">{{ $totalBlogs }}</h3>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer py-2 bg-light bg-opacity-50">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div>
-                                            <span class="text-danger">-3.5%</span>
-                                            <span class="text-muted ms-1 fs-12">Last Month</span>
-                                        </div>
-                                        <a href="{{ route('admin.blogs.index') }}" class="text-reset fw-semibold fs-12">View More</a>
                                     </div>
                                 </div>
                             </div>
