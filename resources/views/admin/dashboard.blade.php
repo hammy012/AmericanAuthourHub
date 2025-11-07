@@ -105,9 +105,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($recentUsers as $i => $user)
+                                    @foreach ($recentUsers as $i => $user)
                                         <tr>
-                                            <td class="ps-3">{{ $i+1 }}</td>
+                                            <td class="ps-3">{{ $i + 1 }}</td>
                                             <td>{{ $user->name }}</td>
                                             <td>{{ $user->email }}</td>
                                             <td>
@@ -129,7 +129,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <script>document.write(new Date().getFullYear())</script>
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
                         &copy; American Author Hub. Crafted with
                         <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon>
                         <a href="" class="fw-bold footer-text" target="_blank">HashTechmeta</a>
