@@ -38,14 +38,14 @@
             <li class="menu-title mt-2">Services</li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#sidebarBenefits" data-bs-toggle="collapse" role="button"
-                    aria-expanded="false" aria-controls="sidebarBenefits">
+                <a class="nav-link" href="#sidebarServices" data-bs-toggle="collapse" role="button"
+                    aria-expanded="false" aria-controls="sidebarServices">
                     <span class="nav-icon">
-                        <iconify-icon icon="mdi:gift-outline"></iconify-icon>
+                        <iconify-icon icon="solar:handshake-bold-duotone"></iconify-icon>
                     </span>
                     <span class="nav-text"> Services </span>
                 </a>
-                <div class="collapse" id="sidebarBenefits">
+                <div class="collapse" id="sidebarServices">
                     <ul class="nav sub-navbar-nav">
                         <li class="sub-nav-item">
                             <a class="sub-nav-link" href="{{ route('admin.services.create') }}">Add</a>
@@ -56,6 +56,29 @@
                     </ul>
                 </div>
             </li>
+
+            <li class="menu-title mt-2">FAQs</li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#sidebarFaqs" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="sidebarFaqs">
+                    <span class="nav-icon">
+                        <iconify-icon icon="solar:question-circle-bold-duotone"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> FAQs </span>
+                </a>
+                <div class="collapse" id="sidebarFaqs">
+                    <ul class="nav sub-navbar-nav">
+                        <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="{{ route('admin.add-new-faq') }}">Add</a>
+                        </li>
+                        <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="{{ route('admin.faqs.index') }}">List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
 
             <li class="menu-title mt-2">Profile setting</li>
 
