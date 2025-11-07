@@ -126,6 +126,14 @@
                     <span class="nav-text"> Business Setting </span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.business-setting') }}">
+                    <span class="nav-icon">
+                        <iconify-icon icon="solar:settings-bold-duotone"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> Business Setting </span>
+                </a>
+            </li>
 
 
         </ul>
