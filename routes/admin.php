@@ -21,6 +21,6 @@ Route::middleware('auth:admin')->group(function () {
 
     // PROFILE
     Route::get('profile-view', [HomeController::class, 'profile_view'])->name('profile-view');
-    Route::post('profile-update/{id}', [HomeController::class, 'profile_view'])->name('profile-update');
+    Route::post('profile-update/{id}', [HomeController::class, 'profile_update'])->name('profile-update');
 
 });
