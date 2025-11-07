@@ -41,7 +41,7 @@
                 <a class="nav-link" href="#sidebarServices" data-bs-toggle="collapse" role="button"
                     aria-expanded="false" aria-controls="sidebarServices">
                     <span class="nav-icon">
-                        <iconify-icon icon="solar:handshake-bold-duotone"></iconify-icon>
+                        <iconify-icon icon="fa6-solid:handshake"></iconify-icon>
                     </span>
                     <span class="nav-text"> Services </span>
                 </a>
@@ -56,6 +56,32 @@
                     </ul>
                 </div>
             </li>
+
+            {{-- ------------------- BLOGS SECTION ------------------- --}}
+
+            <li class="menu-title mt-2">Blogs</li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#sidebarBlogs" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                    aria-controls="sidebarBlogs">
+                    <span class="nav-icon">
+                        <iconify-icon icon="mdi:blog-outline"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> Blogs </span>
+                </a>
+                <div class="collapse" id="sidebarBlogs">
+                    <ul class="nav sub-navbar-nav">
+                        <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="{{ route('admin.blogs.create') }}">Add</a>
+                        </li>
+                        <li class="sub-nav-item">
+                            <a class="sub-nav-link" href="{{ route('admin.blogs.index') }}">List</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            {{-- ------------------- FAQS SECTION ------------------- --}}
 
             <li class="menu-title mt-2">FAQs</li>
 
@@ -78,6 +104,7 @@
                     </ul>
                 </div>
             </li>
+
 
 
             <li class="menu-title mt-2">Profile setting</li>

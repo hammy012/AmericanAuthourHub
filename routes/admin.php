@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Admin\FaqController;
@@ -31,6 +32,15 @@ Route::middleware('auth:admin')->group(function () {
     Route::get('faqs/{id}/edit', [FaqController::class, 'edit'])->name('faq-edit');       // route('admin.faq-edit', ['id'=>$faq->id])
     Route::post('faqs/{id}/update', [FaqController::class, 'update'])->name('faq-update');
     Route::delete('faqs/{id}', [FaqController::class, 'destroy'])->name('faq-delete');    // route('admin.faq-delete', ['id'=>$faq->id])
+
+    // Blogs CRUD
+    Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
+    Route::get('blogs/create', [BlogController::class, 'create'])->name('blogs.create');
+    Route::post('blogs', [BlogController::class, 'store'])->name('blogs.store');
+    Route::get('blogs/{id}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
+    Route::post('blogs/{id}/update', [BlogController::class, 'update'])->name('blogs.update');
+    Route::delete('blogs/{id}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+
 
 
     // BUSINESS SETTING
