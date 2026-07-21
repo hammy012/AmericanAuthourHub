@@ -8,8 +8,6 @@
 
     <title>@yield('title', 'American Author Hub | Book Writing Company')</title>
     <link rel="icon" type="image/png" href="{{ asset('assets/imgs/logo.png') }}">
-    <!-- Font Awesome (CDN or local) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     {{-- ✅ Primary SEO --}}
     <title>@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')</title>
@@ -93,6 +91,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/christmas.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom-theme.css') }}">
+    <!-- Font Awesome (CDN or local) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
     <link rel="icon" type="image/png" href="{{ asset('assets/imgs/fav.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -303,7 +303,6 @@
     <!-- Professional Brand Preloader -->
     <div id="preloader">
         <div class="spinner-wrapper">
-            <img src="{{ asset('assets/imgs/logo.png') }}" alt="American Author Hub" class="loader-logo">
             <div class="loader-spinner"></div>
         </div>
     </div>
