@@ -298,9 +298,25 @@
     <!-- Head: add Swiper CSS (place in <head>) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-</head>
-
 <body>
+
+    <!-- Professional Brand Preloader -->
+    <div id="preloader">
+        <div class="spinner-wrapper">
+            <img src="{{ asset('assets/imgs/logo.png') }}" alt="American Author Hub" class="loader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('preloader');
+            if (loader) {
+                loader.classList.add('fade-out');
+                setTimeout(() => loader.style.display = 'none', 500);
+            }
+        });
+    </script>
 
     @include('layouts.navbar')
 

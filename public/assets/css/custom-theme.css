@@ -1,6 +1,6 @@
 /* ==========================================================================
-   AMERICAN AUTHOR HUB - PREMIUM DESIGN SYSTEM & THEME OVERRIDES
-   Exact 2-Color Gradient (#002768 to #9F0B07) | Clean White Theme
+   AMERICAN AUTHOR HUB - PREMIUM DESIGN SYSTEM & UI/UX OVERHAUL
+   Exact 2-Color Gradient (#002768 to #9F0B07) | Clean White Theme | Fixed Dropdown
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
@@ -43,6 +43,53 @@
     --radius-pill: 9999px;
 }
 
+/* Preloader Styling */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner-wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.loader-logo {
+    height: 60px;
+    margin-bottom: 20px;
+    animation: pulseGlow 1.5s ease-in-out infinite;
+}
+
+.loader-spinner {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    border: 3px solid rgba(0, 39, 104, 0.1);
+    border-top-color: #9F0B07;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.85; }
+}
+
 /* Global Resets */
 html {
     scroll-behavior: smooth;
@@ -61,6 +108,141 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text-dark);
     font-weight: 700;
     letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   TOOLBAR & NAVBAR OVERRIDES (FIXED ALIGNMENT & DROPDOWN)
+   ========================================================================== */
+.top-bar-gradient {
+    height: 4px;
+    background: linear-gradient(90deg, #002768 0%, #9F0B07 100%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+}
+
+header.sticky {
+    position: sticky !important;
+    top: 4px !important;
+    z-index: 1050 !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: 0 4px 20px rgba(0, 39, 104, 0.06) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+
+.header-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 0 !important;
+}
+
+.header-logo-box {
+    flex-shrink: 0 !important;
+}
+
+.header-logo-box img {
+    height: 52px !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+
+.header-nav-menu {
+    display: flex !important;
+    align-items: center !important;
+    gap: 32px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.header-nav-menu > li > a {
+    font-family: var(--font-heading) !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    text-decoration: none !important;
+    position: relative !important;
+    padding: 8px 0 !important;
+    transition: color 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+}
+
+.header-nav-menu > li > a:hover {
+    color: var(--accent-red) !important;
+}
+
+.header-nav-menu > li > a::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: var(--gradient-brand) !important;
+    transition: width 0.3s ease !important;
+}
+
+.header-nav-menu > li > a:hover::after {
+    width: 100% !important;
+}
+
+/* Services Dropdown Alignment Fix */
+.header-nav-menu li.dd-link {
+    position: relative !important;
+}
+
+.header-nav-menu li.dd-link .drop-down-box {
+    position: absolute !important;
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(12px) !important;
+    width: 680px !important;
+    background: #ffffff !important;
+    border-radius: var(--radius-md) !important;
+    box-shadow: 0 20px 40px rgba(0, 39, 104, 0.12) !important;
+    border: 1px solid rgba(226, 232, 240, 0.9) !important;
+    padding: 24px !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    z-index: 1200 !important;
+}
+
+.header-nav-menu li.dd-link:hover .drop-down-box {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+.menu_box_list ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.menu_box_list ul li {
+    margin-bottom: 8px !important;
+}
+
+.menu_box_list ul li a {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #334155 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.menu_box_list ul li a:hover {
+    color: var(--accent-red) !important;
 }
 
 /* ==========================================================================
@@ -164,7 +346,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   CARDS & ELEVATION (WHITE THEME HIGH CONTRAST)
+   CARDS & ELEVATION
    ========================================================================== */
 .v2-card {
     background: var(--bg-white) !important;
@@ -264,28 +446,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
 }
 
-/* Navbar Link Underline Animation */
-.main-menu li a {
-    position: relative;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.main-menu li a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--gradient-brand);
-    transition: width 0.3s ease;
-}
-
-.main-menu li a:hover::after {
-    width: 100%;
-}
-
 /* Social Icon Pill Button */
 .social-pill-btn {
     width: 42px;
@@ -304,4 +464,19 @@ h1, h2, h3, h4, h5, h6 {
 .social-pill-btn:hover {
     transform: translateY(-4px) scale(1.08);
     box-shadow: 0 8px 22px rgba(159, 11, 7, 0.3);
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+    .header-nav-menu {
+        display: none !important;
+    }
+    .header-nav-menu li.dd-link .drop-down-box {
+        width: 100% !important;
+        position: static !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none !important;
+    }
 }
