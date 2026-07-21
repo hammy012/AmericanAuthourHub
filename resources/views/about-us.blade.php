@@ -5,23 +5,23 @@
 @section('content')
 
 
-    <section class="about-us" style="background: url('{{ asset('assets/imgs/main-back.png') }}');">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+    <section class="about-us py-5 section-white" style="background: url('{{ asset('assets/imgs/main-back.png') }}') center/cover no-repeat;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="banner-head">
-                        <span>About American Author Hub</span>
-                        <h1 class="text-light">Discover the Power of Exceptional Writing</h1>
-                        <p>
+                        <span class="gradient-badge mb-3"><i class="fa-solid fa-building me-1"></i> About American Author Hub</span>
+                        <h1 class="text-light fw-bold display-5">Discover the Power of <span class="gradient-text-red">Exceptional Writing</span></h1>
+                        <p class="text-light opacity-90 fs-5 mt-3">
                             American Author Hub was founded to give writers and publishers a seamless, collaborative platform 
                             where creativity meets professionalism. Our mission is simple: to provide high-quality content creation 
                             services that connect authors with their readers and bring their ideas to life effortlessly.
                         </p>
-                        <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Let’s Discuss Your Project</a>
+                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary btn-lg mt-3"><i class="fa-solid fa-paper-plane me-2"></i> Let’s Discuss Your Project</a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="{{ asset('assets/imgs/about.webp') }}" alt="About American Author Hub">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="{{ asset('assets/imgs/about.webp') }}" alt="About American Author Hub" class="shadow-lg rounded-4 w-100">
                 </div>
             </div>
         </div>

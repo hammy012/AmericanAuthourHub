@@ -3,23 +3,22 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-<section class="pricing-section">
-    <div class="container">
+<section class="pricing-section py-5 section-white">
+    <div class="container py-4">
 
-        <div class="pricing-header">
-            <span>OUR PACKAGES</span>
-            <h2>Choose Your Publishing Plan</h2>
-            <p>
-                Flexible publishing solutions designed for aspiring and
-                professional authors.
+        <div class="pricing-header text-center mb-5" data-aos="fade-up">
+            <span class="gradient-badge mb-2"><i class="fa-solid fa-tags text-danger me-1"></i> OUR PACKAGES</span>
+            <h2 class="fw-bold display-6 mt-2">Choose Your <span class="gradient-text">Publishing Plan</span></h2>
+            <p class="text-muted fs-6">
+                Flexible publishing solutions designed for aspiring and professional authors.
             </p>
         </div>
 
         <div class="row align-items-stretch">
 
             <!-- BASIC -->
-            <div class="col-lg-4 mb-4">
-                <div class="pricing-card">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-card custom-card">
 
                     <div class="plan-icon">
                         <i class="fas fa-pen-nib"></i>
@@ -45,8 +44,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             </div>
 
             <!-- STANDARD -->
-            <div class="col-lg-4 mb-4">
-                <div class="pricing-card featured">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="250">
+                <div class="pricing-card featured custom-card">
 
                     <div class="popular-tag">
                         MOST POPULAR
@@ -80,8 +79,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             </div>
 
             <!-- PREMIUM -->
-            <div class="col-lg-4 mb-4">
-                <div class="pricing-card">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="pricing-card custom-card">
 
                     <div class="plan-icon">
                         <i class="fas fa-crown"></i>

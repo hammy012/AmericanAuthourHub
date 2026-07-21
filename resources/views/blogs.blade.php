@@ -109,36 +109,37 @@
     </style>
 
 
-    <section class="service-banner"
+    <section class="service-banner py-5 section-white"
         style="background: url('{{ asset('assets/imgs/main-back.png') }}') no-repeat center center/cover;">
-        <div class="container">
-            <div class="banner-head">
-                <span style="font-weight:700;">Our Blogs</span>
-                <h1>Inspiration, Insights & Expert Tips</h1>
-                <p style="color:#fff;">
+        <div class="container py-5">
+            <div class="banner-head" data-aos="fade-right">
+                <span class="gradient-badge mb-3"><i class="fa-solid fa-newspaper me-1"></i> Our Blogs</span>
+                <h1 class="text-light fw-bold display-4">Inspiration, Insights & <span class="gradient-text-red">Expert Tips</span></h1>
+                <p class="text-light opacity-90 fs-5 mt-3">
                     Discover the latest from our team — expert marketing advice, success stories, publishing insights, 
                     and creative ideas to help authors thrive. Stay informed and motivated.
                 </p>
-                <a href="javascript:;" class="project-btn popup-btn">Explore Blogs</a>
+                <a href="#posts" class="btn-gradient-primary btn-lg mt-3"><i class="fa-solid fa-book-open me-2"></i> Explore Blogs</a>
             </div>
         </div>
     </section>
 
 
 
-    <section class="blog-sec">
-        <div class="container">
+    <section class="blog-sec py-5 section-white" id="posts">
+        <div class="container py-4">
     
-            <div class="row mb-4">
+            <div class="row mb-5" data-aos="fade-up">
                 <div class="col-md-8">
-                    <h2 style="color:#9F0B07; font-size: 36px;">Latest Posts</h2>
-                    <p style="color:#333;" class="mt-3">Discover articles on book promotion, writing tips, publishing and author-career advice.</p>
+                    <span class="gradient-badge mb-2"><i class="fa-solid fa-rss text-danger me-1"></i> Latest Articles</span>
+                    <h2 class="fw-bold display-6 mt-2">Discover Our <span class="gradient-text">Latest Posts</span></h2>
+                    <p class="text-muted fs-6">Discover articles on book promotion, writing tips, publishing and author-career advice.</p>
                 </div>
             </div>
     
             <div class="blog-grid">
-                @foreach ($blogs as $b)
-                    <article class="blog-card">
+                @foreach ($blogs as $index => $b)
+                    <article class="blog-card custom-card" data-aos="fade-up" data-aos-delay="{{ 100 * (($index % 3) + 1) }}">
                         @php
                             // thumbnail fallback
                             $thumb = $b->thumbnail 
@@ -148,17 +149,17 @@
     
                         <img src="{{ asset($thumb) }}" alt="{{ $b->title }}" class="card-img">
                         <div class="card-body">
-                            <div class="meta">{{ $b->date ? $b->date->format('F d, Y') : ($b->created_at->format('F d, Y')) }} • {{ config('app.name') }} Team</div>
+                            <div class="meta text-muted small mb-2"><i class="fa-regular fa-calendar me-1"></i> {{ $b->date ? $b->date->format('F d, Y') : ($b->created_at->format('F d, Y')) }}</div>
     
-                            <h3>{{ $b->title }}</h3>
-                            <p class="excerpt">{{ \Illuminate\Support\Str::limit(strip_tags($b->description), 120) }}</p>
-                            <a href="{{ route('blog', $b->slug) }}" class="read-more">Read More</a>
+                            <h3 class="fw-bold text-dark fs-5 mb-2">{{ $b->title }}</h3>
+                            <p class="excerpt text-muted small mb-3">{{ \Illuminate\Support\Str::limit(strip_tags($b->description), 120) }}</p>
+                            <a href="{{ route('blog', $b->slug) }}" class="btn-gradient-primary btn-sm"><i class="fa-solid fa-arrow-right me-1"></i> Read More</a>
                         </div>
                     </article>
                 @endforeach
             </div>
     
-            <div class="d-flex justify-content-center mt-4">
+            <div class="d-flex justify-content-center mt-5">
                 {{ $blogs->links('pagination::bootstrap-4') }}
             </div>
         </div>

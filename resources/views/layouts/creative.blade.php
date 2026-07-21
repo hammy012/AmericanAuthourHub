@@ -5,7 +5,7 @@
 
 .meta-creative-sec{
     padding:90px 0;
-    background:linear-gradient(135deg,#9F0B07 0%, #5c0503 100%);
+    background: var(--gradient-fusion);
     position:relative;
     overflow:hidden;
 }
@@ -208,7 +208,7 @@
 
 </style>
 
-<section class="meta-creative-sec">
+<section class="meta-creative-sec" data-aos="fade-up">
     <div class="container">
 
         <div class="banner-head">

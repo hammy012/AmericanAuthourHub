@@ -12,6 +12,7 @@
     }
 </style>
 
+<div class="top-bar-gradient"></div>
 <header class="sticky">
     <div class="main-header">
         <div class="container">
@@ -85,13 +86,8 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <ul class="cta-menu-links">
-                        <!--<li>-->
-                        <!--        <a href="tel:+13463476046">-->
-                        <!--            +1 (346) 347-6046-->
-                        <!--        </a>-->
-                        <!--    </li>-->
-                        <li><a href="{{ route('contact-us') }}" class="project-btn h-start">Contact</a>
+                    <ul class="cta-menu-links d-flex justify-content-end align-items-center">
+                        <li><a href="{{ route('contact-us') }}" class="btn-gradient-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
                         </li>
                     </ul>
                 </div>

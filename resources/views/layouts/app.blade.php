@@ -82,6 +82,9 @@
     {{-- SweetAlert2 CDN --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS from public/assets -->
     <link rel="stylesheet" href="{{ asset('assets/css/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
@@ -89,6 +92,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/christmas.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-theme.css') }}">
 
     <link rel="icon" type="image/png" href="{{ asset('assets/imgs/fav.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -552,6 +556,21 @@
         });
     
     })();
+    </script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true,
+                    offset: 50,
+                    easing: 'ease-out-cubic'
+                });
+            }
+        });
     </script>
 
     @stack('scripts')

@@ -43,12 +43,12 @@
         }
     </style>
     
-    <section class="testi-sec">
+    <section class="testi-sec py-5 section-white" data-aos="fade-up">
         <div class="container">
-            <div class="banner-head">
-                <span>Testimonials</span>
-                <h2>Why Writers Choose American Author Hub</h2>
-                <p class="testi-sub">Hear from real authors and publishers who trusted us with their writing, editing, and publishing journeys.</p>
+            <div class="banner-head text-center">
+                <span class="gradient-badge mb-2"><i class="fa-solid fa-heart text-danger me-1"></i> Author Testimonials</span>
+                <h2 class="fw-bold display-6 mt-2">Why Writers Choose <span class="gradient-text">American Author Hub</span></h2>
+                <p class="testi-sub text-muted">Hear from real authors and publishers who trusted us with their writing, editing, and publishing journeys.</p>
             </div>
     
             @php

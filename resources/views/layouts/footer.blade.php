@@ -1,52 +1,39 @@
 <footer>
-    <div class="container">
+    <div class="container py-5">
         <div class="row">
             <!-- Left Column -->
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right">
                 <div class="footer-box-1">
                     <h1 style="font-size: 70px;">
-                        <img src="{{ asset('assets/imgs/logo.png') }}" alt=""
-                            style="width: 150px; margin-bottom: -60px;">
+                        <img src="{{ asset('assets/imgs/logo.png') }}" alt="American Author Hub"
+                            style="width: 160px; margin-bottom: -40px;">
                     </h1>
-                    <p>
-                        American Author Hub is a content agency that offers you the best of writing, design,
-                        publishing, and marketing. We have an expert team of dedicated and committed
-                        professionals to take on any project with our instant solutions for your books
-                        with worldwide marketing channels!
+                    <p class="mt-3 text-muted">
+                        American Author Hub is a premium content agency offering expert writing, design,
+                        publishing, and marketing solutions with worldwide distribution channels.
                     </p>
-                    <!--<ul class="clock-box-links">-->
-                    <!--    <li><a href="tel:+13463476046">-->
-                    <!--                +1 (346) 347-6046-->
-                    <!--            </a></li>-->
-                    <!--    <li><a href="mailto:info@americanauthorhub.com" target="_blank"><span>info@americanauthorhub.com</span></a></li>-->
-                    <!--</ul>-->
-                    <h6>
-                        <i class="fa-solid fa-location" aria-hidden="true"></i>
+                    <h6 class="mt-3">
+                        <i class="fa-solid fa-location-dot me-2 text-danger" aria-hidden="true"></i>
                         <a href="https://www.google.com/maps/search/?api=1&query=15155+Richmond+Ave+Houston+TX+77082" 
-                           target="_blank">
+                           target="_blank" class="fw-semibold">
                            15155 Richmond Ave, Houston, TX 77082
                         </a>
                     </h6>
-                    <div class="social-links">
-                        <h5>Social Links</h5>
-                        <ul class="social-links-list">
+                    <div class="social-links mt-4">
+                        <h5 class="fw-bold gradient-text">Follow Us</h5>
+                        <ul class="social-links-list d-flex gap-3 list-unstyled mt-2">
                             <li>
-                                <a href="https://www.facebook.com/profile.php?id=61583690636910" target="_blank">
+                                <a href="https://www.facebook.com/profile.php?id=61583690636910" target="_blank" class="social-btn">
                                     <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <!--<li>-->
-                            <!--    <a href="https://www.linkedin.com/" target="_blank">-->
-                            <!--        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>-->
-                            <!--    </a>-->
-                            <!--</li>-->
                             <li>
-                                <a href="https://www.instagram.com/americanauthorhub/" target="_blank">
+                                <a href="https://www.instagram.com/americanauthorhub/" target="_blank" class="social-btn">
                                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/@Americanauthorhub" target="_blank">
+                                <a href="https://www.youtube.com/@Americanauthorhub" target="_blank" class="social-btn">
                                     <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -56,10 +43,10 @@
             </div>
 
             <!-- Middle Column -->
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left">
                 <div class="footer-box-2">
-                    <h4>Services</h4>
-                    <ul class="services-links">
+                    <h4 class="fw-bold gradient-text mb-4">Our Services</h4>
+                    <ul class="services-links list-unstyled">
                         @php
                             use App\Models\Service;
                             use Illuminate\Support\Str;

@@ -128,50 +128,48 @@
     </style>
 
 
-    <section class="service-banner"
+    <section class="service-banner py-5 section-white"
         style="background: url('{{ asset('assets/imgs/main-back.png') }}') no-repeat center center/cover;">
-        <div class="container">
-            <div class="banner-head">
-                <span>Have Questions About Our eBook Services?</span>
-                <h1>Everything You Need to Know About Our Book Promotion</h1>
-                <p>Get answers to the most common questions authors ask before starting their book marketing journey.
-                    <br>
+        <div class="container py-5">
+            <div class="banner-head" data-aos="fade-right">
+                <span class="gradient-badge mb-3"><i class="fa-solid fa-circle-question me-1"></i> FAQ Center</span>
+                <h1 class="text-light fw-bold display-4">Everything You Need to Know About Our <span class="gradient-text-red">Book Promotion</span></h1>
+                <p class="text-light opacity-90 fs-5 mt-3">Get answers to the most common questions authors ask before starting their book marketing journey.
                     From pricing to publishing support — we’ve covered it all to help you make confident decisions.
                 </p>
 
-                <a href="javascript:;" class="project-btn popup-btn">Explore FAQs</a>
+                <a href="#faqs" class="btn-gradient-primary btn-lg mt-3"><i class="fa-solid fa-comments me-2"></i> Explore FAQs</a>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION — paste this right AFTER the first </section> -->
-    <section class="faq-sec" style="background: #f7f9fc;">
-        <div class="container">
+    <!-- FAQ SECTION -->
+    <section class="faq-sec py-5 section-white" id="faqs">
+        <div class="container py-4">
             <div class="row align-items-start">
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-right">
                     <div class="banner-head">
-                        <span style="color:#002768;font-weight:700;">FAQs</span>
-                        <h1 style="color:#9F0B07;">Frequently Asked Questions</h1>
-                        <p style="color:#333;">
+                        <span class="gradient-badge mb-2"><i class="fa-solid fa-circle-info me-1"></i> FAQs</span>
+                        <h2 class="fw-bold display-6 mt-2 mb-3">Frequently Asked <span class="gradient-text">Questions</span></h2>
+                        <p class="text-muted fs-6 leading-relaxed">
                             Here you will find answers to common questions about our services, processes, and delivery.
-                            If your question is not listed, please get in touch via the “Let’s Discuss your Project” button.
+                            If your question is not listed, please get in touch via the button below.
                         </p>
-                        <a href="{{ route('contact-us') }}" class="project-btn popup-btn"
-                            style="background:#9F0B07;border-color:#9F0B07;color:#fff;">Let’s Discuss your Project</a>
+                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary mt-3"><i class="fa-solid fa-paper-plane me-2"></i> Let’s Discuss Your Project</a>
                     </div>
                 </div>
 
-                <div class="col-md-7">
-                    <div class="faq-box">
+                <div class="col-md-7" data-aos="fade-left" data-aos-delay="200">
+                    <div class="faq-box custom-card p-4">
                         <ul class="faq-accordion">
                             @foreach ($faqs as $index => $faq)
-                                <li class="accordion-item">
+                                <li class="accordion-item" data-aos="fade-up" data-aos-delay="{{ 50 * ($index + 1) }}">
                                     <button class="accordion-btn" aria-expanded="false" aria-controls="faq{{ $index + 1 }}">
-                                        <span class="q">{{ $faq['question'] }}</span>
+                                        <span class="q fw-semibold text-dark">{{ $faq['question'] }}</span>
                                         <span class="toggle"></span>
                                     </button>
                                     <div id="faq{{ $index + 1 }}" class="accordion-content">
-                                        <p>{!! $faq['answer'] !!}</p>
+                                        <p class="text-muted leading-relaxed mb-0">{!! $faq['answer'] !!}</p>
                                     </div>
                                 </li>
                             @endforeach

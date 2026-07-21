@@ -89,18 +89,20 @@
                 <div class="swiper-slide">
                     <div class="container">
                         <div class="row align-items-center">
-                            <div class="col-md-7">
+                            <div class="col-md-7" data-aos="fade-right" data-aos-duration="1000">
                                 <div class="banner-head">
-                                    <h1 class="text-light">Transform Your Ideas Into Captivating Books</h1>
-                                    <p>Let our professional writers craft your story with creativity and precision — where every word reflects your unique vision.</p>
-                                    <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Start Your Project</a>
-                                    <!--<a href="tel:+13463476046" class="project-btn phone-btn h-phone">+1 (346) 347-6046</a>-->
-                                    
+                                    <div class="gradient-badge mb-3"><i class="fa-solid fa-crown me-1"></i> Premier Book Writing Agency</div>
+                                    <h1 class="text-light fw-bold display-4">Transform Your Ideas Into <span class="gradient-text-red">Captivating Books</span></h1>
+                                    <p class="fs-5 text-light opacity-90">Let our professional writers craft your story with creativity and precision — where every word reflects your unique vision.</p>
+                                    <div class="d-flex gap-3 flex-wrap mt-4">
+                                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary btn-lg"><i class="fa-solid fa-rocket"></i> Start Your Project</a>
+                                        <a href="{{ route('about-us') }}" class="btn-gradient-outline btn-lg"><i class="fa-solid fa-circle-info"></i> Learn More</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-md-5" data-aos="zoom-in" data-aos-duration="1000">
                                 <div class="banner-img">
-                                    <img src="{{ asset('assets/imgs/main.webp') }}" alt="Book Writing" />
+                                    <img src="{{ asset('assets/imgs/main.webp') }}" alt="Book Writing" class="shadow-lg rounded-4" />
                                 </div>
                             </div>
                         </div>
@@ -113,15 +115,17 @@
                         <div class="row align-items-center">
                             <div class="col-md-7">
                                 <div class="banner-head">
-                                    <h1 class="text-light">Ghostwriting That Brings Your Imagination To Life</h1>
-                                    <p>From concept to creation — our ghostwriters breathe life into your stories with passion, emotion, and clarity.</p>
-                                    <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Bring Your Story Alive</a>
-                                    <!--<a href="tel:+13463476046" class="project-btn phone-btn h-phone">+1 (346) 347-6046</a>-->
+                                    <div class="gradient-badge mb-3"><i class="fa-solid fa-feather me-1"></i> Expert Ghostwriting</div>
+                                    <h1 class="text-light fw-bold display-4">Ghostwriting That Brings Your <span class="gradient-text-red">Imagination To Life</span></h1>
+                                    <p class="fs-5 text-light opacity-90">From concept to creation — our ghostwriters breathe life into your stories with passion, emotion, and clarity.</p>
+                                    <div class="d-flex gap-3 flex-wrap mt-4">
+                                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary btn-lg"><i class="fa-solid fa-pen-nib"></i> Bring Your Story Alive</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="banner-img mt-5">
-                                    <img src="{{ asset('assets/imgs/booknew1.png') }}" alt="Ghostwriting" />
+                                    <img src="{{ asset('assets/imgs/booknew1.png') }}" alt="Ghostwriting" class="shadow-lg rounded-4" />
                                 </div>
                             </div>
                         </div>
@@ -134,15 +138,17 @@
                         <div class="row align-items-center">
                             <div class="col-md-7">
                                 <div class="banner-head">
-                                    <h1 class="text-light">Refine. Publish. Inspire — Your Book Awaits</h1>
-                                    <p>Collaborate with our editorial experts to polish your manuscript and transform it into a published success story.</p>
-                                    <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Let’s Get Started</a>
-                                    <!--<a href="tel:+13463476046" class="project-btn phone-btn h-phone">+1 (346) 347-6046</a>-->
+                                    <div class="gradient-badge mb-3"><i class="fa-solid fa-book-open me-1"></i> Publishing Excellence</div>
+                                    <h1 class="text-light fw-bold display-4">Refine. Publish. Inspire — <span class="gradient-text-red">Your Book Awaits</span></h1>
+                                    <p class="fs-5 text-light opacity-90">Collaborate with our editorial experts to polish your manuscript and transform it into a published success story.</p>
+                                    <div class="d-flex gap-3 flex-wrap mt-4">
+                                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary btn-lg"><i class="fa-solid fa-check-double"></i> Let’s Get Started</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-5">
                                 <div class="banner-img mt-5">
-                                    <img src="{{ asset('assets/imgs/booknew3.png') }}" style="width: 80% !important;" alt="Publishing" />
+                                    <img src="{{ asset('assets/imgs/booknew3.png') }}" style="width: 80% !important;" alt="Publishing" class="shadow-lg rounded-4" />
                                 </div>
                             </div>
                         </div>
@@ -152,31 +158,28 @@
             </div>
     
             <!-- Controls -->
-            <!--<div class="swiper-button-next"></div>-->
-            <!--<div class="swiper-button-prev"></div>-->
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
 
-    <section class="what-we-do-sec mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+    <section class="what-we-do-sec py-5 section-white">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
                     <div class="banner-head">
-                        <span>What We Do</span>
-                        <h2>Turning Your Ideas Into Published Masterpieces</h2>
-                        <p>No matter what genre or concept you have in mind, our expert writers and editors bring your story
+                        <span class="gradient-badge mb-2"><i class="fa-solid fa-layer-group"></i> What We Do</span>
+                        <h2 class="fw-bold display-6 mt-2 mb-3">Turning Your Ideas Into <span class="gradient-text">Published Masterpieces</span></h2>
+                        <p class="text-muted fs-6 leading-relaxed">No matter what genre or concept you have in mind, our expert writers and editors bring your story
                             to life with creativity, structure, and precision. From fiction to non-fiction, autobiographies
                             to business guides — we write, edit, design, and publish your book with complete professionalism
                             at an affordable price. Let our team of skilled book writers turn your dreams into reality.
                         </p>
-                        <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Let’s Discuss Your Project</a>
-                        <!--<a href="tel:+13463476046" class="project-btn phone-btn h-phone-2">+1 (346) 347-6046</a>-->
+                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary mt-3"><i class="fa-solid fa-comments"></i> Let’s Discuss Your Project</a>
                     </div>
                 </div>
     
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
                     <ul class="what-we-slider">
                         <li>
                             <div class="what-we-do-main-box">
@@ -286,26 +289,26 @@
     </section>
 
 
-    <section class="choose-sec">
-        <div class="container-fluid">
-            <div class="row desktop-margin">
-                <div class="col-md-2 offset-1">
+    <section class="choose-sec py-5 section-light">
+        <div class="container-fluid py-4">
+            <div class="row desktop-margin align-items-center">
+                <div class="col-md-2 offset-1" data-aos="fade-up" data-aos-delay="100">
                     <div class="choose-sec-img">
-                        <img loading="lazy" src="{{ asset('assets/imgs/b1.webp') }}" alt="Book Writer 1">
+                        <img loading="lazy" src="{{ asset('assets/imgs/b1.webp') }}" alt="Book Writer 1" class="shadow-lg rounded-4">
                     </div>
                 </div>
     
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="fade-up" data-aos-delay="250">
                     <div class="choose-sec-img">
-                        <img loading="lazy" src="{{ asset('assets/imgs/b2.webp') }}" alt="Book Writer 2">
+                        <img loading="lazy" src="{{ asset('assets/imgs/b2.webp') }}" alt="Book Writer 2" class="shadow-lg rounded-4">
                     </div>
                 </div>
     
-                <div class="col-md-4">
+                <div class="col-md-5 ms-md-4" data-aos="fade-left" data-aos-delay="300">
                     <div class="banner-head">
-                        <span>Why Choose American Author Hub</span>
-                        <h2>Step Into a World of Literary Excellence</h2>
-                        <p>
+                        <span class="gradient-badge mb-2"><i class="fa-solid fa-star me-1"></i> Why Choose American Author Hub</span>
+                        <h2 class="fw-bold display-6 mt-2 mb-3">Step Into a World of <span class="gradient-text">Literary Excellence</span></h2>
+                        <p class="text-muted fs-6 leading-relaxed">
                             With over 10,000 satisfied clients across the United States, American Author Hub has earned a reputation
                             for delivering premium-quality, affordable, and creative book writing services.  
                             We take pride in understanding every author’s unique voice and vision — crafting stories that
@@ -320,14 +323,13 @@
     </section>
     
 
-    <section class="services-sec">
-        <div class="banner-head">
-            <h2>Explore Our Wide Range of Writing Services</h2>
-            <p>
+    <section class="services-sec py-5 section-white">
+        <div class="container text-center mb-5" data-aos="fade-up">
+            <span class="gradient-badge mb-2"><i class="fa-solid fa-wand-magic-sparkles me-1"></i> Comprehensive Solutions</span>
+            <h2 class="fw-bold display-6 mt-2">Explore Our Wide Range of <span class="gradient-text">Writing Services</span></h2>
+            <p class="text-muted mx-auto fs-6" style="max-width: 800px;">
                 At American Author Hub, diversity defines our strength. We house a team of specialized writers across
                 every literary and professional genre — ensuring you always find the right expert for your story or project.
-                Whether you’re an aspiring novelist, a speaker, or a business visionary, our tailored writing services are
-                designed to help your ideas grow, connect, and leave a lasting impact.
             </p>
         </div>
     
@@ -467,77 +469,61 @@
                         </div>
                     </div>
                 </li>
-            </ul>
-        </div>
-    </section>
-
-
-    <section class="tier-sec">
-        <div class="container-fluid">
+    <section class="tier-sec py-5 section-light">
+        <div class="container-fluid py-4">
             <div class="row align-items-center">
-                <div class="col-md-5">
+                <div class="col-md-5" data-aos="fade-right">
                     <div class="tier-sec-img">
-                        <img loading="lazy" src="{{ asset('assets/imgs/ban1.webp') }}" alt="Professional Writers">
+                        <img loading="lazy" src="{{ asset('assets/imgs/ban1.webp') }}" alt="Professional Writers" class="shadow-lg rounded-4">
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="tier-box active">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tier-box active custom-card p-4">
                         <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle" alt="Tier Icon">
-                        <span>500</span>
-                        <h4>Top-Rated, US-Based Writers</h4>
-                        <p>
-                            Each of our writers undergoes a thorough selection, testing, and training process before joining 
-                            our professional book writing team. We take pride in having some of the most skilled and 
-                            celebrated authors from across the United States.
+                        <span class="gradient-text fw-bold display-5">500+</span>
+                        <h4 class="fw-bold mt-2">Top-Rated US Writers</h4>
+                        <p class="text-muted">
+                            Each of our writers undergoes a thorough selection and testing process before joining 
+                            our team of celebrated authors across the United States.
                         </p>
-                        <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Let’s Discuss Your Project</a>
+                        <a href="{{ route('contact-us') }}" class="btn-gradient-primary btn-sm mt-2"><i class="fa-solid fa-comments"></i> Start Project</a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="tier-box">
+                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tier-box custom-card p-4">
                         <img loading="lazy" src="{{ asset('assets/imgs/tier.png') }}" class="tier-circle" alt="Tier Icon">
-                        <span>2,000</span>
-                        <h4>Thousands of Happy Clients</h4>
-                        <p>
+                        <span class="gradient-text-red fw-bold display-5">2,000+</span>
+                        <h4 class="fw-bold mt-2">Happy Book Clients</h4>
+                        <p class="text-muted">
                             With over 2,000 satisfied customers, our track record speaks for itself. 
-                            Our exceptional writing quality, customer support, and dedication to excellence 
-                            have earned us lasting relationships and an outstanding reputation in the industry.
+                            Our exceptional quality and customer support deliver lasting results.
                         </p>
-                        <a href="{{ route('contact-us') }}" class="project-btn popup-btn">Let’s Discuss Your Project</a>
+                        <a href="{{ route('contact-us') }}" class="btn-gradient-secondary btn-sm mt-2"><i class="fa-solid fa-paper-plane"></i> Discuss Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    
-    
-    
-
     @include('layouts.creative')
 
     @include('layouts.reviews')
 
-
-    <section class="cta-se-2">
-        <div class="container">
+    <section class="cta-se-2 py-5 text-white" style="background: var(--gradient-fusion);" data-aos="zoom-in">
+        <div class="container py-4 text-center">
             <div class="cta-head-2">
-                <span>100% Original • Authentic • Professionally Written</span>
-                <h3>
+                <span class="badge bg-white text-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-3"><i class="fa-solid fa-shield-halved text-danger me-1"></i> 100% Original • Authentic • Professional</span>
+                <h3 class="display-5 fw-bold text-white mb-4">
                     Turn Your Dream Into a Bestseller <br>
-                    with American Author Hub’s Expert Writing Services
+                    with American Author Hub’s Expert Team
                 </h3>
-                <ul class="cta-btn">
-                    <!--<li>-->
-                    <!--    <a href="tel:+13463476046">+1 (346) 347-6046</a>-->
-                    <!--    &nbsp;-->
-                    <!--</li>-->
-                    <li>
-                        <a href="mailto:info@americanauthorhub.com">
-                            <span>info@americanauthorhub.com</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+                    <a href="{{ route('contact-us') }}" class="btn btn-light btn-lg rounded-pill fw-bold text-dark px-4 py-3 shadow-lg"><i class="fa-solid fa-paper-plane text-danger me-2"></i> Get Started Today</a>
+                    <a href="mailto:info@americanauthorhub.com" class="btn btn-outline-light btn-lg rounded-pill fw-bold px-4 py-3"><i class="fa-solid fa-envelope me-2"></i> info@americanauthorhub.com</a>
+                </div>
+            </div>
+        </div>
+    </section>      </ul>
             </div>
         </div>
     </section>
