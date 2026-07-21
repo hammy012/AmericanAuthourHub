@@ -16,11 +16,6 @@
         </a>
     </div>
 
-    <!-- Menu Toggle Button (sm-hover) -->
-    <button type="button" class="button-sm-hover" aria-label="Show Full Sidebar">
-        <iconify-icon icon="solar:double-alt-arrow-right-bold-duotone" class="button-sm-hover-icon"></iconify-icon>
-    </button>
-
     <div class="scrollbar" data-simplebar>
         <ul class="navbar-nav" id="navbar-nav">
 
@@ -103,6 +98,17 @@
                         </li>
                     </ul>
                 </div>
+            </li>
+            
+            <li class="menu-title mt-2">Contacts</li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('admin.contact-list') }}">
+                    <span class="nav-icon">
+                        <iconify-icon icon="solar:call-chat-rounded-bold-duotone"></iconify-icon>
+                    </span>
+                    <span class="nav-text"> Contact </span>
+                </a>
             </li>
 
 

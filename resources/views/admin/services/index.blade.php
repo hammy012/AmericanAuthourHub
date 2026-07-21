@@ -36,13 +36,13 @@
                                         <td>{{ Str::limit($service->short_desc, 50) }}</td>
                                         <td>
                                             @if ($service->image)
-                                                <img src="{{ asset('storage/' . $service->image) }}" alt="img"
+                                                <img src="{{ asset($service->image) }}" alt="img"
                                                     style="height:50px;">
                                             @endif
                                         </td>
                                         <td>
                                             @if ($service->icon_image)
-                                                <img src="{{ asset('storage/' . $service->icon_image) }}" alt="icon"
+                                                <img src="{{ asset($service->icon_image) }}" alt="icon"
                                                     style="height:40px;">
                                             @endif
                                         </td>

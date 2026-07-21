@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\BusinessSetting;
 use App\Models\Admin;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -82,5 +83,31 @@ class HomeController extends Controller
         $admin->save();
 
         return back()->with('success', 'Profile updated successfully.');
+    }
+    
+    // contact list
+    public function contact_list()
+    {
+        $contacts = Contact::latest()->paginate(15); // adjust per page
+        return view('admin.contacts.index', compact('contacts'));
+    }
+
+    // contact view
+    public function contact_view($id)
+    {
+        $contact = Contact::findOrFail($id);
+
+        // optionally mark as read here if you have is_read column
+        // $contact->update(['is_read' => 1]);
+
+        return view('admin.contacts.view', compact('contact'));
+    }
+
+    // optional: delete contact
+    public function contact_delete($id)
+    {
+        $contact = Contact::findOrFail($id);
+        $contact->delete();
+        return redirect()->route('contact-list')->with('success', 'Contact deleted successfully.');
     }
 }

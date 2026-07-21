@@ -27,11 +27,11 @@ Route::middleware('auth:admin')->group(function () {
 
     // FAQ routes (names chosen to match your previous blade usage)
     Route::get('faqs', [FaqController::class, 'index'])->name('faqs.index');
-    Route::get('faqs/add', [FaqController::class, 'create'])->name('add-new-faq');          // route('admin.add-new-faq')
+    Route::get('faqs/add', [FaqController::class, 'create'])->name('add-new-faq');         
     Route::post('faqs', [FaqController::class, 'store'])->name('faq-store');
-    Route::get('faqs/{id}/edit', [FaqController::class, 'edit'])->name('faq-edit');       // route('admin.faq-edit', ['id'=>$faq->id])
+    Route::get('faqs/{id}/edit', [FaqController::class, 'edit'])->name('faq-edit');       
     Route::post('faqs/{id}/update', [FaqController::class, 'update'])->name('faq-update');
-    Route::delete('faqs/{id}', [FaqController::class, 'destroy'])->name('faq-delete');    // route('admin.faq-delete', ['id'=>$faq->id])
+    Route::delete('faqs/{id}', [FaqController::class, 'destroy'])->name('faq-delete');   
 
     // Blogs CRUD
     Route::get('blogs', [BlogController::class, 'index'])->name('blogs.index');
@@ -51,5 +51,11 @@ Route::middleware('auth:admin')->group(function () {
     // PROFILE
     Route::get('profile-view', [HomeController::class, 'profile_view'])->name('profile-view');
     Route::post('profile-update/{id}', [HomeController::class, 'profile_update'])->name('profile-update');
+    
+    Route::get('contact-list', [HomeController::class, 'contact_list'])->name('contact-list');
+    Route::get('contact-view/{id}', [HomeController::class, 'contact_view'])->name('contact-view');
+    
+    // optional: delete contact
+    Route::delete('contact-delete/{id}', [HomeController::class, 'contact_delete'])->name('contact-delete');
 
 });

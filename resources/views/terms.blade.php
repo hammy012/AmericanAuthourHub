@@ -46,7 +46,7 @@
                         from the amount. </p>
 
                     <p> A refund request can be submitted if you are not satisfied with any product or service provided by
-                        Authors Time within 5 days of your order completion. Certain percentage based refund would be
+                        American author hub within 5 days of your order completion. Certain percentage based refund would be
                         granted if we are unable to provide required service through our unlimited revision policy. If no
                         refund
                         request is received within five days after your order has been delivered, your satisfaction over the
@@ -60,7 +60,7 @@
 
                     <h3>TERM OF USE OF THIS WEBSITE</h3>
 
-                    <p>The information provided on www.authorstime.com includes, but is not limited to, the services
+                    <p>The information provided on www.americanauthorhub.com includes, but is not limited to, the services
                         provided by the company and does not render any advice, certifications, guarantees or warranties.
                     </p>
 

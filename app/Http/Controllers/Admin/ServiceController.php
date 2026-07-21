@@ -24,29 +24,37 @@ class ServiceController extends Controller
 
     // store
     public function store(Request $request)
-    {
-        $data = $request->validate([
-            'sub_title' => 'nullable|string|max:255',
-            'title' => 'required|string|max:255',
-            'short_desc' => 'nullable|string',
-            'sec_title' => 'nullable|string|max:255',
-            'description' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
-            'icon_image' => 'nullable|image|mimes:svg,png,jpg,jpeg,webp|max:2048',
-        ]);
+{
+    $data = $request->validate([
+        'sub_title' => 'nullable|string|max:255',
+        'title' => 'required|string|max:255',
+        'short_desc' => 'nullable|string',
+        'sec_title' => 'nullable|string|max:255',
+        'description' => 'nullable|string',
+        'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
+        'icon_image' => 'nullable|image|mimes:svg,png,jpg,jpeg,webp|max:2048',
+    ]);
 
-        if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('services', 'public');
-        }
-
-        if ($request->hasFile('icon_image')) {
-            $data['icon_image'] = $request->file('icon_image')->store('services/icons', 'public');
-        }
-
-        Service::create($data);
-
-        return redirect()->route('admin.services.index')->with('success', 'Service created successfully.');
+    // ✅ Main image
+    if ($request->hasFile('image')) {
+        $file = $request->file('image');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('services'), $filename);
+        $data['image'] = 'services/' . $filename;
     }
+
+    // ✅ Icon image
+    if ($request->hasFile('icon_image')) {
+        $file = $request->file('icon_image');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('services/icons'), $filename);
+        $data['icon_image'] = 'services/icons/' . $filename;
+    }
+
+    Service::create($data);
+
+    return redirect()->route('admin.services.index')->with('success', 'Service created successfully.');
+}
 
     // edit form
     public function edit($id)
@@ -57,52 +65,65 @@ class ServiceController extends Controller
 
     // update
     public function update(Request $request, $id)
-    {
-        $service = Service::findOrFail($id);
+{
+    $service = Service::findOrFail($id);
 
-        $data = $request->validate([
-            'sub_title' => 'nullable|string|max:255',
-            'title' => 'required|string|max:255',
-            'short_desc' => 'nullable|string',
-            'sec_title' => 'nullable|string|max:255',
-            'description' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
-            'icon_image' => 'nullable|image|mimes:svg,png,jpg,jpeg,webp|max:2048',
-        ]);
+    $data = $request->validate([
+        'sub_title' => 'nullable|string|max:255',
+        'title' => 'required|string|max:255',
+        'short_desc' => 'nullable|string',
+        'sec_title' => 'nullable|string|max:255',
+        'description' => 'nullable|string',
+        'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:4096',
+        'icon_image' => 'nullable|image|mimes:svg,png,jpg,jpeg,webp|max:2048',
+    ]);
 
-        if ($request->hasFile('image')) {
-            // delete old
-            if ($service->image && Storage::disk('public')->exists($service->image)) {
-                Storage::disk('public')->delete($service->image);
-            }
-            $data['image'] = $request->file('image')->store('services', 'public');
+    // ✅ Replace main image
+    if ($request->hasFile('image')) {
+        if ($service->image && file_exists(public_path($service->image))) {
+            unlink(public_path($service->image));
         }
 
-        if ($request->hasFile('icon_image')) {
-            if ($service->icon_image && Storage::disk('public')->exists($service->icon_image)) {
-                Storage::disk('public')->delete($service->icon_image);
-            }
-            $data['icon_image'] = $request->file('icon_image')->store('services/icons', 'public');
-        }
-
-        $service->update($data);
-
-        return redirect()->route('admin.services.index')->with('success', 'Service updated successfully.');
+        $file = $request->file('image');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('services'), $filename);
+        $data['image'] = 'services/' . $filename;
     }
+
+    // ✅ Replace icon image
+    if ($request->hasFile('icon_image')) {
+        if ($service->icon_image && file_exists(public_path($service->icon_image))) {
+            unlink(public_path($service->icon_image));
+        }
+
+        $file = $request->file('icon_image');
+        $filename = time() . '_' . $file->getClientOriginalName();
+        $file->move(public_path('services/icons'), $filename);
+        $data['icon_image'] = 'services/icons/' . $filename;
+    }
+
+    $service->update($data);
+
+    return redirect()->route('admin.services.index')->with('success', 'Service updated successfully.');
+}
 
     // destroy
     public function destroy($id)
-    {
-        $service = Service::findOrFail($id);
-        if ($service->image && Storage::disk('public')->exists($service->image)) {
-            Storage::disk('public')->delete($service->image);
-        }
-        if ($service->icon_image && Storage::disk('public')->exists($service->icon_image)) {
-            Storage::disk('public')->delete($service->icon_image);
-        }
+{
+    $service = Service::findOrFail($id);
 
-        $service->delete();
-
-        return redirect()->route('admin.services.index')->with('success', 'Service deleted successfully.');
+    // ✅ Delete main image
+    if ($service->image && file_exists(public_path($service->image))) {
+        unlink(public_path($service->image));
     }
+
+    // ✅ Delete icon image
+    if ($service->icon_image && file_exists(public_path($service->icon_image))) {
+        unlink(public_path($service->icon_image));
+    }
+
+    $service->delete();
+
+    return redirect()->route('admin.services.index')->with('success', 'Service deleted successfully.');
+}
 }

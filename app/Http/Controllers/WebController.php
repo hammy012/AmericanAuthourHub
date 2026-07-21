@@ -2,6 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
+use App\Models\Service;
+use Illuminate\Support\Str;
+use App\Models\Faq;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class WebController extends Controller
@@ -16,21 +21,48 @@ class WebController extends Controller
         return view('about-us');
     }
 
-    public function book_promotions()
+    public function service ($slug)
     {
-        return view('book-promotions');
+        // load all services (small table) and match by slugified title
+        $service = Service::all()->first(function ($s) use ($slug) {
+            return Str::slug($s->title) === $slug;
+        });
+    
+        if (! $service) {
+            abort(404);
+        }
+    
+        // optionally you may want related services or other data:
+        $otherServices = Service::where('id', '!=', $service->id)->take(6)->get();
+    
+        return view('book-promotions', compact('service', 'otherServices'));
     }
-    public function blogs()
+    
+    public function blogss(Request $request)
     {
-        return view('blogs');
+        // paginate (9 per page) — change per your design
+        $blogs = Blog::orderBy('date', 'desc')->paginate(9);
+
+        // recent posts for sidebar
+        $recentPosts = Blog::orderBy('date', 'desc')->take(5)->get();
+
+        return view('blogs', compact('blogs', 'recentPosts'));
     }
-    public function blog()
+
+    // single blog page (slug)
+    public function blog($slug)
     {
-        return view('blog');
+        $blog = Blog::where('slug', $slug)->firstOrFail();
+
+        // optional: recent posts for sidebar
+        $recentPosts = Blog::orderBy('date', 'desc')->take(5)->get();
+
+        return view('blog', compact('blog', 'recentPosts'));
     }
     public function faqs()
     {
-        return view('faq');
+        $faqs = Faq::orderBy('created_at', 'desc')->get();
+        return view('faq', compact('faqs'));
     }
     public function contact_us()
     {

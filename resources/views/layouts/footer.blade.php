@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <!-- Left Column -->
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="footer-box-1">
                     <h1 style="font-size: 70px;">
                         <img src="{{ asset('assets/imgs/logo.png') }}" alt=""
@@ -14,32 +14,40 @@
                         professionals to take on any project with our instant solutions for your books
                         with worldwide marketing channels!
                     </p>
-                    <ul class="clock-box-links">
-                        <li><a href="tel:+123456789">(123) 456-789</a></li>
-                        <li><a href="mailto:info@ebook.com"><span>info@ebook.com</span></a></li>
-                    </ul>
-                    <h6>ABC City 10th Street New York United States</h6>
+                    <!--<ul class="clock-box-links">-->
+                    <!--    <li><a href="tel:+13463476046">-->
+                    <!--                +1 (346) 347-6046-->
+                    <!--            </a></li>-->
+                    <!--    <li><a href="mailto:info@americanauthorhub.com" target="_blank"><span>info@americanauthorhub.com</span></a></li>-->
+                    <!--</ul>-->
+                    <h6>
+                        <i class="fa-solid fa-location" aria-hidden="true"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=15155+Richmond+Ave+Houston+TX+77082" 
+                           target="_blank">
+                           15155 Richmond Ave, Houston, TX 77082
+                        </a>
+                    </h6>
                     <div class="social-links">
                         <h5>Social Links</h5>
                         <ul class="social-links-list">
                             <li>
-                                <a href="https://www.facebook.com" target="_blank">
+                                <a href="https://www.facebook.com/profile.php?id=61583690636910" target="_blank">
                                     <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                                 </a>
                             </li>
+                            <!--<li>-->
+                            <!--    <a href="https://www.linkedin.com/" target="_blank">-->
+                            <!--        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>-->
+                            <!--    </a>-->
+                            <!--</li>-->
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
-                                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.instagram.com/americanauthorhub/" target="_blank">
                                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.pinterest.com/" target="_blank">
-                                    <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+                                <a href="https://www.youtube.com/@Americanauthorhub" target="_blank">
+                                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                                 </a>
                             </li>
                         </ul>
@@ -48,49 +56,27 @@
             </div>
 
             <!-- Middle Column -->
-            <div class="col-md-5">
+            <div class="col-md-6">
                 <div class="footer-box-2">
                     <h4>Services</h4>
                     <ul class="services-links">
-                        <li><i class="fa-solid fa-bullhorn text-pink"></i> <a href="book-promotions">Book
-                                Promotions</a></li>
-
-                        <li><i class="fa-solid fa-book-open text-pink"></i> <a href="ebook-writing">E-book
-                                Writing</a></li>
-
-                        <li><i class="fa-solid fa-pen-to-square text-pink"></i> <a href="book-editing">Editing</a>
-                        </li>
-
-                        <li><i class="fa-solid fa-spell-check text-pink"></i> <a href="proofreading">Proofreading</a>
-                        </li>
-
-                        <li><i class="fa-solid fa-headphones text-pink"></i> <a href="audio-book">Audio Book</a></li>
-
-                        <li><i class="fa-solid fa-globe text-purple"></i> <a href="author-website">Author Website</a>
-                        </li>
-
-                        <li><i class="fa-solid fa-image text-pink"></i> <a href="book-cover">Book Cover</a></li>
-
-                        <li><i class="fa-solid fa-print text-pink"></i> <a href="book-printing">Book Printing</a>
-                        </li>
-
-                        <li><i class="fa-solid fa-align-left text-pink"></i> <a href="formatting">Formatting</a></li>
-
-                        <li><i class="fa-solid fa-feather text-pink"></i> <a href="ghost-writing">Ghostwriting</a>
-                        </li>
-
-                        <li><i class="fa-solid fa-video text-pink"></i> <a href="book-video-trailer">Video Book
-                                Trailer</a></li>
-
-                        <li><i class="fa-solid fa-book text-pink"></i> <a href="book-publishing">Publishing</a></li>
+                        @php
+                            use App\Models\Service;
+                            use Illuminate\Support\Str;
+                            $services = Service::all();
+                        @endphp
+            
+                        @foreach ($services as $service)
+                            <li class="d-flex align-items-center mb-2">
+                                <img src="{{ asset($service->icon_image) }}" 
+                                     alt="{{ $service->title }}" 
+                                     style="width: 18px; height: 18px; object-fit: contain; margin-right: 12px; margin-top: -13px">
+                                <a href="{{ route('service', Str::slug($service->title)) }}">
+                                    {{ $service->title }}
+                                </a>
+                            </li>
+                        @endforeach
                     </ul>
-
-                </div>
-            </div>
-
-            <div class="col-md-2">
-                <div class="feather-img">
-                    <img src="https://authorstime.com/assets/images/feather.png" alt="Feather">
                 </div>
             </div>
         </div>

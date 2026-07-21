@@ -27,7 +27,7 @@
                     <label>Thumbnail</label>
                     <input type="file" name="thumbnail" class="form-control">
                     @if($blog->thumbnail)
-                        <div class="mt-2"><img src="{{ asset('storage/'.$blog->thumbnail) }}" alt="thumb" style="height:80px;"></div>
+                        <div class="mt-2"><img src="{{ asset($blog->thumbnail) }}" alt="thumb" style="height:80px;"></div>
                     @endif
                 </div>
 
@@ -38,7 +38,7 @@
                         <div class="mt-2 d-flex flex-wrap gap-2">
                             @foreach($blog->images as $img)
                                 <div style="margin-right:8px;">
-                                    <img src="{{ asset('storage/'.$img) }}" alt="img" style="height:70px;">
+                                    <img src="{{ asset($img) }}" style="height:70px;">
                                 </div>
                             @endforeach
                         </div>

@@ -113,81 +113,53 @@
         style="background: url('{{ asset('assets/imgs/main-back.png') }}') no-repeat center center/cover;">
         <div class="container">
             <div class="banner-head">
-                <span style="font-weight:700;">Our Blog</span>
-                <h1>Insights, Tips & Stories</h1>
+                <span style="font-weight:700;">Our Blogs</span>
+                <h1>Inspiration, Insights & Expert Tips</h1>
                 <p style="color:#fff;">
-                    Read the latest from our team — marketing tips for authors, case studies, book publishing guides,
-                    and more. Stay inspired and informed.
+                    Discover the latest from our team — expert marketing advice, success stories, publishing insights, 
+                    and creative ideas to help authors thrive. Stay informed and motivated.
                 </p>
-
                 <a href="javascript:;" class="project-btn popup-btn">Explore Blogs</a>
             </div>
         </div>
     </section>
 
 
+
     <section class="blog-sec">
         <div class="container">
-
+    
             <div class="row mb-4">
                 <div class="col-md-8">
                     <h2 style="color:#9F0B07; font-size: 36px;">Latest Posts</h2>
-                    <p style="color:#333;" class="mt-3">Discover articles on book promotion, writing tips, publishing and
-                        author-career
-                        advice.</p>
+                    <p style="color:#333;" class="mt-3">Discover articles on book promotion, writing tips, publishing and author-career advice.</p>
                 </div>
             </div>
-
+    
             <div class="blog-grid">
-
-                <!-- Blog Card 1 -->
-                <article class="blog-card">
-                    <img src="{{ asset('assets/imgs/blog1.avif') }}" alt="Blog 1" class="card-img">
-                    <div class="card-body">
-                        <div class="meta">November 06, 2025 • American Author Hub Team</div>
-                        <h3>How to Market Your Book Effectively</h3>
-                        <p class="excerpt">Discover practical book marketing tips that help authors reach a wider audience
-                            and boost sales.</p>
-                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-
-                <!-- Blog Card 2 -->
-                <article class="blog-card">
-                    <img src="{{ asset('assets/imgs/blog2.avif') }}" alt="Blog 2" class="card-img">
-                    <div class="card-body">
-                        <div class="meta">November 04, 2025 • American Author Hub Team</div>
-                        <h3>The Art of Writing Engaging Fiction</h3>
-                        <p class="excerpt">Learn key techniques to make your story compelling, with strong characters and
-                            emotional depth.</p>
-                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-
-                <!-- Blog Card 3 -->
-                <article class="blog-card">
-                    <img src="{{ asset('assets/imgs/blog3.webp') }}" alt="Blog 3" class="card-img">
-                    <div class="card-body">
-                        <div class="meta">November 02, 2025 • American Author Hub Team</div>
-                        <h3>Why Professional Editing Matters</h3>
-                        <p class="excerpt">Editing turns a good manuscript into a great one. Here why you should never
-                            skip it.</p>
-                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-
-                <!-- Blog Card 4 -->
-                <article class="blog-card">
-                    <img src="{{ asset('assets/imgs/blog4.jpg') }}" alt="Blog 4" class="card-img">
-                    <div class="card-body">
-                        <div class="meta">October 30, 2025 • American Author Hub Team</div>
-                        <h3>Self-Publishing vs Traditional Publishing</h3>
-                        <p class="excerpt">Explore the pros and cons of both approaches to decide which suits your author
-                            journey best.</p>
-                        <a href="{{ route('blog', ['slug' => 'blog']) }}" class="read-more">Read More</a>
-                    </div>
-                </article>
-
+                @foreach ($blogs as $b)
+                    <article class="blog-card">
+                        @php
+                            // thumbnail fallback
+                            $thumb = $b->thumbnail 
+                                     ?? (is_array($b->images) && count($b->images) ? $b->images[0] : null)
+                                     ?? 'assets/imgs/default-blog.jpg';
+                        @endphp
+    
+                        <img src="{{ asset($thumb) }}" alt="{{ $b->title }}" class="card-img">
+                        <div class="card-body">
+                            <div class="meta">{{ $b->date ? $b->date->format('F d, Y') : ($b->created_at->format('F d, Y')) }} • {{ config('app.name') }} Team</div>
+    
+                            <h3>{{ $b->title }}</h3>
+                            <p class="excerpt">{{ \Illuminate\Support\Str::limit(strip_tags($b->description), 120) }}</p>
+                            <a href="{{ route('blog', $b->slug) }}" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                @endforeach
+            </div>
+    
+            <div class="d-flex justify-content-center mt-4">
+                {{ $blogs->links('pagination::bootstrap-4') }}
             </div>
         </div>
     </section>

@@ -29,41 +29,44 @@ class BlogController extends Controller
             'images.*' => 'nullable|image|mimes:jpg,jpeg,png,webp,avif|max:4096',
             'date' => 'nullable|date',
             'description' => 'nullable|string',
-            'tags' => 'nullable|string', // comma-separated input
+            'tags' => 'nullable|string',
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
         ]);
-
-        // thumbnail
+    
+        // thumbnail save (in /blogs/thumbnails)
         if ($request->hasFile('thumbnail')) {
-            $data['thumbnail'] = $request->file('thumbnail')->store('blogs/thumbnails', 'public');
+            $file = $request->file('thumbnail');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('blogs/thumbnails'), $filename);
+            $data['thumbnail'] = 'blogs/thumbnails/' . $filename;
         }
-
-        // multiple images
+    
+        // multiple images save (in /blogs/images)
         $imagesArr = [];
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $img) {
-                $imagesArr[] = $img->store('blogs/images', 'public');
+                $imgName = time() . '_' . $img->getClientOriginalName();
+                $img->move(public_path('blogs/images'), $imgName);
+                $imagesArr[] = 'blogs/images/' . $imgName;
             }
         }
         $data['images'] = !empty($imagesArr) ? $imagesArr : null;
-
-        // tags: convert comma-separated string to array, trim
+    
+        // tags convert
         if (!empty($request->input('tags'))) {
             $tags = array_filter(array_map('trim', explode(',', $request->input('tags'))));
             $data['tags'] = array_values($tags);
         } else {
             $data['tags'] = null;
         }
-
-        // slug (optional override) and description kept as-is
+    
         $data['slug'] = Str::slug($data['title']) . '-' . Str::random(6);
-
+    
         Blog::create($data);
-
+    
         return redirect()->route('admin.blogs.index')->with('success', 'Blog created successfully.');
     }
-
     public function edit($id)
     {
         $blog = Blog::findOrFail($id);
@@ -73,7 +76,7 @@ class BlogController extends Controller
     public function update(Request $request, $id)
     {
         $blog = Blog::findOrFail($id);
-
+    
         $data = $request->validate([
             'title' => 'required|string|max:255',
             'thumbnail' => 'nullable|image|mimes:jpg,jpeg,png,webp,avif|max:4096',
@@ -84,60 +87,68 @@ class BlogController extends Controller
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
         ]);
-
-        // thumbnail replace
+    
+        // ✅ Replace thumbnail (if new uploaded)
         if ($request->hasFile('thumbnail')) {
-            if ($blog->thumbnail && Storage::disk('public')->exists($blog->thumbnail)) {
-                Storage::disk('public')->delete($blog->thumbnail);
+            // delete old thumbnail
+            if ($blog->thumbnail && file_exists(public_path($blog->thumbnail))) {
+                unlink(public_path($blog->thumbnail));
             }
-            $data['thumbnail'] = $request->file('thumbnail')->store('blogs/thumbnails', 'public');
+    
+            $file = $request->file('thumbnail');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('blogs/thumbnails'), $filename);
+            $data['thumbnail'] = 'blogs/thumbnails/' . $filename;
         }
-
-        // images: append new images to existing array
+    
+        // ✅ Add new images to existing
         $existing = $blog->images ?? [];
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $img) {
-                $existing[] = $img->store('blogs/images', 'public');
+                $imgName = time() . '_' . $img->getClientOriginalName();
+                $img->move(public_path('blogs/images'), $imgName);
+                $existing[] = 'blogs/images/' . $imgName;
             }
         }
         $data['images'] = !empty($existing) ? $existing : null;
-
-        // tags
+    
+        // ✅ Tags
         if (!empty($request->input('tags'))) {
             $tags = array_filter(array_map('trim', explode(',', $request->input('tags'))));
             $data['tags'] = array_values($tags);
         } else {
             $data['tags'] = null;
         }
-
-        // update slug only if empty (you may change logic)
+    
+        // ✅ Slug (only if empty)
         if (empty($blog->slug)) {
             $data['slug'] = Str::slug($data['title']) . '-' . Str::random(6);
         }
-
+    
         $blog->update($data);
-
+    
         return redirect()->route('admin.blogs.index')->with('success', 'Blog updated successfully.');
     }
-
     public function destroy($id)
     {
         $blog = Blog::findOrFail($id);
-
-        // delete files if exist
-        if ($blog->thumbnail && Storage::disk('public')->exists($blog->thumbnail)) {
-            Storage::disk('public')->delete($blog->thumbnail);
+    
+        // ✅ Delete thumbnail if exists
+        if ($blog->thumbnail && file_exists(public_path($blog->thumbnail))) {
+            unlink(public_path($blog->thumbnail));
         }
+    
+        // ✅ Delete all images if exist
         if (!empty($blog->images) && is_array($blog->images)) {
             foreach ($blog->images as $img) {
-                if (Storage::disk('public')->exists($img)) {
-                    Storage::disk('public')->delete($img);
+                if (file_exists(public_path($img))) {
+                    unlink(public_path($img));
                 }
             }
         }
-
+    
         $blog->delete();
-
+    
         return redirect()->route('admin.blogs.index')->with('success', 'Blog deleted successfully.');
     }
 }

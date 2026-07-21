@@ -60,7 +60,7 @@
                     <h3> <strong>7. Contact Us </strong></h3>
                     <p class="lead"> If you have any questions or concerns about our Privacy Policy or our handling of
                         your personal information, please contact us at <a style="color: #e4573d;"
-                            href="mailto: info@authorstime.com"> <strong>info@authorstime.com</strong> </a>. </p>
+                            href="mailto: info@americanauthorhub.com"> <strong>info@americanauthorhub.com</strong> </a>. </p>
                     <h3> <strong>8. Opting In to Messages </strong></h3>
                     <p class="lead"> Users may opt in to receive messages from us through various methods, such as filling
                         out an SMS marketing opt-in form on our website. When you opt in, you give us permission to send you

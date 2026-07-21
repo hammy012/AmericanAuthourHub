@@ -7,16 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
     <title>@yield('title', 'American Author Hub | Book Writing Company')</title>
-
+    <link rel="icon" type="image/png" href="{{ asset('assets/imgs/logo.png') }}">
     <!-- Font Awesome (CDN or local) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <meta name="title" content="@yield('meta_title', 'American Author Hub  | Book Writing Company')">
-    <meta name="description" content="@yield('meta_description', 'Become a published author with American Author Hub . Our professional writers offer exceptional book writing services.')">
-    <link rel="canonical" href="{{ url()->current() }}" />
+    {{-- ✅ Primary SEO --}}
+    <title>@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')</title>
 
-    <meta property="og:image" content="{{ asset('assets/images/logo.png') }}">
+    <meta name="description" content="@yield('meta_description', 'American Author Hub is a professional book writing and ghostwriting company offering expert editing, publishing, book marketing and Amazon KDP services. Turn your idea into a bestselling book today.')">
+    
+    <meta name="keywords" content="@yield('meta_keywords', 'book writing company, ghostwriting services, professional book writers, hire a ghostwriter, book publishing services, Amazon KDP publishing, book editing services, ebook writing services, book marketing agency, American Author Hub')">
+    
+    <meta name="author" content="American Author Hub">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <link rel="canonical" href="{{ url()->current() }}" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="American Author Hub">
+    <meta property="og:title" content="@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')">
+    <meta property="og:description" content="@yield('meta_description', 'Hire professional ghostwriters, editors and publishing experts to bring your book to life.')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ asset('assets/images/og-cover.jpg') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Expert ghostwriting, editing and publishing services to help you become a published author.')">
+    <meta name="twitter:image" content="{{ asset('assets/images/og-cover.jpg') }}">
+    <meta name="twitter:site" content="@AmericanAuthorHub">
+    
+    <!-- Geo Target (USA Focus) -->
+    <meta name="geo.region" content="US">
+    <meta name="geo.placename" content="United States">
+    <meta name="language" content="English">
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "American Author Hub",
+          "url": "{{ url('/') }}",
+          "logo": "{{ asset('assets/images/logo.png') }}",
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=61583690636910",
+            "https://www.instagram.com/americanauthorhub/",
+            "https://www.youtube.com/@Americanauthorhub"
+          ],
+          "description": "Professional book writing, ghostwriting, editing, publishing and book marketing services in the USA.",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+          }
+        }
+    </script>
+
+
+    
+    {{-- ✅ Favicon --}}
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    
+    {{-- ✅ Theme Color --}}
+    <meta name="theme-color" content="#0f172a">
+    
+    {{-- ✅ CSRF --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+    {{-- SweetAlert2 CDN --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- CSS from public/assets -->
     <link rel="stylesheet" href="{{ asset('assets/css/layout.css') }}">
@@ -26,8 +90,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/christmas.css') }}">
 
-    <link rel="shortcut icon" href="{{ asset('fav.png') }}" type="image/x-icon">
-
+    <link rel="icon" type="image/png" href="{{ asset('assets/imgs/fav.png') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Chat widget inline CSS -->
     <style>
         :root {
@@ -226,6 +290,9 @@
             }
         }
     </style>
+    
+    <!-- Head: add Swiper CSS (place in <head>) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -273,23 +340,22 @@
                     </div>
                     <div class="form-group">
                         <label for="cw-phone">Phone</label>
-                        <input id="cw-phone" name="phone" type="tel" placeholder="Phone Number" minlength="10"
-                            required>
+                        <input id="cw-phone" name="phone" type="tel" placeholder="Phone Number" minlength="10" required>
                     </div>
-
+            
                     <div class="form-group">
                         <label for="cw-message">Message</label>
                         <textarea id="cw-message" name="message" placeholder="Tell us briefly about your project or question (optional)"></textarea>
                     </div>
-
+            
                     <div class="note">By sending, you agree we may contact you regarding your enquiry.</div>
-
+            
                     <button type="submit" class="btn-submit" id="chat-send">
                         <i class="fa-solid fa-paper-plane"></i> Send Message
                     </button>
                 </form>
-
-                <div class="success" id="chat-success" role="status" aria-live="polite">
+            
+                <div class="success" id="chat-success" role="status" aria-live="polite" style="display:none;">
                     <h4>Thanks — message sent!</h4>
                     <p>We'll get back to you shortly. If you'd like, call us at <strong>123 456-789</strong>.</p>
                 </div>
@@ -301,132 +367,191 @@
             <i class="fa-solid fa-comments"></i>
         </button>
     </div>
+    
+    
+    @if (session('success'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '{{ session('success') }}',
+                showConfirmButton: true,
+                confirmButtonColor: '#3085d6',
+            });
+        </script>
+    @endif
+    
+    @if (session('error'))
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '{{ session('error') }}',
+            });
+        </script>
+    @endif
+
 
     <!-- Chat Widget Script (vanilla JS) -->
     <script>
-        (function() {
-            // elements
-            const toggle = document.getElementById('chat-toggle');
-            const panel = document.getElementById('chat-panel');
-            const closeBtn = document.getElementById('chat-close');
-            const form = document.getElementById('chat-form');
-            const successBox = document.getElementById('chat-success');
-            const sendBtn = document.getElementById('chat-send');
-
-            function openPanel() {
-                panel.style.display = 'block';
-                panel.setAttribute('aria-hidden', 'false');
-                // allow CSS transition to run
-                requestAnimationFrame(() => {
-                    panel.style.opacity = '1';
-                    panel.style.transform = 'translateY(0) scale(1)';
-                });
-                toggle.setAttribute('aria-expanded', 'true');
-                form.style.display = '';
-                successBox.style.display = 'none';
-                document.getElementById('cw-name').focus();
-            }
-
-            function closePanel() {
-                panel.style.opacity = '0';
-                panel.style.transform = 'translateY(12px) scale(.99)';
-                toggle.setAttribute('aria-expanded', 'false');
-                setTimeout(() => {
-                    panel.style.display = 'none';
-                    panel.setAttribute('aria-hidden', 'true');
-                }, 240);
-            }
-
-            // toggle
+    (function() {
+        // Elements (may not exist in some pages — guard for null)
+        const toggle = document.getElementById('chat-toggle');
+        const panel = document.getElementById('chat-panel');
+        const closeBtn = document.getElementById('chat-close');
+        const form = document.getElementById('chat-form');
+        const successBox = document.getElementById('chat-success');
+        const sendBtn = document.getElementById('chat-send');
+    
+        // Safe no-op if form not present
+        if (!form) return;
+    
+        // Small helpers for panel safety
+        function safeOpenPanel() {
+            if (!panel) return;
+            panel.style.display = 'block';
+            panel.setAttribute('aria-hidden', 'false');
+            requestAnimationFrame(() => {
+                panel.style.opacity = '1';
+                panel.style.transform = 'translateY(0) scale(1)';
+            });
+            if (toggle) toggle.setAttribute('aria-expanded', 'true');
+            form.style.display = '';
+            if (successBox) successBox.style.display = 'none';
+            const nameInput = document.getElementById('cw-name');
+            if (nameInput) nameInput.focus();
+        }
+        function safeClosePanel() {
+            if (!panel) return;
+            panel.style.opacity = '0';
+            panel.style.transform = 'translateY(12px) scale(.99)';
+            if (toggle) toggle.setAttribute('aria-expanded', 'false');
+            setTimeout(() => {
+                panel.style.display = 'none';
+                panel.setAttribute('aria-hidden', 'true');
+            }, 240);
+        }
+    
+        // attach toggle listeners only if toggle exists
+        if (toggle) {
             toggle.addEventListener('click', function(e) {
                 e.preventDefault();
-                if (panel.style.display === 'block') closePanel();
-                else openPanel();
+                if (panel && panel.style.display === 'block') safeClosePanel();
+                else safeOpenPanel();
             });
-
-            closeBtn.addEventListener('click', closePanel);
-
-            // click outside to close (keeps toggle visible)
+        }
+    
+        if (closeBtn) closeBtn.addEventListener('click', safeClosePanel);
+    
+        // click outside to close (if panel exists)
+        if (panel) {
             document.addEventListener('click', function(e) {
-                if (panel.style.display === 'block' && !e.target.closest('#chat-panel') && !e.target.closest(
-                        '#chat-toggle')) {
-                    closePanel();
+                if (panel.style.display === 'block' && !e.target.closest('#chat-panel') && !e.target.closest('#chat-toggle')) {
+                    safeClosePanel();
                 }
             });
-
-            // escape key to close
             document.addEventListener('keyup', function(e) {
-                if (e.key === 'Escape' && panel.style.display === 'block') closePanel();
+                if (e.key === 'Escape' && panel.style.display === 'block') safeClosePanel();
             });
-
-            // form submit
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const name = document.getElementById('cw-name').value.trim();
-                const email = document.getElementById('cw-email').value.trim();
-                const phone = document.getElementById('cw-phone').value.trim();
-                const message = document.getElementById('cw-message').value.trim();
-
-                if (!name) {
-                    alert('Please enter your name');
-                    document.getElementById('cw-name').focus();
-                    return;
-                }
-                if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
-                    alert('Please enter a valid email');
-                    document.getElementById('cw-email').focus();
-                    return;
-                }
-                if (!phone || phone.replace(/\D/g, '').length < 10) {
-                    alert('Please enter a valid phone number');
-                    document.getElementById('cw-phone').focus();
-                    return;
-                }
-
-                // sending state
+        }
+    
+        // Form submit handler (AJAX to contact.quick)
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+    
+            const name = (document.getElementById('cw-name') || {}).value?.trim() || '';
+            const email = (document.getElementById('cw-email') || {}).value?.trim() || '';
+            const phone = (document.getElementById('cw-phone') || {}).value?.trim() || '';
+            const message = (document.getElementById('cw-message') || {}).value?.trim() || '';
+    
+            if (!name) {
+                Swal.fire({ icon: 'warning', title: 'Please enter your name' });
+                document.getElementById('cw-name')?.focus();
+                return;
+            }
+            if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+                Swal.fire({ icon: 'warning', title: 'Please enter a valid email' });
+                document.getElementById('cw-email')?.focus();
+                return;
+            }
+            if (!phone || phone.replace(/\D/g, '').length < 10) {
+                Swal.fire({ icon: 'warning', title: 'Please enter a valid phone number' });
+                document.getElementById('cw-phone')?.focus();
+                return;
+            }
+    
+            // sending state
+            if (sendBtn) {
                 sendBtn.disabled = true;
                 sendBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-
-                // Example fetch POST to backend - change URL to your route and enable CSRF header
-                /*
-                fetch('/contact/quick', {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-                  },
-                  body: JSON.stringify({ name, email, phone, message })
-                })
-                .then(r => {
-                  if (!r.ok) throw new Error('Network error');
-                  return r.json();
-                })
-                .then(data => {
-                  form.reset();
-                  form.style.display = 'none';
-                  successBox.style.display = 'block';
-                })
-                .catch(err => {
-                  alert('There was an error. Please try again later.');
-                })
-                .finally(() => {
-                  sendBtn.disabled = false;
-                  sendBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-                });
-                */
-
-                // Demo fake success
-                setTimeout(function() {
+            }
+    
+            const fd = new FormData();
+            fd.append('name', name);
+            fd.append('email', email);
+            fd.append('phone', phone);
+            fd.append('message', message);
+    
+            const url = "{{ route('contact.quick') }}"; // Blade route
+            const tokenMeta = document.querySelector('meta[name="csrf-token"]');
+            const token = tokenMeta ? tokenMeta.getAttribute('content') : '';
+    
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': token,
+                    'Accept': 'application/json'
+                },
+                body: fd
+            })
+            .then(async res => {
+                if (res.status === 422) {
+                    const data = await res.json();
+                    const first = Object.values(data.errors || {}).flat()[0] || 'Please fix the errors and try again.';
+                    throw { type: 'validation', message: first };
+                }
+                if (!res.ok) {
+                    const text = await res.text();
+                    throw { type: 'network', message: 'Server error. Please try again later.' , details: text};
+                }
+                return res.json();
+            })
+            .then(data => {
+                // success behavior
+                if (successBox) {
                     form.reset();
                     form.style.display = 'none';
                     successBox.style.display = 'block';
+                } else {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Message sent',
+                        text: data.message || 'Thanks — we will get back to you soon.',
+                        timer: 3000,
+                        showConfirmButton: false
+                    });
+                }
+    
+                // close panel after a short delay (if exists)
+                setTimeout(() => safeClosePanel(), 1400);
+            })
+            .catch(err => {
+                if (err && err.type === 'validation') {
+                    Swal.fire({ icon: 'warning', title: 'Validation', text: err.message });
+                } else {
+                    console.error(err);
+                    Swal.fire({ icon: 'error', title: 'Error', text: err.message || 'There was an error. Please try again later.' });
+                }
+            })
+            .finally(() => {
+                if (sendBtn) {
                     sendBtn.disabled = false;
                     sendBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-                }, 900);
-
+                }
             });
-
-        })();
+        });
+    
+    })();
     </script>
 
     @stack('scripts')

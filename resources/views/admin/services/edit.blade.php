@@ -56,7 +56,7 @@
                         <label>Image</label>
                         <input type="file" name="image" class="form-control">
                         @if ($service->image)
-                            <div class="mt-2"><img src="{{ asset('storage/' . $service->image) }}" alt="image"
+                            <div class="mt-2"><img src="{{ asset($service->image) }}" alt="image"
                                     style="height:60px;"></div>
                         @endif
                     </div>
@@ -65,7 +65,7 @@
                         <label>Icon Image</label>
                         <input type="file" name="icon_image" class="form-control">
                         @if ($service->icon_image)
-                            <div class="mt-2"><img src="{{ asset('storage/' . $service->icon_image) }}" alt="icon"
+                            <div class="mt-2"><img src="{{ asset($service->icon_image) }}" alt="icon"
                                     style="height:50px;"></div>
                         @endif
                     </div>

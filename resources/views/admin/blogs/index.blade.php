@@ -36,7 +36,7 @@
                                 <td>{{ optional($blog->date)->format('Y-m-d') ?? '-' }}</td>
                                 <td>
                                     @if($blog->thumbnail)
-                                        <img src="{{ asset('storage/'.$blog->thumbnail) }}" alt="thumb" style="height:50px;">
+                                        <img src="{{ asset($blog->thumbnail) }}" style="height:50px;">
                                     @endif
                                 </td>
                                 <td>

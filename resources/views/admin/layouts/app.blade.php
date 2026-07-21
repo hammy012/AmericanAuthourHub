@@ -206,7 +206,7 @@
 
     </div>
     <!-- END Wrapper -->
-    <script src="https://cdn.tiny.cloud/1/djhl9vbjarm1m2eod0whp4qfu2uwrocb9hognn4ojf9ax31u/tinymce/7/tinymce.min.js"
+    <script src="https://cdn.tiny.cloud/1/t7nlvpwqi0gsdhan0cgmdbg48rl9l6bkzlug0c8ypoogwx1g/tinymce/7/tinymce.min.js"
         referrerpolicy="origin"></script>
 
     <!-- Vendor Javascript (Require in all Page) -->

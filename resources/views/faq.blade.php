@@ -159,68 +159,22 @@
                         <a href="{{ route('contact-us') }}" class="project-btn popup-btn"
                             style="background:#9F0B07;border-color:#9F0B07;color:#fff;">Let’s Discuss your Project</a>
                     </div>
-
                 </div>
 
                 <div class="col-md-7">
                     <div class="faq-box">
                         <ul class="faq-accordion">
-
-                            <li class="accordion-item">
-                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq1">
-                                    <span class="q">What services do you offer?</span>
-                                    <span class="toggle"></span>
-                                </button>
-                                <div id="faq1" class="accordion-content" role="region" aria-labelledby="">
-                                    <p>We offer a complete range of ebook and author-related services including Book
-                                        Promotions,
-                                        E-book Writing, Editing, Proofreading, Audio Books, Author Websites, Book Covers,
-                                        Book Printing,
-                                        Formatting, Ghostwriting, Video Book Trailers, and Publishing.</p>
-                                </div>
-                            </li>
-
-                            <li class="accordion-item">
-                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq2">
-                                    <span class="q">How long does it take to complete a project?</span>
-                                    <span class="toggle"></span>
-                                </button>
-                                <div id="faq2" class="accordion-content">
-                                    <p>The timeline depends on the type and scope of your project. For example, writing and
-                                        editing
-                                        may take a few days, while full-scale book publishing or promotions can take several
-                                        weeks.
-                                        We’ll provide an estimated timeline after reviewing your project details.</p>
-                                </div>
-                            </li>
-
-                            <li class="accordion-item">
-                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq3">
-                                    <span class="q">Do you provide revisions?</span>
-                                    <span class="toggle"></span>
-                                </button>
-                                <div id="faq3" class="accordion-content">
-                                    <p>Yes, we do! Every package includes a certain number of revisions to ensure you’re
-                                        completely
-                                        satisfied with the final result. The number of revisions depends on the package you
-                                        choose.</p>
-                                </div>
-                            </li>
-
-                            <li class="accordion-item">
-                                <button class="accordion-btn" aria-expanded="false" aria-controls="faq4">
-                                    <span class="q">How can I get started?</span>
-                                    <span class="toggle"></span>
-                                </button>
-                                <div id="faq4" class="accordion-content">
-                                    <p>Getting started is simple! Fill out our contact form or click on “Let’s Discuss Your
-                                        Project”
-                                        to share your requirements. Our team will reach out to you to discuss your project
-                                        details
-                                        and the next steps.</p>
-                                </div>
-                            </li>
-
+                            @foreach ($faqs as $index => $faq)
+                                <li class="accordion-item">
+                                    <button class="accordion-btn" aria-expanded="false" aria-controls="faq{{ $index + 1 }}">
+                                        <span class="q">{{ $faq['question'] }}</span>
+                                        <span class="toggle"></span>
+                                    </button>
+                                    <div id="faq{{ $index + 1 }}" class="accordion-content">
+                                        <p>{!! $faq['answer'] !!}</p>
+                                    </div>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
