@@ -13,7 +13,8 @@ class WebController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $services = Service::all();
+        return view('welcome', compact('services'));
     }
 
     public function about_us()

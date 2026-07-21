@@ -1,5 +1,5 @@
 <footer class="dark-footer pt-5 pb-4">
-    <div class="container" data-aos="fade-up">
+    <div class="container">
         <div class="row g-4 mb-5">
             
             <!-- Column 1: Brand & Socials -->

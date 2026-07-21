@@ -5,8 +5,8 @@
 @section('content')
 
     <!-- ==========================================================================
-                                 HERO SECTION (MATCHING BLUEPRINT LAYOUT)
-                                 ========================================================================== -->
+                                             HERO SECTION (MATCHING BLUEPRINT LAYOUT)
+                                             ========================================================================== -->
     <section class="position-relative hero-bg-ref overflow-hidden d-flex align-items-center"
         style="padding-top: 20px !important; padding-bottom: 20px !important; min-height: calc(100vh - 88px);">
         <div class="container py-lg-2">
@@ -81,8 +81,8 @@
                 <!-- Right Visual Display -->
                 <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="position-relative d-inline-block">
-                        <img src="{{ asset('assets/imgs/main.png') }}" alt="Book Writing & Publishing" class="img-fluid hero-floating-image"
-                            style="max-height: 425px; object-fit: contain;">
+                        <img src="{{ asset('assets/imgs/main.png') }}" alt="Book Writing & Publishing"
+                            class="img-fluid hero-floating-image" style="max-height: 425px; object-fit: contain;">
                     </div>
                 </div>
 
@@ -91,17 +91,18 @@
     </section>
 
     <!-- ==========================================================================
-                                 ABOUT US SECTION (SEO OPTIMIZED & PROFESSIONAL)
-                                 ========================================================================== -->
-    <section class="py-5 bg-white position-relative" id="home-about" style="border-top: 1px solid rgba(226, 232, 240, 0.4);">
+                                             ABOUT US SECTION (SEO OPTIMIZED & PROFESSIONAL)
+                                             ========================================================================== -->
+    <section class="py-5 bg-white position-relative" id="home-about"
+        style="border-top: 1px solid rgba(226, 232, 240, 0.4);">
         <div class="container py-lg-4">
             <div class="row align-items-center g-5">
-                
+
                 <!-- Left Visual Image -->
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
                     <div class="position-relative d-inline-block text-center w-100">
-                        <img src="{{ asset('assets/imgs/about.png') }}" alt="About American Author Hub" class="img-fluid" 
-                             style="max-height: 530px; object-fit: contain;">
+                        <img src="{{ asset('assets/imgs/about.png') }}" alt="About American Author Hub" class="img-fluid"
+                            style="max-height: 530px; object-fit: contain;">
                     </div>
                 </div>
 
@@ -115,10 +116,14 @@
                         Creating <span class="text-brand-red">Bestselling Authors</span>
                     </h2>
                     <p class="hero-paragraph mb-3">
-                        At American Author Hub, we believe every story deserves to be told with excellence. We are a premier team of book writing, editing, and publishing professionals committed to transforming your ideas into market-ready books.
+                        At American Author Hub, we believe every story deserves to be told with excellence. We are a premier
+                        team of book writing, editing, and publishing professionals committed to transforming your ideas
+                        into market-ready books.
                     </p>
                     <p class="hero-paragraph mb-4" style="font-size: 15px !important;">
-                        Our collaborative process pairs you with elite industry specialists who capture your unique voice, refine your manuscript, design eye-catching covers, and navigate the entire publishing process on Amazon KDP and global platforms.
+                        Our collaborative process pairs you with elite industry specialists who capture your unique voice,
+                        refine your manuscript, design eye-catching covers, and navigate the entire publishing process on
+                        Amazon KDP and global platforms.
                     </p>
 
                     <!-- Core Strengths Cards -->
@@ -162,7 +167,8 @@
                         <a href="{{ route('about-us') }}" class="btn-red-pill mr-3 mb-2">
                             Read Our Story <i class="fa-solid fa-arrow-right ms-1 small"></i>
                         </a>
-                        <a href="{{ route('contact-us') }}" class="btn-brand-outline mb-2" style="border: 1px solid #001529 !important;">
+                        <a href="{{ route('contact-us') }}" class="btn-brand-outline mb-2"
+                            style="border: 1px solid #001529 !important;">
                             Let's Talk Project
                         </a>
                     </div>
@@ -173,157 +179,148 @@
     </section>
 
     <!-- ==========================================================================
-                                 WHAT WE DO SECTION (MATCHING BLUEPRINT GRID)
-                                 ========================================================================== -->
+                                             WHAT WE DO SECTION (MATCHING BLUEPRINT GRID)
+                                             ========================================================================== -->
     <section class="py-5 bg-light position-relative" id="what-we-do">
         <div class="container py-4">
-            <div class="row align-items-center g-5">
 
-                <!-- Left Content -->
-                <div class="col-lg-5" data-aos="fade-right">
-                    <span class="text-uppercase text-danger fw-bold small tracking-wider">WHAT WE DO</span>
-                    <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
-                        Complete Book Solutions <br>Under One Roof
-                    </h2>
-                    <p class="text-muted fs-6 leading-relaxed mb-4">
-                        No matter what genre or concept you have in mind, our expert writers and editors bring your story to
-                        life with creativity, structure, and precision. From fiction to non-fiction, autobiography to
-                        business guides — we write, edit, design, and publish your book with complete professionalism.
-                    </p>
-                    <a href="{{ route('contact-us') }}" class="btn-red-pill">
-                        Let’s Discuss Your Project <i class="fa-solid fa-chevron-right ms-1 small"></i>
-                    </a>
-                </div>
+            <!-- Centered Heading Content -->
+            <div class="text-center mb-5">
+                <span class="text-uppercase text-danger fw-bold small tracking-wider">WHAT WE DO</span>
+                <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
+                    Complete Book Solutions <br>Under One Roof
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 800px; font-size: 16px; line-height: 1.6;">
+                    No matter what genre or concept you have in mind, our expert writers and editors bring your story to
+                    life with creativity, structure, and precision. From fiction to non-fiction, autobiography to
+                    business guides — we write, edit, design, and publish your book with complete professionalism.
+                </p>
+                <a href="{{ route('contact-us') }}" class="btn-red-pill mt-2">
+                    Let’s Discuss Your Project <i class="fa-solid fa-chevron-right ms-1 small"></i>
+                </a>
+            </div>
 
-                <!-- Right 6 Feature Cards Grid -->
-                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-                    <div class="row g-4">
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="feature-box-card">
-                                <div class="feature-icon-red">
-                                    <i class="fa-solid fa-laptop-code"></i>
+            <!-- Dynamic Services Slick Slider -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="what-we-slider">
+                        @foreach ($services as $service)
+                            <div class="px-2 pb-2">
+                                <div class="feature-box-card">
+                                    <div>
+                                        <div class="feature-icon-red">
+                                            @if ($service->icon_image)
+                                                <img src="{{ asset($service->icon_image) }}" alt="{{ $service->title }}">
+                                            @else
+                                                <i class="fa-solid fa-laptop-code"></i>
+                                            @endif
+                                        </div>
+                                        <h5 class="fw-bold text-dark mb-2">{{ $service->title }}</h5>
+                                        <p class="text-muted small mb-0">{{ $service->short_desc }}</p>
+                                    </div>
+                                    <div class="mt-3">
+                                        <a href="{{ route('service', \Illuminate\Support\Str::slug($service->title)) }}"
+                                            class="learn-more-link">
+                                            Learn More <i class="fa-solid fa-arrow-right small"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                                <h5 class="fw-bold text-dark mb-2">Author Website</h5>
-                                <p class="text-muted small mb-0">Professional author websites that showcase your books,
-                                    highlight your journey, and build your reader fanbase.</p>
                             </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="feature-box-card">
-                                <div class="feature-icon-red">
-                                    <i class="fa-solid fa-feather-pointed"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Book Writing</h5>
-                                <p class="text-muted small mb-0">Our professional writers transform your ideas into
-                                    compelling narratives with strong characters and flow.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="feature-box-card">
-                                <div class="feature-icon-red">
-                                    <i class="fa-solid fa-book-open-reader"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">eBook Publishing</h5>
-                                <p class="text-muted small mb-0">Complete formatting, design, and distribution setup across
-                                    major digital platforms worldwide.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="feature-box-card">
-                                <div class="feature-icon-red">
-                                    <i class="fa-solid fa-palette"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Book Cover Design</h5>
-                                <p class="text-muted small mb-0">Stunning, original, and story-aligned book covers that
-                                    command attention on Amazon KDP shelves.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="feature-box-card">
-                                <div class="feature-icon-red">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Editing & Proofreading</h5>
-                                <p class="text-muted small mb-0">Polish your manuscript to perfection with our expert
-                                    editing and proofreading services.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <div class="feature-box-card">
-                                <div class="feature-icon-red">
-                                    <i class="fa-solid fa-bullhorn"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Book Promotion</h5>
-                                <p class="text-muted small mb-0">Strategic marketing and promotion to help your book reach
-                                    the right readers globally.</p>
-                            </div>
-                        </div>
-
+                        @endforeach
                     </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
-    <!-- ==========================================================================
-                                 WHY CHOOSE US BANNER (FULL RED BANNER)
-                                 ========================================================================== -->
-    <section class="bg-red-banner py-5 text-center text-white position-relative" data-aos="fade-up">
+    <section class="why-choose-us-sec py-5 position-relative">
         <div class="container py-4 position-relative" style="z-index: 2;">
-            <span class="text-uppercase fw-bold small tracking-wider opacity-75">WHY CHOOSE US</span>
-            <h2 class="display-6 fw-bold text-white mt-1 mb-3">
-                Step Into a World of Literary Excellence
-            </h2>
-            <p class="text-white opacity-90 mx-auto fs-6 mb-5" style="max-width: 750px;">
-                With over 10,000 satisfied clients across the United States, American Author Hub delivers premium,
-                affordable, and creative book writing services.
-            </p>
 
-            <!-- 5 Stats Row -->
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-2 col-6">
-                    <div class="p-3">
-                        <i class="fa-solid fa-users fs-3 text-white opacity-75 mb-2"></i>
-                        <h3 class="fw-bold text-white mb-1">10,000+</h3>
-                        <p class="small text-white opacity-75 mb-0">Satisfied Authors</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-6">
-                    <div class="p-3">
-                        <i class="fa-solid fa-pen-nib fs-3 text-white opacity-75 mb-2"></i>
-                        <h3 class="fw-bold text-white mb-1">500+</h3>
-                        <p class="small text-white opacity-75 mb-0">Top Writers</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-6">
-                    <div class="p-3">
-                        <i class="fa-solid fa-layer-group fs-3 text-white opacity-75 mb-2"></i>
-                        <h3 class="fw-bold text-white mb-1">40+</h3>
-                        <p class="small text-white opacity-75 mb-0">Distribution Channels</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-6">
-                    <div class="p-3">
-                        <i class="fa-solid fa-thumbs-up fs-3 text-white opacity-75 mb-2"></i>
-                        <h3 class="fw-bold text-white mb-1">98%</h3>
-                        <p class="small text-white opacity-75 mb-0">Client Satisfaction</p>
-                    </div>
-                </div>
-                <div class="col-md-2 col-6">
-                    <div class="p-3">
-                        <i class="fa-solid fa-headset fs-3 text-white opacity-75 mb-2"></i>
-                        <h3 class="fw-bold text-white mb-1">24/7</h3>
-                        <p class="small text-white opacity-75 mb-0">Expert Support</p>
-                    </div>
-                </div>
+            <!-- Centered Header -->
+            <div class="text-center mb-5">
+                <span class="text-uppercase fw-bold small text-danger" style="letter-spacing: 2px;">— WHY CHOOSE US —</span>
+                <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
+                    Why Thousands of Authors <span class="text-danger">Trust Us</span>
+                </h2>
+                <p class="text-muted mx-auto fs-6" style="max-width: 750px; line-height: 1.6;">
+                    We combine creativity, expertise, and dedication to deliver exceptional results that set your book
+                    apart.
+                </p>
             </div>
+
+            <!-- Two Columns content (Left Cards, Right Image) -->
+            <div class="row align-items-center g-5">
+
+                <!-- Left Column: 4 Grid Cards -->
+                <div class="col-lg-6">
+                    <div class="row g-4 g-md-5">
+
+                         <!-- Card 1 -->
+                        <div class="col-md-6">
+                            <div class="why-card-modern">
+                                <div class="why-card-icon">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <h4 class="why-card-title">Expert Team</h4>
+                                <p class="why-card-text">
+                                    Skilled writers, editors and designers with years of industry experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-6">
+                            <div class="why-card-modern">
+                                <div class="why-card-icon">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                                <h4 class="why-card-title">End-to-End Services</h4>
+                                <p class="why-card-text">
+                                    From writing and editing to publishing and marketing - we handle everything.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-6 mt-3">
+                            <div class="why-card-modern">
+                                <div class="why-card-icon">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <h4 class="why-card-title">Quality Assurance</h4>
+                                <p class="why-card-text">
+                                    We follow industry best practices to deliver high-quality, error-free books.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-md-6 mt-3">
+                            <div class="why-card-modern">
+                                <div class="why-card-icon">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                </div>
+                                <h4 class="why-card-title">Proven Results</h4>
+                                <p class="why-card-text">
+                                    Thousands of books published and authors empowered to achieve their dreams.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Mockup -->
+                <div class="col-lg-6 text-center">
+                    <div class="why-visual-wrapper">
+                        <img src="{{ asset('assets/imgs/why_choose_us_books.png') }}" alt="Why Authors Trust Us"
+                            class="img-fluid why-mockup-img">
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
 
@@ -334,24 +331,28 @@
     @include('layouts.reviews')
 
     <!-- ==========================================================================
-                                 CALL TO ACTION BANNER (RED BANNER)
-                                 ========================================================================== -->
-    <section class="bg-red-banner py-5 text-center text-white position-relative" data-aos="zoom-in">
-        <div class="container py-4 position-relative" style="z-index: 2;">
-            <span class="badge bg-white text-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-3 shadow-sm">
-                100% ORIGINAL • CONFIDENTIAL • RESULT DRIVEN
-            </span>
-            <h3 class="display-5 fw-bold text-white mb-4">
-                Turn Your Dream Into a Bestseller <br>
-                with American Author Hub’s Expert Team
-            </h3>
-            <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
-                <a href="{{ route('contact-us') }}" class="btn-red-pill py-3 px-4 fs-6">
-                    <i class="fa-solid fa-rocket me-1"></i> Get Started Today
-                </a>
-                <a href="mailto:info@americanauthorhub.com" class="btn-white-pill py-3 px-4 fs-6">
-                    <i class="fa-solid fa-envelope me-1 text-danger"></i> info@americanauthorhub.com
-                </a>
+                                             CALL TO ACTION BANNER (RED BANNER)
+                                             ========================================================================== -->
+    <section class="bg-red-banner">
+        <div class="container">
+            <div class="premium-cta-card text-center">
+                <div class="cta-content-wrapper">
+                    <span class="premium-cta-badge">
+                        100% ORIGINAL • CONFIDENTIAL • RESULT DRIVEN
+                    </span>
+                    <h3>
+                        Turn Your Dream Into a Bestseller <br>
+                        with American Author Hub’s Expert Team
+                    </h3>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap mt-2">
+                        <a href="{{ route('contact-us') }}" class="btn-cta-primary">
+                            <i class="fa-solid fa-rocket"></i> Get Started Today
+                        </a>
+                        <a href="mailto:info@americanauthorhub.com" class="btn-cta-secondary">
+                            <i class="fa-solid fa-envelope"></i> info@americanauthorhub.com
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -3,7 +3,7 @@
         <div class="row align-items-center g-5">
             
             <!-- Left Side Content -->
-            <div class="col-lg-5" data-aos="fade-right">
+            <div class="col-lg-5">
                 <span class="text-uppercase text-danger fw-bold small tracking-wider">GET IN TOUCH</span>
                 <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
                     We’re Here to <span class="text-danger">Support You</span>
@@ -32,7 +32,7 @@
             </div>
 
             <!-- Right Side Form -->
-            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="col-lg-7">
                 <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm border border-light">
                     <form method="POST" action="{{ route('contact.store') }}">
                         @csrf
