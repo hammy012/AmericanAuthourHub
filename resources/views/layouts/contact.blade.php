@@ -3,7 +3,7 @@
     <div class="container">
 
         <!-- Section Header -->
-        <div class="banner-head">
+        <div class="banner-head" data-aos="fade-up">
             <span>
                 <i class="fa-solid fa-feather-pointed"></i> CONTACT US <i class="fa-solid fa-feather-pointed"></i>
             </span>
@@ -17,7 +17,7 @@
         <div class="row g-5 align-items-center" style="margin-top: -40px !important">
 
             <!-- Left Column: Info list & privacy -->
-            <div class="col-lg-5">
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
                 <div class="contact-left-wrapper">
                     <h3 class="contact-left-title">Get In Touch</h3>
                     <p class="contact-left-text">
@@ -85,7 +85,7 @@
             </div>
 
             <!-- Right Column: Form Card -->
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="900">
                 <div class="contact-premium-form-card">
 
                     <!-- Form Card Header -->

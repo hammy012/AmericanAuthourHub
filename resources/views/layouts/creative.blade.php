@@ -244,7 +244,7 @@
     <div class="container">
 
         <!-- Heading -->
-        <div class="banner-head">
+        <div class="banner-head" data-aos="fade-up">
             <h2>Meta Creatives</h2>
             <p>
                 Explore our high-converting, professionally designed creatives crafted
@@ -253,7 +253,7 @@
         </div>
 
         <!-- Slider -->
-        <div class="swiper creativeSwiper">
+        <div class="swiper creativeSwiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">

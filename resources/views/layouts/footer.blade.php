@@ -50,13 +50,19 @@
             <div class="col-lg-3 col-md-6">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled d-flex flex-column gap-3 small">
-                    <li><a href="{{ route('about-us') }}"><span class="text-danger me-2">›</span> About Us</a></li>
-                    <li><a href="{{ route('book-video-trailer') }}"><span class="text-danger me-2">›</span>Video
+                    <li><a href="{{ route('about-us') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> About Us</a></li>
+                    <li><a href="{{ route('book-video-trailer') }}" style=" font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span>Video
                             Trailer</a></li>
-                    <li><a href="{{ route('blogss') }}"><span class="text-danger me-2">›</span> Blog</a></li>
-                    <li><a href="{{ route('faqs') }}"><span class="text-danger me-2">›</span> FAQs</a></li>
-                    <li><a href="{{ url('/#our-work') }}"><span class="text-danger me-2">›</span> Our Work</a></li>
-                    <li><a href="{{ route('contact-us') }}"><span class="text-danger me-2">›</span> Contact Us</a></li>
+                    <li><a href="{{ route('blogss') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> Blog</a></li>
+                    <li><a href="{{ route('faqs') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> FAQs</a></li>
+                    <li><a href="{{ url('/#our-work') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> Our Work</a></li>
+                    <li><a href="{{ route('contact-us') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> Contact Us</a></li>
                 </ul>
             </div>
 
@@ -64,17 +70,22 @@
             <div class="col-lg-3 col-md-6">
                 <h5>Our Services</h5>
                 <ul class="list-unstyled d-flex flex-column gap-3 small">
-                    <li><a href="{{ url('service/book-promotion') }}"><span class="text-danger me-2">›</span> Book
+                    <li><a href="{{ url('service/book-promotion') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> Book
                             Promotion</a></li>
-                    <li><a href="{{ url('service/audio-book') }}"><span class="text-danger me-2">›</span> Audio Book</a>
+                    <li><a href="{{ url('service/audio-book') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> Audio Book</a>
                     </li>
-                    <li><a href="{{ url('service/book-formatting') }}"><span class="text-danger me-2">›</span> Book
+                    <li><a href="{{ url('service/book-formatting') }}"
+                            style="font-size: 14px; margin-bottom: 4px;"><span class="text-danger me-2">›</span> Book
                             Formatting</a></li>
-                    <li><a href="{{ url('service/e-book-writing') }}"><span class="text-danger me-2">›</span> E-book
+                    <li><a href="{{ url('service/e-book-writing') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> E-book
                             Writing</a></li>
-                    <li><a href="{{ url('service/author-website') }}"><span class="text-danger me-2">›</span> Author
+                    <li><a href="{{ url('service/author-website') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                                class="text-danger me-2">›</span> Author
                             Website</a></li>
-                    <li><a href="{{ url('service/ghostwriting') }}"><span
+                    <li><a href="{{ url('service/ghostwriting') }}" style="font-size: 14px; margin-bottom: 4px;"><span
                                 class="text-danger me-2">›</span>Ghostwriting</a></li>
                 </ul>
             </div>

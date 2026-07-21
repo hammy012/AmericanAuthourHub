@@ -212,13 +212,13 @@ header.sticky-header {
 }
 
 .premium-cta-card {
-    background: linear-gradient(135deg, #001529 0%, #002768 50%, #9F0B07 100%);
+    background: linear-gradient(135deg, #060c1d 0%, #14122d 45%, #7a0907 100%);
     border-radius: 30px;
     padding: 60px 40px;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 20px 50px rgba(159, 11, 7, 0.18);
+    box-shadow: 0 20px 50px rgba(122, 9, 7, 0.2);
     z-index: 1;
 }
 

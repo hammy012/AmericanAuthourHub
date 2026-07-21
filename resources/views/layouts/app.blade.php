@@ -573,18 +573,46 @@
     })();
     </script>
 
-    <!-- AOS Animation JS -->
+    <!-- AOS Animation JS & Fail-Safe Auto-Reveal -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // 1. Initialize AOS
             if (typeof AOS !== 'undefined') {
                 AOS.init({
                     duration: 800,
                     once: true,
-                    offset: 50,
-                    easing: 'ease-out-cubic'
+                    offset: 30,
+                    easing: 'ease-out-cubic',
+                    disableMutationObserver: false
+                });
+
+                window.addEventListener('load', function() {
+                    AOS.refresh();
                 });
             }
+
+            // 2. IntersectionObserver for instant smooth trigger
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('aos-animate');
+                        }
+                    });
+                }, { threshold: 0.05 });
+
+                document.querySelectorAll('[data-aos]').forEach(function(el) {
+                    observer.observe(el);
+                });
+            }
+
+            // 3. Absolute Fail-Safe: Auto-reveal any un-animated element after 1.5s so nothing stays hidden
+            setTimeout(function() {
+                document.querySelectorAll('[data-aos]:not(.aos-animate)').forEach(function(el) {
+                    el.classList.add('aos-animate');
+                });
+            }, 1500);
         });
     </script>
 

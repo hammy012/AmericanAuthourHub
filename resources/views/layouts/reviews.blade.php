@@ -210,7 +210,7 @@
     <div class="container">
         
         <!-- Header -->
-        <div class="banner-head">
+        <div class="banner-head" data-aos="fade-up">
             <span>
                 <i class="fa-solid fa-feather-pointed"></i> WHAT OUR AUTHORS SAY <i class="fa-solid fa-feather-pointed"></i>
             </span>
@@ -264,7 +264,7 @@
             ];
         @endphp
 
-        <div class="testi-swiper">
+        <div class="testi-swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper swiper-container testi-swiper-container">
                 <div class="swiper-wrapper">
                     @foreach($testimonials as $t)

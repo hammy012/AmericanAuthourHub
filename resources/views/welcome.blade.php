@@ -185,7 +185,7 @@
         <div class="container py-4">
 
             <!-- Centered Heading Content -->
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
                 <span class="text-uppercase text-danger fw-bold small tracking-wider">WHAT WE DO</span>
                 <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
                     Complete Book Solutions <br>Under One Roof
@@ -201,7 +201,7 @@
             </div>
 
             <!-- Dynamic Services Slick Slider -->
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-12">
                     <div class="what-we-slider">
                         @foreach ($services as $service)
@@ -238,7 +238,7 @@
         <div class="container py-4 position-relative" style="z-index: 2;">
 
             <!-- Centered Header -->
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up">
                 <span class="text-uppercase fw-bold small text-danger" style="letter-spacing: 2px;">— WHY CHOOSE US —</span>
                 <h2 class="display-6 fw-bold text-dark mt-2 mb-3">
                     Why Thousands of Authors <span class="text-danger">Trust Us</span>
@@ -253,7 +253,7 @@
             <div class="row align-items-center g-5">
 
                 <!-- Left Column: 4 Grid Cards -->
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
                     <div class="row g-4 g-md-5">
 
                          <!-- Card 1 -->
@@ -312,7 +312,7 @@
                 </div>
 
                 <!-- Right Column: Visual Mockup -->
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="900">
                     <div class="why-visual-wrapper">
                         <img src="{{ asset('assets/imgs/why_choose_us_books.png') }}" alt="Why Authors Trust Us"
                             class="img-fluid why-mockup-img">
@@ -335,7 +335,7 @@
                                              ========================================================================== -->
     <section class="bg-red-banner">
         <div class="container">
-            <div class="premium-cta-card text-center">
+            <div class="premium-cta-card text-center" data-aos="zoom-in" data-aos-duration="900">
                 <div class="cta-content-wrapper">
                     <span class="premium-cta-badge">
                         100% ORIGINAL • CONFIDENTIAL • RESULT DRIVEN
