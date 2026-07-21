@@ -51,8 +51,8 @@
                         </div>
                     </li>
 
-                    <li><a href="{{ route('book-video-trailer') }}"
-                            class="nav-link-item {{ request()->routeIs('book-video-trailer') ? 'active' : '' }}">Our
+                    <li><a href="{{ route('our-work') }}"
+                            class="nav-link-item {{ (request()->routeIs('our-work') || request()->routeIs('book-video-trailer')) ? 'active' : '' }}">Our
                             Work</a></li>
                     <li><a href="{{ route('blogss') }}"
                             class="nav-link-item {{ request()->routeIs('blogss') ? 'active' : '' }}">Blog</a></li>

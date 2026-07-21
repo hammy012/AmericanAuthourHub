@@ -28,6 +28,7 @@ Route::get('contact-us', [WebController::class, 'contact_us'])->name('contact-us
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/contact/quick', [ContactController::class, 'quickStore'])->name('contact.quick');
 
+Route::get('our-work', [WebController::class, 'book_video_trailer'])->name('our-work');
 Route::get('book-video-trailer', [WebController::class, 'book_video_trailer'])->name('book-video-trailer');
 Route::get('terms-conditions', [WebController::class, 'term_condition'])->name('terms-conditions');
 Route::get('privacy-policy', [WebController::class, 'privacy_policy'])->name('privacy-policy');

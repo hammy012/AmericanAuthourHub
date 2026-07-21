@@ -141,29 +141,8 @@
     @include('layouts.reviews')
 
 
-    <section class="cta-se-2">
-        <div class="container">
-            <div class="cta-head-2">
-                <span>100% Original • Authentic • Professionally Written</span>
-                <h3>
-                    Turn Your Dream Into a Bestseller <br>
-                    with American Author Hub’s Expert Writing Services
-                </h3>
-                <ul class="cta-btn">
-                    <!--<li>-->
-                    <!--    <a href="tel:+13463476046">-->
-                    <!--                +1 (346) 347-6046-->
-                    <!--            </a>-->
-                    <!--</li>-->
-                    <li>
-                        <a href="mailto:info@americanauthorhub.com">
-                            <span>info@americanauthorhub.com</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <!-- Call To Action Banner -->
+    @include('layouts.cta')
     
     @include('layouts.contact')
 

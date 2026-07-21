@@ -59,7 +59,7 @@
                                 class="text-danger me-2">›</span> Blog</a></li>
                     <li><a href="{{ route('faqs') }}" style="font-size: 14px; margin-bottom: 4px;"><span
                                 class="text-danger me-2">›</span> FAQs</a></li>
-                    <li><a href="{{ url('/#our-work') }}" style="font-size: 14px; margin-bottom: 4px;"><span
+                    <li><a href="{{ route('our-work') }}" style="font-size: 14px; margin-bottom: 4px;"><span
                                 class="text-danger me-2">›</span> Our Work</a></li>
                     <li><a href="{{ route('contact-us') }}" style="font-size: 14px; margin-bottom: 4px;"><span
                                 class="text-danger me-2">›</span> Contact Us</a></li>
