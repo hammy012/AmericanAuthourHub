@@ -119,7 +119,7 @@
                 <span>
                     <i class="fa-solid fa-feather-pointed"></i> WHY CHOOSE US <i class="fa-solid fa-feather-pointed"></i>
                 </span>
-                <h2>Why Authors Trust Our <span class="text-danger">{{ $service->title }}</span></h2>
+                <h2>Why Authors Trust Our {{ $service->title }}</h2>
                 <p class="testi-sub text-muted mx-auto" style="max-width: 700px;">
                     We blend literary craftsmanship with data-driven publishing strategies to ensure your book stands out in a crowded market.
                 </p>
@@ -175,7 +175,7 @@
                 <span>
                     <i class="fa-solid fa-feather-pointed"></i> EXPAND YOUR REACH <i class="fa-solid fa-feather-pointed"></i>
                 </span>
-                <h2>Explore Other <span class="text-danger">Author Services</span></h2>
+                <h2>Explore Other Author Services</h2>
                 <p class="testi-sub text-muted mx-auto" style="max-width: 650px;">
                     Combine our writing, editing, and promotion services for maximum publishing impact.
                 </p>
