@@ -8,7 +8,7 @@
                 <i class="fa-solid fa-feather-pointed"></i> CONTACT US <i class="fa-solid fa-feather-pointed"></i>
             </span>
             <h2 style="margin-top: -10px !important">Let's Work </h2>
-            <span class="text-danger" style="margin-top: -80px !important">Together</span>
+            <span class="text-danger" style="margin-top: 0px !important">Together</span>
             <p class="testi-sub text-muted" style="margin-top: -25px !important">
                 Have a question or ready to get started? We'd love to hear from you.
             </p>
