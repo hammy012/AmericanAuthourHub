@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [WebController::class, 'index'])->name('home');
 Route::get('about-us', [WebController::class, 'about_us'])->name('about-us');
 Route::get('service/{slug}', [WebController::class, 'service'])->name('service');
-Route::get('/blogs', [WebController::class, 'blogs'])->name('blogs');
+Route::get('/blogs', [WebController::class, 'blogss'])->name('blogs');
 Route::get('/our-blogs', [WebController::class, 'blogss'])->name('blogss');
 Route::get('blog/{slug}', [WebController::class, 'blog'])->name('blog');
 Route::get('faqs', [WebController::class, 'faqs'])->name('faqs');
