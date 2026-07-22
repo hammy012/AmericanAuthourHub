@@ -5,8 +5,8 @@
 @section('content')
 
     <!-- ==========================================================================
-                                             HERO SECTION (MATCHING BLUEPRINT LAYOUT)
-                                             ========================================================================== -->
+                                                         HERO SECTION (MATCHING BLUEPRINT LAYOUT)
+                                                         ========================================================================== -->
     <section class="position-relative hero-bg-ref overflow-hidden d-flex align-items-center"
         style="padding-top: 20px !important; padding-bottom: 20px !important; min-height: calc(100vh - 88px);">
         <div class="container py-lg-2">
@@ -91,8 +91,8 @@
     </section>
 
     <!-- ==========================================================================
-                                             ABOUT US SECTION (SEO OPTIMIZED & PROFESSIONAL)
-                                             ========================================================================== -->
+                                                         ABOUT US SECTION (SEO OPTIMIZED & PROFESSIONAL)
+                                                         ========================================================================== -->
     <section class="py-5 bg-white position-relative" id="home-about"
         style="border-top: 1px solid rgba(226, 232, 240, 0.4);">
         <div class="container py-lg-4">
@@ -179,8 +179,8 @@
     </section>
 
     <!-- ==========================================================================
-                                             WHAT WE DO SECTION (MATCHING BLUEPRINT GRID)
-                                             ========================================================================== -->
+                                                         WHAT WE DO SECTION (MATCHING BLUEPRINT GRID)
+                                                         ========================================================================== -->
     <section class="py-5 bg-light position-relative" id="what-we-do">
         <div class="container py-4">
 
@@ -256,7 +256,7 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
                     <div class="row g-4 g-md-5">
 
-                         <!-- Card 1 -->
+                        <!-- Card 1 -->
                         <div class="col-md-6">
                             <div class="why-card-modern">
                                 <div class="why-card-icon">
@@ -326,6 +326,9 @@
 
     <!-- Featured Books Carousel -->
     @include('layouts.creative')
+
+    <!-- PRICING -->
+    @include('layouts.pricing')
 
     <!-- Author Testimonials -->
     @include('layouts.reviews')
