@@ -52,9 +52,6 @@
                 <ul class="list-unstyled d-flex flex-column gap-3 small">
                     <li><a href="{{ route('about-us') }}" style="font-size: 14px; margin-bottom: 4px;"><span
                                 class="text-danger me-2">›</span> About Us</a></li>
-                    <li><a href="{{ route('book-video-trailer') }}" style=" font-size: 14px; margin-bottom: 4px;"><span
-                                class="text-danger me-2">›</span>Video
-                            Trailer</a></li>
                     <li><a href="{{ route('blogss') }}" style="font-size: 14px; margin-bottom: 4px;"><span
                                 class="text-danger me-2">›</span> Blog</a></li>
                     <li><a href="{{ route('faqs') }}" style="font-size: 14px; margin-bottom: 4px;"><span
