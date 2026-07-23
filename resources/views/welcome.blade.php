@@ -29,7 +29,7 @@
 
                     <!-- Buttons -->
                     <div class="d-flex flex-wrap align-items-center mb-3">
-                        <a href="{{ route('contact-us') }}" class="btn-red-pill" style="margin-right: 12px !important;">
+                        <a href="{{ route('home') }}#pricing" class="btn-red-pill" style="margin-right: 12px !important;">
                             <i class="fa-solid fa-paper-plane me-1"></i> Start Your Project
                         </a>
                         <a href="#what-we-do" class="btn-brand-outline">

@@ -5,26 +5,36 @@
 @section('content')
 
 
-    <section class="contact-banner py-5 section-white"
-        style="background: url('{{ asset('assets/imgs/main-back.png') }}') center/cover no-repeat;">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-md-6" data-aos="fade-right">
-                    <div class="banner-head">
-                        <span class="gradient-badge mb-3"><i class="fa-solid fa-headset me-1"></i> Get In Touch</span>
-                        <h1 class="text-light fw-bold display-5">We’re Here to Bring Your <span
-                                class="gradient-text-red">Vision to Life</span></h1>
-                        <p class="text-light opacity-90 fs-5 mt-3">
-                            Looking for expert writers to craft your story? Connect with us today.
-                            Share your project details, and our professional team will deliver exceptional
-                            writing that captures your ideas with creativity, precision, and excellence.
-                        </p>
-                        <a href="#contact" class="btn-gradient-primary btn-lg mt-3"><i
-                                class="fa-solid fa-comments me-2"></i> Start Conversation</a>
+    <section class="position-relative hero-bg-ref overflow-hidden d-flex align-items-center"
+        style="padding-top: 60px !important; padding-bottom: 60px !important; min-height: 420px;">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
+                    <span class="hero-subtitle text-uppercase d-inline-block mb-3">
+                        <i class="fa-solid fa-headset me-1 text-brand-red"></i> GET IN TOUCH
+                    </span>
+                    <h1 class="hero-title mb-3">
+                        We’re Here to Bring Your<br>
+                        <span class="gradient-text">Vision to Life</span>
+                    </h1>
+                    <p class="hero-paragraph mb-4" style="max-width: 540px;">
+                        Looking for expert writers to craft your story? Connect with us today.
+                        Share your project details, and our professional team will deliver exceptional
+                        writing that captures your ideas with creativity, precision, and excellence.
+                    </p>
+                    <div class="d-flex flex-wrap align-items-center gap-3">
+                        <a href="#contact" class="btn-red-pill">
+                            <i class="fa-solid fa-comments me-1"></i> Start Conversation
+                        </a>
+                        <a href="tel:+13463476046" class="btn-brand-outline">
+                            <i class="fa-solid fa-phone me-1"></i> Call Us Now
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                    <img src="{{ asset('assets/imgs/about.webp') }}" alt="Contact Us" class="shadow-lg rounded-4 w-100">
+                <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="about-image-wrapper">
+                        <img src="{{ asset('assets/imgs/contact-hero.png') }}" alt="Contact American Author Hub" class="img-fluid rounded-4">
+                    </div>
                 </div>
             </div>
         </div>

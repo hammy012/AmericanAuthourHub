@@ -1,7 +1,7 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-<section class="pricing-section position-relative py-5 bg-light-gradient">
+<section id="pricing" class="pricing-section position-relative py-5 bg-light-gradient">
     <div class="container position-relative" style="z-index: 2;">
 
         <!-- Section Header -->

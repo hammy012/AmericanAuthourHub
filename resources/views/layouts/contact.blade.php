@@ -7,14 +7,13 @@
             <span>
                 <i class="fa-solid fa-feather-pointed"></i> CONTACT US <i class="fa-solid fa-feather-pointed"></i>
             </span>
-            <h2 style="margin-top: -10px !important">Let's Work </h2>
-            <span class="text-danger" style="margin-top: 0px !important">Together</span>
-            <p class="testi-sub text-muted" style="margin-top: -25px !important">
+            <h2>Let's Work <span class="text-brand-red">Together</span></h2>
+            <p class="testi-sub text-muted">
                 Have a question or ready to get started? We'd love to hear from you.
             </p>
         </div>
 
-        <div class="row g-5 align-items-center" style="margin-top: -40px !important">
+        <div class="row g-5 align-items-center mt-2">
 
             <!-- Left Column: Info list & privacy -->
             <div class="col-lg-5" data-aos="fade-right" data-aos-duration="900">
@@ -146,7 +145,7 @@
                             <div class="input-icon-wrapper">
                                 <textarea id="message" name="message" placeholder="Your Message" class="form-control"
                                     rows="4" required></textarea>
-                                <textarea-icon><i class="fa-solid fa-pen"></i></textarea-icon>
+                                <i class="fa-solid fa-pen textarea-icon"></i>
                             </div>
                         </div>
 

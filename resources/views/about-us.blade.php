@@ -23,7 +23,7 @@
                         services that connect authors with their readers and bring their ideas to life effortlessly.
                     </p>
                     <div class="d-flex flex-wrap align-items-center gap-3">
-                        <a href="{{ route('contact-us') }}" class="btn-red-pill">
+                        <a href="{{ route('home') }}#pricing" class="btn-red-pill">
                             <i class="fa-solid fa-paper-plane me-1"></i> Start Your Project
                         </a>
                         <a href="#who-we-are" class="btn-brand-outline">

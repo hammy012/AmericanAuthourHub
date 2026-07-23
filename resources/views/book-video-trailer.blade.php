@@ -18,7 +18,7 @@
                 From KDP #1 Bestsellers to award-nominated memoirs and corporate leadership guides — explore how our team of expert writers, editors, and designers turn author visions into published success.
             </p>
             <div class="d-flex justify-content-center flex-wrap" style="gap: 15px !important;">
-                <a href="{{ route('contact-us') }}" class="btn-red-pill" style="margin-right: 12px !important;">
+                <a href="{{ route('home') }}#pricing" class="btn-red-pill" style="margin-right: 12px !important;">
                     <i class="fa-solid fa-paper-plane me-1"></i> Start Your Book Project
                 </a>
                 <a href="#our-work-grid" class="btn-brand-outline">
