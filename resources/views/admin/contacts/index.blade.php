@@ -23,6 +23,7 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Phone</th>
+                                    <th>Service</th>
                                     <th>Message</th>
                                     <th>Location</th>
                                     <th>Received</th>
@@ -36,6 +37,7 @@
                                         <td>{{ $c->name }}</td>
                                         <td>{{ $c->email }}</td>
                                         <td>{{ $c->phone }}</td>
+                                        <td><span class="badge bg-secondary text-white">{{ $c->service ?? '-' }}</span></td>
                                         <td>{{ \Illuminate\Support\Str::limit($c->message, 60) }}</td>
                                         <td>
                                             {{ $c->city ? $c->city . ' / ' : '' }}

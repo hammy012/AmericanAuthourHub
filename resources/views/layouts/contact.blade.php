@@ -139,6 +139,28 @@
                             </div>
                         </div>
 
+                        <!-- Service Field -->
+                        <div class="form-group-custom">
+                            <label for="service">Select Service</label>
+                            <div class="input-icon-wrapper">
+                                <select id="service" name="service" required class="form-control" style="appearance: none; -webkit-appearance: none; -moz-appearance: none; background: url(&quot;data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%2394a3b8' d='M6 8.5L2.5 5h7L6 8.5z'/></svg>&quot;) no-repeat; background-position: calc(100% - 20px) 50%; padding-right: 40px;">
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="Book Publishing">Book Publishing</option>
+                                    <option value="Ghostwriting">Ghostwriting</option>
+                                    <option value="Book Editing & Proofreading">Book Editing & Proofreading</option>
+                                    <option value="Book Formatting">Book Formatting</option>
+                                    <option value="Book Cover Design">Book Cover Design</option>
+                                    <option value="Book Marketing & Promotion">Book Marketing & Promotion</option>
+                                    <option value="Audio Book">Audio Book</option>
+                                    <option value="Author Website">Author Website</option>
+                                    <option value="Book Video Trailer">Book Video Trailer</option>
+                                    <option value="Book Printing">Book Printing</option>
+                                    <option value="Other">Other / Not Sure</option>
+                                </select>
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                        </div>
+
                         <!-- Message Field -->
                         <div class="form-group-custom">
                             <label for="message">Message</label>

@@ -17,6 +17,7 @@
                         <tr><th>Name</th><td>{{ $contact->name }}</td></tr>
                         <tr><th>Email</th><td>{{ $contact->email }}</td></tr>
                         <tr><th>Phone</th><td>{{ $contact->phone }}</td></tr>
+                        <tr><th>Service Requested</th><td><span class="badge bg-secondary text-white" style="font-size: 14px;">{{ $contact->service ?? '-' }}</span></td></tr>
                         <tr><th>Message</th><td>{!! nl2br(e($contact->message)) !!}</td></tr>
                     </table>
 

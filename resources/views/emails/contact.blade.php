@@ -6,6 +6,7 @@
     <p><strong>Name:</strong> {{ $contact->name }}</p>
     <p><strong>Email:</strong> {{ $contact->email }}</p>
     <p><strong>Phone:</strong> {{ $contact->phone }}</p>
+    <p><strong>Selected Service:</strong> {{ $contact->service ?? 'Not Specified' }}</p>
     <p><strong>Message:</strong><br/> {!! nl2br(e($contact->message)) !!}</p>
 
     <h3>Client Info</h3>

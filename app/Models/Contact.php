@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     protected $fillable = [
-        'name','email','phone','message',
+        'name','email','phone','service','message',
         'policy_check','terms_policy',
         'ip_address','user_agent',
         'city','region','country','country_code','timezone','lat','lon','isp'
