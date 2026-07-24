@@ -63,7 +63,7 @@
                     </ul>
 
                     <div class="btn-container mt-auto">
-                        <a href="{{ route('contact-us') }}" class="pricing-action-btn btn-outline-brand">
+                        <a href="{{ route('payment.checkout', 'basic') }}" class="pricing-action-btn btn-outline-brand">
                             Get Started Now <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                     </ul>
 
                     <div class="btn-container mt-auto">
-                        <a href="{{ route('contact-us') }}" class="pricing-action-btn btn-brand-solid">
+                        <a href="{{ route('payment.checkout', 'standard') }}" class="pricing-action-btn btn-brand-solid">
                             Claim Offer Now <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                     </div>
@@ -196,7 +196,7 @@
                     </ul>
 
                     <div class="btn-container mt-auto">
-                        <a href="{{ route('contact-us') }}" class="pricing-action-btn btn-outline-brand">
+                        <a href="{{ route('payment.checkout', 'premium') }}" class="pricing-action-btn btn-outline-brand">
                             Get Started Now <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                     </div>

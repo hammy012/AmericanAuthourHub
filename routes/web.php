@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,10 @@ Route::get('our-work', [WebController::class, 'book_video_trailer'])->name('our-
 Route::get('book-video-trailer', [WebController::class, 'book_video_trailer'])->name('book-video-trailer');
 Route::get('terms-conditions', [WebController::class, 'term_condition'])->name('terms-conditions');
 Route::get('privacy-policy', [WebController::class, 'privacy_policy'])->name('privacy-policy');
+
+// Stripe Payment Routes
+Route::get('payment/success', [PaymentController::class, 'success'])->name('payment.success');
+Route::get('payment/{slug}', [PaymentController::class, 'checkout'])->name('payment.checkout');
+Route::post('payment/process', [PaymentController::class, 'process'])->name('payment.process');
+
+
