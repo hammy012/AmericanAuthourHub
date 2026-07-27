@@ -573,46 +573,73 @@
     })();
     </script>
 
-    <!-- AOS Animation JS & Fail-Safe Auto-Reveal -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Custom IntersectionObserver Scroll Animations & Mobile Navigation Helper -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // 1. Initialize AOS
-            if (typeof AOS !== 'undefined') {
-                AOS.init({
-                    duration: 800,
-                    once: true,
-                    offset: 30,
-                    easing: 'ease-out-cubic',
-                    disableMutationObserver: false
-                });
-
-                window.addEventListener('load', function() {
-                    AOS.refresh();
-                });
-            }
-
-            // 2. IntersectionObserver for instant smooth trigger
+            // 1. Scroll-triggered animations via IntersectionObserver
+            const animatedElements = document.querySelectorAll('[data-aos]');
+            
             if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver(function(entries) {
-                    entries.forEach(function(entry) {
+                const observer = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
                         if (entry.isIntersecting) {
-                            entry.target.classList.add('aos-animate');
+                            const el = entry.target;
+                            const delay = el.getAttribute('data-aos-delay') || 0;
+                            const duration = el.getAttribute('data-aos-duration') || 800;
+                            
+                            el.style.transitionDuration = duration + 'ms';
+                            
+                            setTimeout(function () {
+                                el.classList.add('aos-animate');
+                            }, delay);
+                            
+                            observer.unobserve(el); // Animate once
                         }
                     });
-                }, { threshold: 0.05 });
-
-                document.querySelectorAll('[data-aos]').forEach(function(el) {
+                }, {
+                    threshold: 0.05,
+                    rootMargin: '0px 0px -40px 0px'
+                });
+                
+                animatedElements.forEach(function (el) {
                     observer.observe(el);
+                });
+            } else {
+                // Fallback for older browsers
+                animatedElements.forEach(function (el) {
+                    el.classList.add('aos-animate');
                 });
             }
 
-            // 3. Absolute Fail-Safe: Auto-reveal any un-animated element after 1.5s so nothing stays hidden
-            setTimeout(function() {
-                document.querySelectorAll('[data-aos]:not(.aos-animate)').forEach(function(el) {
-                    el.classList.add('aos-animate');
+            // 2. Mobile Menu Dropdown Toggle (Services)
+            const serviceToggle = document.querySelector('.mobile-service-toggle');
+            if (serviceToggle) {
+                serviceToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const submenu = this.nextElementSibling;
+                    if (submenu) {
+                        submenu.classList.toggle('open');
+                        const icon = this.querySelector('i');
+                        if (icon) {
+                            icon.classList.toggle('fa-chevron-down');
+                            icon.classList.toggle('fa-chevron-up');
+                        }
+                    }
                 });
-            }, 1500);
+            }
+
+            // 3. Close mobile menu when clicking outside of it
+            document.addEventListener('click', function (e) {
+                const menuWrap = document.querySelector('.menuWrap');
+                const menuBar = document.querySelector('.menu-Bar');
+                if (menuWrap && menuWrap.classList.contains('open')) {
+                    if (!menuWrap.contains(e.target) && !menuBar.contains(e.target)) {
+                        menuWrap.classList.remove('open');
+                        menuBar.classList.remove('open');
+                        document.body.classList.remove('ovr-hiddn');
+                    }
+                }
+            });
         });
     </script>
 

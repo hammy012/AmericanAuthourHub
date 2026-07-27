@@ -13,22 +13,22 @@
             <div class="row align-items-center g-5">
 
                 <!-- Left Content -->
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
-                    <span class="hero-subtitle text-uppercase d-inline-block mb-3">
+                <div class="col-lg-6">
+                    <span class="hero-subtitle text-uppercase d-inline-block mb-3 animate-hero animate-fade-down">
                         USA'S #1 BOOK WRITING & PUBLISHING AGENCY
                     </span>
-                    <h1 class="hero-title mb-3">
+                    <h1 class="hero-title mb-3 animate-hero animate-fade-up delay-100">
                         Transform Your Ideas<br>
                         Into<br>
                         <span class="text-brand-red">Captivating Bestsellers</span>
                     </h1>
-                    <p class="hero-paragraph mb-3" style="max-width: 540px;">
+                    <p class="hero-paragraph mb-3 animate-hero animate-fade-up delay-200" style="max-width: 540px;">
                         From ghostwriting and professional editing to cover design and global publishing — our expert team
                         turns your story into a literary masterpiece.
                     </p>
 
                     <!-- Buttons -->
-                    <div class="d-flex flex-wrap align-items-center mb-3">
+                    <div class="d-flex flex-wrap align-items-center mb-3 animate-hero animate-fade-up delay-300">
                         <a href="{{ route('home') }}#pricing" class="btn-red-pill" style="margin-right: 12px !important;">
                             <i class="fa-solid fa-paper-plane me-1"></i> Start Your Project
                         </a>
@@ -38,7 +38,7 @@
                     </div>
 
                     <!-- Trust Stats Row -->
-                    <div class="hero-stats-row">
+                    <div class="hero-stats-row animate-hero animate-fade-up delay-400">
                         <!-- Stat 1 -->
                         <div class="stat-item">
                             <div class="stat-icon-wrapper text-warning">
@@ -79,12 +79,13 @@
                 </div>
 
                 <!-- Right Visual Display -->
-                <div class="col-lg-6 text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="col-lg-6 text-center">
                     <div class="position-relative d-inline-block">
                         <img src="{{ asset('assets/imgs/main.png') }}" alt="Book Writing & Publishing"
-                            class="img-fluid hero-floating-image" style="max-height: 425px; object-fit: contain;">
+                            class="img-fluid hero-floating-image animate-hero animate-scale delay-200" style="max-height: 425px; object-fit: contain;">
                     </div>
                 </div>
+
 
             </div>
         </div>
