@@ -80,9 +80,9 @@
 
                 <!-- Right Visual Display -->
                 <div class="col-lg-6 text-center">
-                    <div class="position-relative d-inline-block">
+                    <div class="position-relative d-inline-block animate-hero animate-scale delay-200">
                         <img src="{{ asset('assets/imgs/main.png') }}" alt="Book Writing & Publishing"
-                            class="img-fluid hero-floating-image animate-hero animate-scale delay-200" style="max-height: 425px; object-fit: contain;">
+                            class="img-fluid hero-floating-image" style="max-height: 425px; object-fit: contain;">
                     </div>
                 </div>
 
