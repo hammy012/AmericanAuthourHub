@@ -277,18 +277,20 @@
         }
 
         /* responsive adjustments */
-        @media (max-width:420px) {
+        @media (max-width:480px) {
             #chat-panel {
-                width: 94vw;
-                right: 12px;
-                left: 12px;
-                bottom: 82px;
+                position: fixed !important;
+                width: auto !important;
+                max-width: none !important;
+                right: 15px !important;
+                left: 15px !important;
+                bottom: 85px !important;
                 border-radius: 10px;
             }
 
             #chat-toggle {
-                right: 14px;
-                bottom: 14px;
+                right: 15px;
+                bottom: 15px;
                 width: 52px;
                 height: 52px;
             }
