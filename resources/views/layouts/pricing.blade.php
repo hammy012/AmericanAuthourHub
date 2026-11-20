@@ -34,10 +34,10 @@
                     </div>
 
                     <div class="price-container mb-3">
-                        <span class="old-price">$399</span>
+                        <span class="old-price">$499</span>
                         <div class="d-flex align-items-baseline text-navy mt-1">
                             <span class="currency">$</span>
-                            <span class="price-val">199</span>
+                            <span class="price-val">349</span>
                             <span class="period">/ package</span>
                         </div>
                         <div class="mt-2">

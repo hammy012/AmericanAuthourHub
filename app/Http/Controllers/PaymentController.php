@@ -14,8 +14,8 @@ class PaymentController extends Controller
     protected $packages = [
         'basic' => [
             'name' => 'Basic Package',
-            'price' => 199,
-            'discount' => 399,
+            'price' => 349,
+            'discount' => 499,
             'subtitle' => 'Essential Plan',
             'description' => 'Best for authors starting their self-publishing journey.',
             'features' => [
