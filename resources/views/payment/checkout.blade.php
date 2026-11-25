@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Secure Checkout - ' . $package['name'] . ' | American Author Hub')
+@section('meta_description', 'Complete your secure SSL checkout for the ' . $package['name'] . ' at American Author Hub. ' . $package['description'])
+@section('robots', 'noindex, follow')
 
 @section('content')
 <section class="checkout-section py-5 bg-light-gradient">

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Frequently Asked Questions | American Author Hub')
+@section('meta_description', 'Find answers to common questions about American Author Hub’s ghostwriting, book editing, publishing timelines, 100% royalty ownership, and package pricing.')
 
 @section('content')
 

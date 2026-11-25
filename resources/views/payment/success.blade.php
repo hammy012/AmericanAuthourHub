@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Payment Successful | American Author Hub')
+@section('meta_description', 'Your order with American Author Hub has been completed successfully.')
+@section('robots', 'noindex, follow')
 
 @section('content')
 <section class="success-section py-5 d-flex align-items-center bg-light-gradient">

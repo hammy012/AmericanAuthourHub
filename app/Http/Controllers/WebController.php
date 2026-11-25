@@ -81,4 +81,48 @@ class WebController extends Controller
     {
         return view('privacy-policy');
     }
+
+    public function sitemap()
+    {
+        $baseUrl = rtrim(app()->environment('local') ? url('/') : config('app.url', url('/')), '/');
+
+        $urls = [
+            ['loc' => $baseUrl . '/', 'lastmod' => null],
+            ['loc' => $baseUrl . '/about-us', 'lastmod' => null],
+            ['loc' => $baseUrl . '/our-work', 'lastmod' => null],
+            ['loc' => $baseUrl . '/our-blogs', 'lastmod' => null],
+            ['loc' => $baseUrl . '/faqs', 'lastmod' => null],
+            ['loc' => $baseUrl . '/contact-us', 'lastmod' => null],
+            ['loc' => $baseUrl . '/terms-conditions', 'lastmod' => null],
+            ['loc' => $baseUrl . '/privacy-policy', 'lastmod' => null],
+        ];
+
+        foreach (Service::orderBy('id')->get() as $service) {
+            $urls[] = [
+                'loc' => $baseUrl . '/service/' . Str::slug($service->title),
+                'lastmod' => $service->updated_at ? Carbon::parse($service->updated_at)->toAtomString() : null,
+            ];
+        }
+
+        foreach (Blog::orderBy('date', 'desc')->get() as $blog) {
+            $urls[] = [
+                'loc' => $baseUrl . '/blog/' . $blog->slug,
+                'lastmod' => $blog->updated_at ? Carbon::parse($blog->updated_at)->toAtomString() : null,
+            ];
+        }
+
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+        foreach ($urls as $item) {
+            $xml .= "  <url>\n";
+            $xml .= '    <loc>' . e($item['loc']) . "</loc>\n";
+            if (!empty($item['lastmod'])) {
+                $xml .= '    <lastmod>' . e($item['lastmod']) . "</lastmod>\n";
+            }
+            $xml .= "  </url>\n";
+        }
+        $xml .= '</urlset>' . "\n";
+
+        return response($xml, 200)->header('Content-Type', 'application/xml; charset=UTF-8');
+    }
 }

@@ -11,75 +11,12 @@ use Stripe\Charge;
 
 class PaymentController extends Controller
 {
-    protected $packages = [
-        'basic' => [
-            'name' => 'Basic Package',
-            'price' => 349,
-            'discount' => 499,
-            'subtitle' => 'Essential Plan',
-            'description' => 'Best for authors starting their self-publishing journey.',
-            'features' => [
-                'Publishing Assistance',
-                'Professional Formatting',
-                'Editing & Proofreading',
-                'Account Setup Assistance',
-                '100% Royalties Kept by Author',
-                'Publish globally on Barnes & Noble, Amazon, Walmart and 40+ other platforms',
-                '7 Days Dedicated Support'
-            ],
-            'accent' => '#9F0B07'
-        ],
-        'standard' => [
-            'name' => 'Standard Package',
-            'price' => 450,
-            'discount' => 899,
-            'subtitle' => 'Recommended Plan',
-            'description' => 'Complete formatting, professional cover design & global distribution.',
-            'features' => [
-                'Publishing Assistance',
-                'Professional Formatting',
-                'Editing & Proofreading',
-                'Account Setup Assistance',
-                'Metadata Optimization',
-                'Category & Keyword Selection',
-                'Front & Back Cover Design',
-                'ISBN Assistance (if required)',
-                'Print-Ready and Digital Files',
-                'Unlimited Revisions During the Design Phase',
-                '100% Royalties Kept by Author',
-                'Global Distribution Setup',
-                'eBook & Paperback Publishing',
-                'Publish globally on Barnes & Noble, Amazon, Walmart and 40+ other platforms',
-                '14 Days Dedicated Support'
-            ],
-            'accent' => '#fd7e14'
-        ],
-        'premium' => [
-            'name' => 'Premium Package',
-            'price' => 1299,
-            'discount' => 2599,
-            'subtitle' => 'VIP Suite Plan',
-            'description' => 'Premium ghostwriting, illustrations, marketing & full suite.',
-            'features' => [
-                'Publishing Assistance',
-                'Professional Formatting',
-                'Editing & Proofreading',
-                'Account Setup Assistance',
-                '100% Royalties Kept by Author',
-                '5 High Quality Illustrations Included',
-                'Metadata Optimization',
-                'Category & Keyword Selection',
-                'ISBN Assistance (if required)',
-                'Global Distribution Setup',
-                'eBook & Paperback Publishing Configuration',
-                'eBook & Paperback Publishing',
-                'Unlimited Revisions During the Design Phase',
-                'Publish globally on Barnes & Noble, Amazon, Walmart and 40+ other platforms',
-                '30 Days Dedicated Support'
-            ],
-            'accent' => '#002768'
-        ]
-    ];
+    protected $packages;
+
+    public function __construct()
+    {
+        $this->packages = config('packages', []);
+    }
 
     /**
      * Normalize the package slug by stripping spaces, hyphens, and the word 'package'.

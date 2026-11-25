@@ -1,5 +1,10 @@
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+@php
+    $packagesConfig = config('packages');
+    $basicPkg = $packagesConfig['basic'];
+    $standardPkg = $packagesConfig['standard'];
+    $premiumPkg = $packagesConfig['premium'];
+    $basicSavings = $basicPkg['discount'] - $basicPkg['price'];
+@endphp
 
 <section id="pricing" class="pricing-section position-relative py-5 bg-light-gradient">
     <div class="container position-relative" style="z-index: 2;">
@@ -24,20 +29,20 @@
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
                 <div class="premium-pricing-card h-100 d-flex flex-column">
                     <div class="card-accent-line bg-red"></div>
-                    <div class="card-discount-badge">Save 50%</div>
+                    <div class="card-discount-badge">Save ${{ number_format($basicSavings) }}</div>
 
                     <div class="plan-header-block mb-3">
                         <span class="plan-subtitle text-uppercase text-brand-red">Essential</span>
-                        <h3 class="plan-title text-navy">Basic Package</h3>
-                        <p class="plan-desc text-muted mb-0">Best for authors starting their self-publishing journey.
+                        <h3 class="plan-title text-navy">{{ $basicPkg['name'] }}</h3>
+                        <p class="plan-desc text-muted mb-0">{{ $basicPkg['description'] }}
                         </p>
                     </div>
 
                     <div class="price-container mb-3">
-                        <span class="old-price">$499</span>
+                        <span class="old-price">${{ number_format($basicPkg['discount']) }}</span>
                         <div class="d-flex align-items-baseline text-navy mt-1">
                             <span class="currency">$</span>
-                            <span class="price-val">349</span>
+                            <span class="price-val">{{ number_format($basicPkg['price']) }}</span>
                             <span class="period">/ package</span>
                         </div>
                         <div class="mt-2">

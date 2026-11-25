@@ -32,7 +32,14 @@ Route::post('/contact/quick', [ContactController::class, 'quickStore'])->name('c
 Route::get('our-work', [WebController::class, 'book_video_trailer'])->name('our-work');
 Route::get('book-video-trailer', [WebController::class, 'book_video_trailer'])->name('book-video-trailer');
 Route::get('terms-conditions', [WebController::class, 'term_condition'])->name('terms-conditions');
+Route::get('terms-of-service', fn () => redirect()->route('terms-conditions', [], 301));
+Route::get('chat', function (\Illuminate\Http\Request $request) {
+    $target = route('contact-us');
+    $qs = $request->getQueryString();
+    return redirect()->to($qs ? $target . '?' . $qs : $target, 301);
+})->name('chat.redirect');
 Route::get('privacy-policy', [WebController::class, 'privacy_policy'])->name('privacy-policy');
+Route::get('sitemap.xml', [WebController::class, 'sitemap'])->name('sitemap');
 
 // Stripe Payment Routes
 Route::get('payment/success', [PaymentController::class, 'success'])->name('payment.success');

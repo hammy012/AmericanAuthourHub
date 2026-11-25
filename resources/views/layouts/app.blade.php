@@ -2,56 +2,59 @@
 <html lang="en">
 
 <head>
+    @php
+        $resolvedTitle = trim($__env->yieldContent('meta_title')) ?: trim($__env->yieldContent('title')) ?: 'Professional Book Writing & Ghostwriting Services | American Author Hub';
+        $resolvedDescription = trim($__env->yieldContent('meta_description')) ?: 'American Author Hub is a professional book writing and ghostwriting company offering expert editing, publishing, book marketing and Amazon KDP services. Turn your idea into a bestselling book today.';
+        $resolvedOgType = trim($__env->yieldContent('og_type')) ?: 'website';
+        $resolvedRobots = trim($__env->yieldContent('robots')) ?: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+        $preferredOrigin = rtrim(app()->environment('local') ? url('/') : config('app.url', url('/')), '/');
+        $path = '/' . ltrim(request()->path(), '/');
+        $canonicalUrl = $path === '/' ? $preferredOrigin . '/' : $preferredOrigin . $path;
+        $ogImageUrl = $preferredOrigin . '/assets/imgs/og-cover.jpg';
+        $logoUrl = $preferredOrigin . '/assets/imgs/logo.png';
+    @endphp
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-
-    <title>@yield('title', 'American Author Hub | Book Writing Company')</title>
-    <link rel="icon" type="image/png" href="{{ asset('assets/imgs/logo.png') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{-- ✅ Primary SEO --}}
-    <title>@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')</title>
-
-    <meta name="description" content="@yield('meta_description', 'American Author Hub is a professional book writing and ghostwriting company offering expert editing, publishing, book marketing and Amazon KDP services. Turn your idea into a bestselling book today.')">
-    
+    <title>{{ $resolvedTitle }}</title>
+    <meta name="description" content="{{ $resolvedDescription }}">
     <meta name="keywords" content="@yield('meta_keywords', 'book writing company, ghostwriting services, professional book writers, hire a ghostwriter, book publishing services, Amazon KDP publishing, book editing services, ebook writing services, book marketing agency, American Author Hub')">
-    
     <meta name="author" content="American Author Hub">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <link rel="canonical" href="{{ url()->current() }}" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="robots" content="{{ $resolvedRobots }}">
+
+    <link rel="canonical" href="{{ $canonicalUrl }}" />
+
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{{ $resolvedOgType }}">
     <meta property="og:site_name" content="American Author Hub">
-    <meta property="og:title" content="@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')">
-    <meta property="og:description" content="@yield('meta_description', 'Hire professional ghostwriters, editors and publishing experts to bring your book to life.')">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ asset('assets/images/og-cover.jpg') }}">
+    <meta property="og:title" content="{{ $resolvedTitle }}">
+    <meta property="og:description" content="{{ $resolvedDescription }}">
+    <meta property="og:url" content="{{ $canonicalUrl }}">
+    <meta property="og:image" content="{{ $ogImageUrl }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('meta_title', 'Professional Book Writing & Ghostwriting Services | American Author Hub')">
-    <meta name="twitter:description" content="@yield('meta_description', 'Expert ghostwriting, editing and publishing services to help you become a published author.')">
-    <meta name="twitter:image" content="{{ asset('assets/images/og-cover.jpg') }}">
+    <meta name="twitter:title" content="{{ $resolvedTitle }}">
+    <meta name="twitter:description" content="{{ $resolvedDescription }}">
+    <meta name="twitter:image" content="{{ $ogImageUrl }}">
     <meta name="twitter:site" content="@AmericanAuthorHub">
-    
+
     <!-- Geo Target (USA Focus) -->
     <meta name="geo.region" content="US">
     <meta name="geo.placename" content="United States">
     <meta name="language" content="English">
-    
+
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "American Author Hub",
-          "url": "{{ url('/') }}",
-          "logo": "{{ asset('assets/images/logo.png') }}",
+          "url": "{{ $preferredOrigin }}/",
+          "logo": "{{ $logoUrl }}",
           "sameAs": [
             "https://www.facebook.com/profile.php?id=61583690636910",
             "https://www.instagram.com/americanauthorhub/",
@@ -65,10 +68,8 @@
         }
     </script>
 
-
-    
     {{-- ✅ Favicon --}}
-    <link rel="icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/imgs/fav.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     
     {{-- ✅ Theme Color --}}
@@ -91,11 +92,11 @@
     <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/christmas.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom-theme.css') }}">
-    <!-- Font Awesome (CDN or local) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-    <link rel="icon" type="image/png" href="{{ asset('assets/imgs/fav.png') }}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Font Awesome (single version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Swiper (single version) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Chat widget inline CSS -->
     <style>
         :root {
@@ -297,8 +298,7 @@
         }
     </style>
     
-    <!-- Head: add Swiper CSS (place in <head>) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
 
 <body>
 
@@ -378,7 +378,7 @@
             
                 <div class="success" id="chat-success" role="status" aria-live="polite" style="display:none;">
                     <h4>Thanks — message sent!</h4>
-                    <p>We'll get back to you shortly. If you'd like, call us at <strong>123 456-789</strong>.</p>
+                    <p>We'll get back to you shortly. If you'd like, call us at <strong>+1 (346) 347-6046</strong>.</p>
                 </div>
             </div>
         </div>

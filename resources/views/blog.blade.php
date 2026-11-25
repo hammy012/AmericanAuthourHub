@@ -1,9 +1,17 @@
 @extends('layouts.app')
 
-@section('title', ($blog->meta_title ?? $blog->title) . ' | American Author Hub')
-@section('meta_title', $blog->meta_title ?? $blog->title)
+@php
+    $rawBlogTitle = trim($blog->meta_title ?? $blog->title);
+    $blogPageTitle = \Illuminate\Support\Str::contains($rawBlogTitle, 'American Author Hub')
+        ? $rawBlogTitle
+        : $rawBlogTitle . ' | American Author Hub';
+@endphp
+
+@section('title', $blogPageTitle)
+@section('meta_title', $blogPageTitle)
 @section('meta_description', $blog->meta_description ?? strip_tags(\Illuminate\Support\Str::limit($blog->description, 160)))
 @section('meta_keywords', is_array($blog->tags) && count($blog->tags) ? implode(', ', $blog->tags) : 'publishing blog, american author hub')
+@section('og_type', 'article')
 
 @section('content')
 

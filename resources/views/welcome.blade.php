@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'American Author Hub | Book Writing & Publishing Company')
+@section('meta_description', 'American Author Hub is a professional book writing, ghostwriting, editing, cover design, and self-publishing company helping authors turn ideas into bestsellers.')
 
 @section('content')
 
@@ -18,8 +19,7 @@
                         USA'S #1 BOOK WRITING & PUBLISHING AGENCY
                     </span>
                     <h1 class="hero-title mb-3 animate-hero animate-fade-up delay-100">
-                        Transform Your Ideas<br>
-                        Into<br>
+                        Transform Your Ideas Into<br>
                         <span class="text-brand-red">Captivating Bestsellers</span>
                     </h1>
                     <p class="hero-paragraph mb-3 animate-hero animate-fade-up delay-200" style="max-width: 540px;">

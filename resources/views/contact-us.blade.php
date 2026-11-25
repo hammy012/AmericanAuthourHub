@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'American Author Hub | Contact')
+@section('title', 'Contact Us | American Author Hub')
+@section('meta_description', 'Contact American Author Hub for a free consultation on ghostwriting, book editing, cover design, or self-publishing. Call +1 (346) 347-6046 or send us a message.')
 
 @section('content')
 

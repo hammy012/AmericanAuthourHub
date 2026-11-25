@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'American Author Hub | About us')
+@section('title', 'About Us | American Author Hub')
+@section('meta_description', 'Learn about American Author Hub, our experienced ghostwriters, editors, and publishing specialists dedicated to helping authors write, publish, and market their books.')
 
 @section('content')
 

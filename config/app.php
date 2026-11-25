@@ -57,6 +57,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'canonical_url' => env('CANONICAL_URL', 'https://americanauthorhub.com'),
+
     'asset_url' => env('ASSET_URL'),
 
     /*

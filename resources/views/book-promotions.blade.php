@@ -1,6 +1,63 @@
 @extends('layouts.app')
 
-@section('title', 'American Author Hub | ' . ($service->title ?? 'Professional Book Service'))
+@php
+    $serviceSlug = \Illuminate\Support\Str::slug($service->title ?? '');
+    $serviceSeo = [
+        'publishing' => [
+            'title' => 'Self-Publishing Services for Authors | American Author Hub',
+            'description' => 'Get help preparing your manuscript, setting up publishing accounts and submitting your book. Explore formats, publishing steps and package options.',
+        ],
+        'ghostwriting' => [
+            'title' => 'Professional Ghostwriting Services | American Author Hub',
+            'description' => 'Hire experienced ghostwriters to turn your story or expertise into a compelling, publication-ready fiction or non-fiction book with 100% ownership.',
+        ],
+        'book-editing' => [
+            'title' => 'Professional Book Editing Services | American Author Hub',
+            'description' => 'Polish your manuscript with developmental, line, and copy editing from experienced book editors focused on clarity, flow, and structure.',
+        ],
+        'book-cover' => [
+            'title' => 'Custom Book Cover Design Services | American Author Hub',
+            'description' => 'Stand out on Amazon and bookstores with custom eBook, paperback, and hardcover book cover designs tailored to your genre and target readers.',
+        ],
+        'book-formatting' => [
+            'title' => 'Book Formatting & Interior Layout Services | American Author Hub',
+            'description' => 'Get print-ready and eBook interior formatting that meets Amazon KDP, IngramSpark, and Barnes & Noble publishing standards.',
+        ],
+        'book-promotion' => [
+            'title' => 'Book Marketing & Promotion Services | American Author Hub',
+            'description' => 'Grow your readership and boost book sales with targeted book marketing campaigns, launch strategies, and author visibility solutions.',
+        ],
+        'audio-book' => [
+            'title' => 'Audiobook Production & Narration Services | American Author Hub',
+            'description' => 'Transform your book into a professionally narrated, ACX-ready audiobook to reach listeners on Audible, Apple Books, and global platforms.',
+        ],
+        'e-book-writing' => [
+            'title' => 'eBook Writing & Publishing Services | American Author Hub',
+            'description' => 'Work with skilled eBook writers to research, write, and format engaging digital books designed to build authority and connect with readers.',
+        ],
+        'author-website' => [
+            'title' => 'Custom Author Website Design Services | American Author Hub',
+            'description' => 'Build your digital headquarters with a custom, mobile-friendly author website featuring your books, bio, reader lead capture, and store links.',
+        ],
+        'book-video-trailer' => [
+            'title' => 'Book Video Trailer Production Services | American Author Hub',
+            'description' => 'Promote your book with a cinematic video trailer crafted to capture reader attention across social media, YouTube, and book launch campaigns.',
+        ],
+        'proofreading' => [
+            'title' => 'Book Proofreading Services for Authors | American Author Hub',
+            'description' => 'Eliminate grammar, spelling, punctuation, and formatting errors before publication with thorough, professional manuscript proofreading.',
+        ],
+        'book-printing' => [
+            'title' => 'Custom Book Printing & Distribution Services | American Author Hub',
+            'description' => 'Print your paperback or hardcover book with crisp typography, quality paper stocks, custom trim sizes, and reliable fulfillment.',
+        ],
+    ];
+    $seoTitle = $serviceSeo[$serviceSlug]['title'] ?? (($service->title ?? 'Professional Book Service') . ' Services | American Author Hub');
+    $seoDesc = $serviceSeo[$serviceSlug]['description'] ?? \Illuminate\Support\Str::limit(strip_tags($service->short_desc ?: ($service->description ?? 'Transform your manuscript into a bestseller with our professional writing and publishing services.')), 155);
+@endphp
+
+@section('title', $seoTitle)
+@section('meta_description', $seoDesc)
 
 @section('content')
 
